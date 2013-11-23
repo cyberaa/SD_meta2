@@ -2,20 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" name="Default" comment="">
-      <change type="MOVED" beforePath="C:\Users\d_cardoso\Documents\GitHub\SD_meta2\web\success.jsp" afterPath="$PROJECT_DIR$/web/MainScreen.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/action/Login.java" afterPath="$PROJECT_DIR$/src/action/Login.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/struts.xml" afterPath="$PROJECT_DIR$/src/struts.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="meta2.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.jsp" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385242426553" ignored="false" />
+    <file path="/index.jsp" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385244870369" ignored="false" />
     <file path="/struts.xml" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385242044681" ignored="false" />
     <file path="/HelloWorld.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385226528944" ignored="false" />
     <file path="/style.css" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385219282557" ignored="false" />
     <file path="/success.jsp" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385227117882" ignored="false" />
-    <file path="/Dummy.txt" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385240409016" ignored="false" />
+    <file path="/Dummy.txt" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385242816473" ignored="false" />
     <file path="/Login.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385242706271" ignored="false" />
     <file path="/Features.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385233024748" ignored="false" />
     <file path="D:/Dropbox/foDEI_nos/SD/Caceiro + Cardoso/Projecto/serverRMI/src/ImplementedFeatures.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385233265432" ignored="false" />
@@ -89,7 +86,7 @@
       <file leaf-file-name="index.jsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="73" selection-start="1496" selection-end="1496" vertical-scroll-proportion="0.8017493">
+            <state line="113" column="22" selection-start="5086" selection-end="5164" vertical-scroll-proportion="0.6272727">
               <folding />
             </state>
           </provider>
@@ -575,7 +572,11 @@
       <created>1385240416249</created>
       <updated>1385240416249</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="lets do this shit!!!!!">
+      <created>1385242824866</created>
+      <updated>1385242824866</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -743,7 +744,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="49" column="31" selection-start="0" selection-end="1858" vertical-scroll-proportion="0.8985075">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -806,13 +807,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/MainScreen.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="19" selection-start="341" selection-end="341" vertical-scroll-proportion="-9.153846">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/action/Login.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="11" selection-start="665" selection-end="665" vertical-scroll-proportion="0.0">
@@ -830,9 +824,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/MainScreen.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="19" selection-start="341" selection-end="341" vertical-scroll-proportion="-9.153846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="73" selection-start="1496" selection-end="1496" vertical-scroll-proportion="0.8017493">
+        <state line="113" column="22" selection-start="5086" selection-end="5164" vertical-scroll-proportion="0.6272727">
           <folding />
         </state>
       </provider>
