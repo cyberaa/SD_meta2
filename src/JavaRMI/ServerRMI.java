@@ -1,3 +1,4 @@
+package JavaRMI;
 import javax.swing.*;
 import java.awt.*;
 import java.net.InetAddress;
