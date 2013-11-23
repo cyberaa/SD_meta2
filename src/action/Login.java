@@ -2,7 +2,6 @@ package action;
 
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.struts2.interceptor.SessionAware;
-
 import model.*;
 import java.math.BigInteger;
 import java.rmi.Naming;
@@ -20,6 +19,7 @@ public class Login extends ActionSupport implements SessionAware {
     private static final long serialVersionUID = 4L;
     private Map<String, Object> session;
     public Features RMIServer = null;
+    private boolean tried=false;
 
     private String userName;
     private String password;
@@ -30,6 +30,7 @@ public class Login extends ActionSupport implements SessionAware {
         setMessage("Hello " + userName);
         setMessagePassword("Your password is:" + password);
         String lol= hashPassword(password);
+        int answer;
         try {
             if(RMIServer==null){
                 System.getProperties().put("java.security.policy", "policy.all");
@@ -39,12 +40,16 @@ public class Login extends ActionSupport implements SessionAware {
                     System.err.println(e);
                     return "SUCCESS";}
             }
-            RMIServer.Login(getUserName(),lol);
+           answer = RMIServer.Login(getUserName(),lol);
         } catch (Exception e) {
             return "ERROR";
         }
-        System.out.println("I'M THE BOSS!!!!");
-        return "SUCCESS";
+        if(answer<1){
+            tried=true;
+            return "ERROR";
+        }else{
+            return "SUCCESS";
+        }
     }
 
     @Override
@@ -67,6 +72,9 @@ public class Login extends ActionSupport implements SessionAware {
 
     public String getUserName() {
         return userName;
+    }
+    public boolean getTried() {
+        return tried;
     }
     public String getPassword() {
         return password;
