@@ -3,6 +3,7 @@ package action;
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.struts2.interceptor.SessionAware;
 
+import model.*;
 import java.math.BigInteger;
 import java.rmi.Naming;
 import java.security.MessageDigest;
@@ -18,7 +19,7 @@ import java.util.Map;
 public class Login extends ActionSupport implements SessionAware {
     private static final long serialVersionUID = 4L;
     private Map<String, Object> session;
-    public model.Features RMIServer = null;
+    public Features RMIServer = null;
 
     private String userName;
     private String password;
@@ -33,7 +34,7 @@ public class Login extends ActionSupport implements SessionAware {
             if(RMIServer==null){
                 System.getProperties().put("java.security.policy", "policy.all");
                 try{
-                    this.RMIServer = (model.Features) Naming.lookup("rmi://127.0.0.1:7000/IdeaBroker");
+                    this.RMIServer = (Features) Naming.lookup("rmi://127.0.0.1:7000/IdeaBroker");
                 }catch(Exception e){
                     System.err.println(e);
                     System.out.println("esmerdou-se");
