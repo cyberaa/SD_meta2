@@ -37,14 +37,13 @@ public class Login extends ActionSupport implements SessionAware {
                     this.RMIServer = (Features) Naming.lookup("rmi://127.0.0.1:7000/IdeaBroker");
                 }catch(Exception e){
                     System.err.println(e);
-                    System.out.println("esmerdou-se");
                     return "SUCCESS";}
             }
-            System.out.println("trying");
             RMIServer.Login(getUserName(),lol);
         } catch (Exception e) {
             return "ERROR";
         }
+        System.out.println("I'M THE BOSS!!!!");
         return "SUCCESS";
     }
 

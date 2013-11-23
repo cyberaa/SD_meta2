@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Features.java" afterPath="$PROJECT_DIR$/src/model/Features.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/action/Login.java" afterPath="$PROJECT_DIR$/src/action/Login.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -13,9 +12,17 @@
     <file path="/HelloWorld.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385226528944" ignored="false" />
     <file path="/style.css" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385219282557" ignored="false" />
     <file path="/success.jsp" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385227117882" ignored="false" />
-    <file path="/Dummy.txt" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385232590825" ignored="false" />
-    <file path="/Login.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385232973328" ignored="false" />
-    <file path="/Features.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385232522890" ignored="false" />
+    <file path="/Dummy.txt" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385232989664" ignored="false" />
+    <file path="/Login.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385234323709" ignored="false" />
+    <file path="/Features.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385233024748" ignored="false" />
+    <file path="D:/Dropbox/foDEI_nos/SD/Caceiro + Cardoso/Projecto/serverRMI/src/ImplementedFeatures.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385233265432" ignored="false" />
+    <file path="D:/Dropbox/foDEI_nos/SD/Caceiro + Cardoso/Projecto/serverRMI/src/model/ConnectionPool.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385233253564" ignored="false" />
+    <file path="/fragment.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385233256936" ignored="false" />
+    <file path="D:/Dropbox/foDEI_nos/SD/Caceiro + Cardoso/Projecto/serverRMI/src/model/Features.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385233265431" ignored="false" />
+    <file path="D:/Dropbox/foDEI_nos/SD/Caceiro + Cardoso/Projecto/serverRMI/src/ServerRMI.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385233347987" ignored="false" />
+    <file path="D:/Dropbox/foDEI_nos/SD/Caceiro + Cardoso/Projecto/serverRMI/src/model/ImplementedFeatures.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385234222640" ignored="false" />
+    <file path="/ServerRMI.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385233335342" ignored="false" />
+    <file path="D:/Dropbox/foDEI_nos/SD/Caceiro + Cardoso/Projecto/serverRMI/src/META-INF/MANIFEST.MF" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385234253516" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,11 +122,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Login.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Login.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/action/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="15" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0">
+            <state line="33" column="15" selection-start="983" selection-end="983" vertical-scroll-proportion="0.2303523">
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="docComment;class#Login#0" expanded="true" />
                 <element signature="method#getMessage#0;class#Login#0" expanded="false" />
                 <element signature="method#setMessage#0;class#Login#0" expanded="false" />
@@ -134,11 +142,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Features.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Features.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Features.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="103" selection-start="39" selection-end="39" vertical-scroll-proportion="0.09550562">
+            <state line="14" column="51" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="docComment;class#Features#0" expanded="true" />
                 <element signature="e#268#306#0" expanded="true" />
               </folding>
@@ -556,7 +565,11 @@
       <created>1385232603828</created>
       <updated>1385232603828</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="lets do this shit!!!!!">
+      <created>1385232997840</created>
+      <updated>1385232997840</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -745,13 +758,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meta2.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/success.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="23" selection-start="385" selection-end="385" vertical-scroll-proportion="-7.9615383">
@@ -783,10 +789,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/Dropbox/foDEI_nos/SD/Caceiro + Cardoso/Projecto 2/serverRMI/src/main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Features.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="51" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#Features#0" expanded="true" />
+            <element signature="e#268#306#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meta2.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/action/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="15" selection-start="131" selection-end="131" vertical-scroll-proportion="0.0">
+        <state line="33" column="15" selection-start="983" selection-end="983" vertical-scroll-proportion="0.2303523">
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="docComment;class#Login#0" expanded="true" />
             <element signature="method#getMessage#0;class#Login#0" expanded="false" />
             <element signature="method#setMessage#0;class#Login#0" expanded="false" />
@@ -796,16 +828,6 @@
             <element signature="method#getPassword#0;class#Login#0" expanded="false" />
             <element signature="method#setPassword#0;class#Login#0" expanded="false" />
             <element signature="method#setUserName#0;class#Login#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Features.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="103" selection-start="39" selection-end="39" vertical-scroll-proportion="0.09550562">
-          <folding>
-            <element signature="docComment;class#Features#0" expanded="true" />
-            <element signature="e#268#306#0" expanded="true" />
           </folding>
         </state>
       </provider>
