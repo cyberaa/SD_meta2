@@ -25,7 +25,7 @@
 <body>
 <table id="wrapper">
     <tr>
-        <td><img src="img/logo.png" alt="" /></td>
+        <td><img src="img/logo.png" alt="" align="center"/></td>
     </tr>
 </table>
 <form method="post" action="HelloWorld" class="login">

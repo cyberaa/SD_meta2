@@ -10,7 +10,6 @@ public class HelloWorld {
 
     private String message;
     private String messagePassword;
-    private String OCaceiroEGay;
 
     private String userName;
     private String password;
