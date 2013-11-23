@@ -28,7 +28,7 @@
         <td><img src="img/logo.png" alt="" align="center"/></td>
     </tr>
 </table>
-<form method="post" action="HelloWorld" class="login">
+<form method="post" action="login" class="login">
     <p>
         <s:textfield name="userName" id="login" label="Username"/>
     </p>
