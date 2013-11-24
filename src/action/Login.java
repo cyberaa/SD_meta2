@@ -29,7 +29,7 @@ public class Login extends ActionSupport implements SessionAware {
     public String execute() {
         setMessage("Hello " + userName);
         setMessagePassword("Your password is:" + password);
-        String lol= hashPassword(password);
+        String hashedpass= hashPassword(password);
         int answer;
         try {
             if(RMIServer==null){
@@ -38,10 +38,11 @@ public class Login extends ActionSupport implements SessionAware {
                     this.RMIServer = (Features) Naming.lookup("rmi://127.0.0.1:7000/IdeaBroker");
                 }catch(Exception e){
                     System.err.println(e);
-                    return "SUCCESS";}
+                    return "ERROR";}
             }
-           answer = RMIServer.Login(getUserName(),lol);
+            answer = RMIServer.Login(getUserName(),hashedpass);
         } catch (Exception e) {
+            System.err.println(e);
             return "ERROR";
         }
         if(answer<1){

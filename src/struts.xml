@@ -8,7 +8,7 @@
     <package name="default" extends="struts-default">
         <action name="login" class="action.Login">
             <result name="SUCCESS">/MainScreen.jsp</result>
-            <result name="ERROR">/index.jsp</result>
+            <result name="ERROR">/error.jsp</result>
         </action>
     </package>
 </struts>
