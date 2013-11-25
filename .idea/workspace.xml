@@ -11,7 +11,7 @@
     <file path="/HelloWorld.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385226528944" ignored="false" />
     <file path="/style.css" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385219282557" ignored="false" />
     <file path="/success.jsp" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385227117882" ignored="false" />
-    <file path="/Dummy.txt" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385405736058" ignored="false" />
+    <file path="/Dummy.txt" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385405799831" ignored="false" />
     <file path="/Login.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385401057544" ignored="false" />
     <file path="/Features.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385233024748" ignored="false" />
     <file path="D:/Dropbox/foDEI_nos/SD/Caceiro + Cardoso/Projecto/serverRMI/src/ImplementedFeatures.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385233265432" ignored="false" />
@@ -608,7 +608,11 @@
       <created>1385405742570</created>
       <updated>1385405742570</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="com página principal do pisso do caceiro">
+      <created>1385405802411</created>
+      <updated>1385405802411</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
