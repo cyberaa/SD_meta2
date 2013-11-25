@@ -11,6 +11,7 @@ import java.util.ArrayList;
  * @project Sistemas Distribuidos
  */
 
+//TODO: Remover estes warnings!
 @SuppressWarnings("UnusedDeclaration")
 public interface Features extends Remote{
     public void CreateRMIServer() throws RemoteException;
