@@ -15,21 +15,19 @@ import java.util.Map;
  * @version 0.1
  * @project Sistemas Distribuídos
  */
-public class Login extends ActionSupport implements SessionAware {
+public class Login extends Action {
     private static final long serialVersionUID = 4L;
     private Map<String, Object> session;
     public Features RMIServer = null;
     private boolean tried=false;
 
-    private String userName;
-    private String password;
     private String message;
     private String messagePassword;
 
     public String execute() {
-        setMessage("Hello " + userName);
-        setMessagePassword("Your password is:" + password);
-        String hashedpass= hashPassword(password);
+        setMessage("Hello " + client.getUserName());
+        setMessagePassword("Your password is:" + client.getPassword());
+        String hashedPass= hashPassword(client.getPassword());
         int answer;
         try {
             if(RMIServer==null){
@@ -40,22 +38,18 @@ public class Login extends ActionSupport implements SessionAware {
                     System.err.println(e);
                     return "ERROR";}
             }
-            answer = RMIServer.Login(getUserName(),hashedpass);
+            answer = RMIServer.Login(client.getUserName(),hashedPass);
         } catch (Exception e) {
             System.err.println(e);
             return "ERROR";
         }
+        System.out.println(answer);
         if(answer<1){
             tried=true;
-            return "ERROR";
+            return "RETRY";
         }else{
             return "SUCCESS";
         }
-    }
-
-    @Override
-    public void setSession(Map<String, Object> session) {
-        this.session = session;
     }
 
     public String getMessage() {
@@ -70,21 +64,8 @@ public class Login extends ActionSupport implements SessionAware {
     public void setMessagePassword(String message) {
         this.messagePassword = message;
     }
-
-    public String getUserName() {
-        return userName;
-    }
     public boolean getTried() {
         return tried;
-    }
-    public String getPassword() {
-        return password;
-    }
-    public void setPassword(String password) {
-        this.password=password;
-    }
-    public void setUserName(String userName) {
-        this.userName = userName;
     }
 
     private String hashPassword(String pass)
