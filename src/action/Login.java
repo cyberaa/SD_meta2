@@ -25,9 +25,13 @@ public class Login extends Action {
     private String messagePassword;
 
     public String execute() {
+        super.execute();
         setMessage("Hello " + client.getUserName());
         setMessagePassword("Your password is:" + client.getPassword());
-        String hashedPass= hashPassword(client.getPassword());
+        if(client.getPassword()==null){
+            return "ERROR";
+        }
+        String hashedPass = hashPassword(client.getPassword());
         int answer;
         try {
             if(RMIServer==null){

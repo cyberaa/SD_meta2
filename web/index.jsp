@@ -99,10 +99,10 @@
 </table>
 <form method="post" action="login" class="login">
     <p>
-        <s:textfield name="userName" id="login" label="Username"/>
+        <s:textfield name="client.userName" id="login" label="Username"/>
     </p>
     <p>
-        <s:password name="password" id="password" label="Password"/>
+        <s:password name="client.password" id="password" label="Password"/>
     </p>
     <p class="login-submit">
         <button type="submit" class="login-button">Login</button>

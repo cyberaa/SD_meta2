@@ -12,6 +12,6 @@
     <title>ERROR!!!!</title>
 </head>
 <body>
-<a href="localhost:8080">PRESS TO GO BACK!!!</a>
+<a href="http://localhost:8080">PRESS TO GO BACK!!!</a>
 </body>
 </html>
