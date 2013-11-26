@@ -15,13 +15,11 @@ public class Client {
     private String userName;
     private String password;
     private Features RMIServer = null;
-    private int number_test;
 
     public String getUserName() {
         return userName;
     }
     public Features getRMIServer(){
-        number_test=0;
         if(this.RMIServer==null){
             System.getProperties().put("java.security.policy", "policy.all");
             try{
@@ -29,13 +27,13 @@ public class Client {
                 return RMIServer;
             }catch(Exception e){
                 System.err.println(e);
-                if(number_test<5)
-                return getRMIServer();
+                return null;
             }
         }else{
             return RMIServer;
         }
     }
+
     public String getPassword() {
         return password;
     }
