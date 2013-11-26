@@ -14,6 +14,7 @@ public class Login extends Action {
 
     private String message;
     private String messagePassword;
+    private boolean retry;
 
     public Login(){
         client = new Client();
