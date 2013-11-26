@@ -1,7 +1,5 @@
 package action;
 
-import com.opensymphony.xwork2.ActionSupport;
-import org.apache.struts2.interceptor.SessionAware;
 import model.*;
 import java.math.BigInteger;
 import java.rmi.Naming;
@@ -16,16 +14,19 @@ import java.util.Map;
  * @project Sistemas Distribuídos
  */
 public class Login extends Action {
-    private static final long serialVersionUID = 4L;
-    private Map<String, Object> session;
+
     public Features RMIServer = null;
     private boolean tried=false;
 
     private String message;
     private String messagePassword;
 
+
+    public Login(){
+        client = new Client();
+    }
     public String execute() {
-        super.execute();
+        //super.execute();
         setMessage("Hello " + client.getUserName());
         setMessagePassword("Your password is:" + client.getPassword());
         if(client.getPassword()==null){
@@ -47,7 +48,7 @@ public class Login extends Action {
             System.err.println(e);
             return "ERROR";
         }
-        System.out.println(answer);
+        System.out.println("ANSWER!!!"+answer+"   pass:"+client.getPassword()+"   username"+client.getUserName());
         if(answer<1){
             tried=true;
             return "RETRY";

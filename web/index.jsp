@@ -43,7 +43,11 @@
                 // The response object is returned with a status field that lets the app know the current
                 // login status of the person. In this case, we're handling the situation where they
                 // have logged in to the app.
-                testAPI();
+
+                 /*FIXME lololololol */
+
+                 //window.location = "/submitIdea.jsp";
+
             } else if (response.status === 'not_authorized') {
                 // In this case, the person is logged into Facebook, but not into the app, so we call
                 // FB.login() to prompt them to do so.
@@ -99,10 +103,10 @@
 </table>
 <form method="post" action="login" class="login">
     <p>
-        <s:textfield name="client.userName" id="login" label="Username"/>
+        <s:textfield name="userName" id="login" label="Username"/>
     </p>
     <p>
-        <s:password name="client.password" id="password" label="Password"/>
+        <s:password name="password" id="password" label="Password"/>
     </p>
     <p class="login-submit">
         <button type="submit" class="login-button">Login</button>

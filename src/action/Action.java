@@ -18,7 +18,6 @@ public class Action extends ActionSupport implements SessionAware {
 
     protected Client client;
 
-
     /**
      * Needed by SessionAware
      *
@@ -34,11 +33,10 @@ public class Action extends ActionSupport implements SessionAware {
      * or loading it from the session if it exists.
      */
     public void getClientSession() {
-        if (!session.containsKey("client")) {
-            this.client = new Client();
+        /*if (!session.containsKey("client")) {
             session.put("client", client);
         } else
-            this.client = (Client) session.get("client");
+            this.client = (Client) session.get("client"); */
     }
 
     public boolean getClientStatus(){
@@ -52,5 +50,20 @@ public class Action extends ActionSupport implements SessionAware {
     {
         getClientSession();
         return "SUCCESS";
+    }
+
+
+    public String getUserName() {
+        return client.getUserName();
+    }
+
+    public String getPassword() {
+        return  client.getPassword();
+    }
+    public void setPassword(String password) {
+        client.setPassword(password);
+    }
+    public void setUserName(String userName) {
+        client.setUserName(userName);
     }
 }
