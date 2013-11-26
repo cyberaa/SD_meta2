@@ -12,8 +12,8 @@
     <title>RMIERROR!!!!</title>
 </head>
 <body>
+O RMI DEU BODE!!!!!
+ESTAMOS SEM BASE DE DADOS!!
 <a href="http://localhost:8080">PRESS TO GO BACK!!!</a>
-lolololol
-asdf  dfdgfhfgfh
 </body>
 </html>

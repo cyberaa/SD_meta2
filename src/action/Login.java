@@ -24,7 +24,7 @@ public class Login extends Action {
         setMessage("Hello " + client.getUserName());
         setMessagePassword("Your password is:" + client.getPassword());
         String password = client.getPassword();
-        int answer = 0;
+        int answer;
         try {
             Features rmi;
             rmi = client.getRMIServer();
