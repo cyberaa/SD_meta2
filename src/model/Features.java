@@ -16,6 +16,17 @@ import java.util.ArrayList;
 public interface Features extends Remote{
     public void CreateRMIServer() throws RemoteException;
     public void ConnectDatabase() throws RemoteException;
+
+    /**
+     * Method to Login the user
+     *
+     * @param user the username
+     * @param pass the password
+     * @return -1 if incorrect password
+     *         0 if user is incorrect or do not exists
+     *
+     * @throws RemoteException
+     */
     public int Login(String user, String pass) throws RemoteException;
 
     /**
@@ -34,6 +45,15 @@ public interface Features extends Remote{
      * @throws RemoteException
      */
     public int newUser(ArrayList<String> user) throws RemoteException;
+
+    /**
+     *
+     * @param data Idea info
+     * @param id_user Id of the user
+     * @param ischild
+     * @return
+     * @throws RemoteException
+     */
     public int newIdea(ArrayList<String> data, int id_user, boolean ischild) throws RemoteException;
     public int newTopics(ArrayList<String> data) throws RemoteException;
     public ArrayList<String> getTopics() throws RemoteException;

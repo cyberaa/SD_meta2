@@ -9,7 +9,7 @@ import java.security.NoSuchAlgorithmException;
  * @author Bruno Caceiro - caceiro@student.dei.uc.pt
  * @author David Cardoso - davidfpc@student.dei.uc.pt
  * @version 0.1
- * @project Sistemas Distribuídos
+ * @project Sistemas Distribuï¿½dos
  */
 public class Client {
     private String userName;
@@ -20,6 +20,7 @@ public class Client {
     public String getUserName() {
         return userName;
     }
+
     public Features getRMIServer(){
         if(this.RMIServer==null||reconnect==false){
             System.getProperties().put("java.security.policy", "policy.all");
@@ -32,6 +33,7 @@ public class Client {
         }
         return RMIServer;
     }
+
     public void setReconnect(boolean value){
         this.reconnect = value;
     }
@@ -44,6 +46,7 @@ public class Client {
     public void setUserName(String userName) {
         this.userName = userName;
     }
+
     private String hashPassword(String pass)    {
         MessageDigest m = null;
         try {

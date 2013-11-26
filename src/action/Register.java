@@ -19,9 +19,7 @@ public class Register extends Action {
     }
 
     public String execute() {
-
-
-        return "SUCCESS";
+        return this.newClient.registerNewUSer();
     }
 
     public void setUsername(String username) {

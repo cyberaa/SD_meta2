@@ -1,6 +1,9 @@
 package model;
 
+import java.math.BigInteger;
 import java.rmi.Naming;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 
 public class NewClient {
@@ -71,12 +74,38 @@ public class NewClient {
         this.lastName = lastName;
     }
 
+    private String hashPassword(String pass)    {
+        MessageDigest m = null;
+        try {
+            m = MessageDigest.getInstance("MD5");
+        } catch (NoSuchAlgorithmException e) {
+            System.out.println("Cannot find hashing algorithm:\n" + e);
+            System.exit(-1); //FIXME?
+        }
+        if(m == null)
+        {
+            System.out.println("Cannot find hashing algorithm.");
+            return null;
+        }
+        m.reset();
+        m.update(pass.getBytes());
+
+        byte[] digest = m.digest();
+        BigInteger bigInt = new BigInteger(1,digest);
+        String hashText = bigInt.toString(16);
+
+        while(hashText.length() < 32)
+            hashText = "0" + hashText;
+
+        return hashText;
+    }
+
     public ArrayList<String> getNewUserElements() {
 
         ArrayList<String> newUserMsg = new ArrayList<String>();
         newUserMsg.add(this.getUsername());
         //TODO HASH PASSWORD
-        newUserMsg.add(this.getPassword());
+        newUserMsg.add(hashPassword(this.getPassword()));
         newUserMsg.add(this.getName());
         newUserMsg.add(this.getLastName());
         newUserMsg.add(this.getEmail());
@@ -84,7 +113,23 @@ public class NewClient {
         return newUserMsg;
     }
 
-    public void registerNewUSer() {
+    public String registerNewUSer() {
+        int answer;
+        try {
+            Features rmi;
+            rmi = this.getRMIServer();
+            if(rmi!=null) {
+                answer = rmi.newUser(this.getNewUserElements());
+            }
+            else{
+                return "RMIERROR";
+            }
+        } catch (Exception e) {
+            System.out.println("Exception registerNewUser - RMI");
+                return "RMIERROR";
+         }
 
+        return "SUCCESS";
     }
+
 }
