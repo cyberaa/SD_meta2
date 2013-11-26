@@ -15,36 +15,36 @@ public class Client {
     private String userName;
     private String password;
     private Features RMIServer = null;
+    private boolean reconnect=false;
 
     public String getUserName() {
         return userName;
     }
     public Features getRMIServer(){
-        if(this.RMIServer==null){
+        if(this.RMIServer==null||reconnect==false){
             System.getProperties().put("java.security.policy", "policy.all");
             try{
                 this.RMIServer = (Features) Naming.lookup("rmi://127.0.0.1:7000/IdeaBroker");
-                return RMIServer;
             }catch(Exception e){
                 System.err.println(e);
-                return null;
+                RMIServer = null;
             }
-        }else{
-            return RMIServer;
         }
+        return RMIServer;
     }
-
+    public void setReconnect(boolean value){
+        this.reconnect = value;
+    }
     public String getPassword() {
         return password;
     }
     public void setPassword(String password) {
-        this.password=password;
+        this.password=hashPassword(password);
     }
     public void setUserName(String userName) {
-        this.userName = hashPassword(userName);
+        this.userName = userName;
     }
-    private String hashPassword(String pass)
-    {
+    private String hashPassword(String pass)    {
         MessageDigest m = null;
         try {
             m = MessageDigest.getInstance("MD5");
@@ -55,7 +55,7 @@ public class Client {
         if(m == null)
         {
             System.out.println("Cannot find hashing algorithm.");
-            System.exit(-1);
+            return null;
         }
         m.reset();
         m.update(pass.getBytes());

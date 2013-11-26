@@ -16,7 +16,11 @@
 
 </head>
 <body>
-
+<!--<s:if test="%{client==null}">
+    <script>
+        window.location = "/index.jsp";
+    </script>
+</s:if>   --!>
 <nav class="navbar navbar-inverse " role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -54,7 +58,7 @@
 
         <ul class="nav navbar-nav navbar-right">
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">USERNAME <b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><s:property value="userName" /><b class="caret"></b></a>
                 <ul class="dropdown-menu">
                     <li><a href="#">Logout</a></li>
                 </ul>

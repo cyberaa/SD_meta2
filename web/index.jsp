@@ -44,9 +44,10 @@
                 // login status of the person. In this case, we're handling the situation where they
                 // have logged in to the app.
 
-                 /*FIXME lololololol */
-
                  //window.location = "/submitIdea.jsp";
+                //FB.api('/me', function(response) {
+                //    document.loginform.login = response.name;
+                //});
 
             } else if (response.status === 'not_authorized') {
                 // In this case, the person is logged into Facebook, but not into the app, so we call
@@ -76,15 +77,6 @@
         js.src = "//connect.facebook.net/en_US/all.js";
         ref.parentNode.insertBefore(js, ref);
     }(document));
-
-    // Here we run a very simple test of the Graph API after login is successful.
-    // This testAPI() function is only called in those cases.
-    function testAPI() {
-        console.log('Welcome!  Fetching your information.... ');
-        FB.api('/me', function(response) {
-            console.log('Good to see you, ' + response.name + '.');
-        });
-    }
 </script>
 <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -101,7 +93,7 @@
         <td><img src="img/logo.png" alt="" align="center"/></td>
     </tr>
 </table>
-<form method="post" action="login" class="login">
+<form method="post" action="login" class="login" id="loginform">
     <p>
         <s:textfield name="userName" id="login" label="Username"/>
     </p>
@@ -111,7 +103,7 @@
     <p class="login-submit">
         <button type="submit" class="login-button">Login</button>
     </p>
-    <div class="fb-login-button" data-width="200"  data-height="100" data-max-rows="1" data-show-faces="false" style="display: table; margin-right: auto; margin-left: auto;">Login into the best website Ever (with Facebook)</div>
+    <div class="fb-login-button" data-width="200"  data-height="100" data-max-rows="1" data-show-faces="false" style="display: table; margin-right: auto; margin-left: auto;">Login with Facebook</div>
     <p class="forgot-password"><a href="/Register.jsp">Register</a></p>
     <s:if test="%{tried==true}">
         <p class="wrong-password">ERROR. Incorrect password or username.</p>

@@ -23,23 +23,29 @@ public class Login extends Action {
         //super.execute();
         setMessage("Hello " + client.getUserName());
         setMessagePassword("Your password is:" + client.getPassword());
-        if(client.getPassword()==null){
-            return "ERROR";
-        }
         String password = client.getPassword();
-        int answer;
+        int answer = 0;
         try {
             Features rmi;
             rmi = client.getRMIServer();
-            if(rmi==null){
+            if(rmi!=null){
                 answer = rmi.Login(client.getUserName(),password);
             }else{
                 return "RMIERROR";
             }
         } catch (Exception e) {
-            System.err.println(e);
-            return "RMIERROR";
+            if (retry ==false ){
+                retry=true;
+                client.setReconnect(true);
+                return this.execute();
+            }else{
+                retry=false;
+                System.err.println(e);
+                return "RMIERROR";
+            }
+
         }
+        System.out.println(answer);
         if(answer<1){
             tried=true;
             return "RETRY";
@@ -65,3 +71,5 @@ public class Login extends Action {
     }
 
 }
+
+
