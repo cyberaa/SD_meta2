@@ -111,7 +111,7 @@
     <p class="login-submit">
         <button type="submit" class="login-button">Login</button>
     </p>
-    <div class="fb-login-button" data-width="200"  data-height="100" data-max-rows="1" data-show-faces="false" style="display: table; margin-right: auto; margin-left: auto;">Login into the best website Ever (with Facebook)</div>
+    <div class="fb-login-button" data-width="200"  data-height="100" data-max-rows="1" data-show-faces="false" style="display: table; margin-right: auto; margin-left: auto;">Login with Facebook</div>
     <p class="forgot-password"><a href="/Register.jsp">Register</a></p>
     <s:if test="%{tried==true}">
         <p class="wrong-password">ERROR. Incorrect password or username.</p>
