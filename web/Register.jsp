@@ -15,6 +15,11 @@
     <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
+<table id="wrapper" class=center>
+    <tr>
+        <td><img src="img/logo.png" alt="" align="center"/></td>
+    </tr>
+</table>
 <form method="post" action="index.html" class="login">
 
     <p>

@@ -46,7 +46,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
+#wrapper {
+    margin:auto;
+    margin-top:10px;
+    padding: 0;
+    border: 0;
+}
 .about {
   margin: 70px auto 40px;
   padding: 8px;
@@ -189,16 +194,15 @@ label {
 }
 
 .login-submit {
-  position: relative;
-  top: 0px;
+  position: absolute;
+  top: 12px;
   right: 0px;
-  left:360px;
-  width: 50px;
-  height: 50px;
-  padding: 0px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.35);
-  box-shadow: 0 0 0px rgba(0, 0, 0, 0.35);
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+  border-radius: 32px;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
 }
 .login-submit:before, .login-submit:after {
   content: '';

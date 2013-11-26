@@ -1,11 +1,6 @@
 package action;
 
 import model.*;
-import java.math.BigInteger;
-import java.rmi.Naming;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.util.Map;
 
 /**
  * @author Bruno Caceiro - caceiro@student.dei.uc.pt
@@ -15,12 +10,10 @@ import java.util.Map;
  */
 public class Login extends Action {
 
-    public Features RMIServer = null;
     private boolean tried=false;
 
     private String message;
     private String messagePassword;
-
 
     public Login(){
         client = new Client();
@@ -32,23 +25,20 @@ public class Login extends Action {
         if(client.getPassword()==null){
             return "ERROR";
         }
-        String hashedPass = hashPassword(client.getPassword());
+        String password = client.getPassword();
         int answer;
         try {
-            if(RMIServer==null){
-                System.getProperties().put("java.security.policy", "policy.all");
-                try{
-                    this.RMIServer = (Features) Naming.lookup("rmi://127.0.0.1:7000/IdeaBroker");
-                }catch(Exception e){
-                    System.err.println(e);
-                    return "ERROR";}
+            Features rmi;
+            rmi = client.getRMIServer();
+            if(rmi==null){
+                answer = rmi.Login(client.getUserName(),password);
+            }else{
+                return "RMIERROR";
             }
-            answer = RMIServer.Login(client.getUserName(),hashedPass);
         } catch (Exception e) {
             System.err.println(e);
-            return "ERROR";
+            return "RMIERROR";
         }
-        System.out.println("ANSWER!!!"+answer+"   pass:"+client.getPassword()+"   username"+client.getUserName());
         if(answer<1){
             tried=true;
             return "RETRY";
@@ -71,33 +61,6 @@ public class Login extends Action {
     }
     public boolean getTried() {
         return tried;
-    }
-
-    private String hashPassword(String pass)
-    {
-        MessageDigest m = null;
-        try {
-            m = MessageDigest.getInstance("MD5");
-        } catch (NoSuchAlgorithmException e) {
-            System.out.println("Cannot find hashing algorithm:\n" + e);
-            System.exit(-1); //FIXME?
-        }
-        if(m == null)
-        {
-            System.out.println("Cannot find hashing algorithm.");
-            System.exit(-1);
-        }
-        m.reset();
-        m.update(pass.getBytes());
-
-        byte[] digest = m.digest();
-        BigInteger bigInt = new BigInteger(1,digest);
-        String hashText = bigInt.toString(16);
-
-        while(hashText.length() < 32)
-            hashText = "0" + hashText;
-
-        return hashText;
     }
 
 }

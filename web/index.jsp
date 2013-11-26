@@ -96,7 +96,7 @@
 </script>
 
 
-<table id="wrapper">
+<table id="wrapper" class=center>
     <tr>
         <td><img src="img/logo.png" alt="" align="center"/></td>
     </tr>
