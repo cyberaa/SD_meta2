@@ -12,5 +12,13 @@
             <result name="RETRY">/index.jsp</result>
             <result name="RMIERROR">/RMIerror.jsp</result>
         </action>
+        <action name = "Register" class = "action.Register">
+            <result name = "SUCCESS">
+                /index.jsp
+            </result>
+            <result name = "ERROR">
+                /RMIerror.jsp
+            </result>
+        </action>
     </package>
 </struts>

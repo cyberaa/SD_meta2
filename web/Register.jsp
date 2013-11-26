@@ -1,11 +1,10 @@
 <%--
-  Created by IntelliJ IDEA.
-  User: bcaceiro
-  Date: 26/11/13
-  Time: 11:45
-  To change this template use File | Settings | File Templates.
+
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib uri="/struts-tags" prefix="s" %>
+
+
 <html>
 <head>
     <meta charset="utf-8">
@@ -14,41 +13,42 @@
     <link rel="stylesheet" href="css/registerStyle.css">
     <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
+
 <body>
+
+
+<table id="wrapper" class=center>
+    <tr>
+        <td><img src="img/logo.png" alt="" align="center"/></td>
+    </tr>
+</table>
+
+
 <form method="post" action="Register" class="login">
 
     <p>
-        <label for="username">Username:</label>
-        <input type="text" name="username" id="username" value="">
+        <s:textfield name = "username" id = "login" label = "Username"/>
     </p>
 
     <p>
-        <label for="password">Password:</label>
-        <input type="password" name="password" id="password" value="">
-    </p>
-    <p>
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name" value="">
+        <s:password name=  "password" id = "password" label = "Password"/>
     </p>
 
     <p>
-        <label for="lastname">Lastname:</label>
-        <input type="text" name="lastName" id="lastname" value="">
+        <s:textfield name = "name" id = "name" label = "Name"/>
     </p>
 
     <p>
-        <label for="email">E-mail:</label>
-        <input type="text" name="email" id="email" value="">
+        <s:textfield name = "lastname" id = "lastname" label = "Lastname"/>
     </p>
 
-
+    <p>
+        <s:textfield name = "email" id = "email" label = "E-mail"/>
+    </p>
 
     <p class="login-submit">
-        <button type="submit" class="login-button">Login</button>
+        <button type="submit" class="login-button">Register</button>
     </p>
-
-
-
 
 </form>
 
