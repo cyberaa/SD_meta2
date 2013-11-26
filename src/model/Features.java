@@ -17,6 +17,22 @@ public interface Features extends Remote{
     public void CreateRMIServer() throws RemoteException;
     public void ConnectDatabase() throws RemoteException;
     public int Login(String user, String pass) throws RemoteException;
+
+    /**
+     *  Method to Register a new User
+     * @param user ArrayList with the User Information:
+     *             - username
+     *             - password
+     *             - name
+     *             - lastname
+     *             - e-mail
+     *
+     * @return 1 in case of success
+     *         -1 in case of error
+     *         0 if the user already exists
+     *
+     * @throws RemoteException
+     */
     public int newUser(ArrayList<String> user) throws RemoteException;
     public int newIdea(ArrayList<String> data, int id_user, boolean ischild) throws RemoteException;
     public int newTopics(ArrayList<String> data) throws RemoteException;

@@ -1,6 +1,8 @@
 package action;
 
+import model.Features;
 import model.NewClient;
+
 
 /**
  * @author Bruno Caceiro - caceiro@student.dei.uc.pt
@@ -8,7 +10,7 @@ import model.NewClient;
  * @version 0.1
  * @project Sistemas Distribu�dos
  */
-public class Register {
+public class Register extends Action {
 
     public NewClient newClient;
 
@@ -17,7 +19,8 @@ public class Register {
     }
 
     public String execute() {
-        System.out.println(newClient.getEmail()+ "  " + newClient.getUsername());
+
+
         return "SUCCESS";
     }
 
