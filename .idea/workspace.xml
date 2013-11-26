@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ArtifactsWorkspaceSettings">
-    <artifacts-to-build>
-      <artifact name="meta2:war exploded" />
-    </artifacts-to-build>
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/action/Action.java" afterPath="$PROJECT_DIR$/src/action/Action.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/action/Login.java" afterPath="$PROJECT_DIR$/src/action/Login.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/style.css" afterPath="$PROJECT_DIR$/web/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/submitIdea.jsp" afterPath="$PROJECT_DIR$/web/submitIdea.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="meta2.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.jsp" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385476500275" ignored="false" />
+    <file path="/index.jsp" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385406366703" ignored="false" />
     <file path="/struts.xml" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385415361503" ignored="false" />
     <file path="/HelloWorld.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385226528944" ignored="false" />
-    <file path="/style.css" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385466900517" ignored="false" />
+    <file path="/style.css" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385219282557" ignored="false" />
     <file path="/success.jsp" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385227117882" ignored="false" />
-    <file path="/Dummy.txt" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385461695280" ignored="false" />
+    <file path="/Dummy.txt" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385416174094" ignored="false" />
     <file path="/Login.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385410403603" ignored="false" />
     <file path="/Features.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385233024748" ignored="false" />
     <file path="D:/Dropbox/foDEI_nos/SD/Caceiro + Cardoso/Projecto/serverRMI/src/ImplementedFeatures.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385233265432" ignored="false" />
@@ -94,16 +91,73 @@
       <file leaf-file-name="index.jsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="32" selection-start="5171" selection-end="5171" vertical-scroll-proportion="0.55018586">
+            <state line="48" column="19" selection-start="2042" selection-end="2042" vertical-scroll-proportion="0.4944238">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/css/style.css">
+      <file leaf-file-name="Client.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="181" column="1" selection-start="4061" selection-end="4075" vertical-scroll-proportion="0.0">
+            <state line="12" column="22" selection-start="284" selection-end="284" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainScreen.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/MainScreen.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="7" selection-start="160" selection-end="160" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="struts.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/struts.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="11" selection-start="320" selection-end="320" vertical-scroll-proportion="-4.04">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="error.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/error.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="21" selection-start="341" selection-end="341" vertical-scroll-proportion="-7.1923075">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="submitIdea.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/submitIdea.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="3" selection-start="272" selection-end="272" vertical-scroll-proportion="-6.5384617">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Login.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/action/Login.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="50" column="112" selection-start="1600" selection-end="1600" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Action.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/action/Action.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="66" column="27" selection-start="1636" selection-end="1636" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -127,6 +181,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/src/JavaRMI/ServerRMI.java" />
         <option value="$PROJECT_DIR$/src/JavaRMI/ImplementedFeatures.java" />
         <option value="$PROJECT_DIR$/src/JavaRMI/HelloWorld.java" />
         <option value="$PROJECT_DIR$/src/model/HelloWorld.java" />
@@ -141,7 +196,6 @@
         <option value="$PROJECT_DIR$/src/action/Action.java" />
         <option value="$PROJECT_DIR$/src/struts.xml" />
         <option value="$PROJECT_DIR$/web/submitIdea.jsp" />
-        <option value="$PROJECT_DIR$/web/css/style.css" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
       </list>
     </option>
@@ -248,24 +302,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="meta2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SD_meta2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -313,7 +349,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.lastSelected" value="preferences.applicationServers" />
@@ -329,119 +365,6 @@
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
-  </component>
-  <component name="RestoreUpdateTree">
-    <UpdateInfo date="Moments ago" ActionInfo="_Update">
-      <UpdatedFiles>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated from server" />
-          <option name="myStatusName" value="Changed on server" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CHANGED_ON_SERVER" />
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Updated" />
-            <option name="myStatusName" value="Changed" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="UPDATED" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/web/css/style.css</PATH>
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Created" />
-            <option name="myStatusName" value="Created" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="CREATED" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/web/Register.jsp</PATH>
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Deleted" />
-            <option name="myStatusName" value="Deleted" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="true" />
-            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Restored" />
-            <option name="myStatusName" value="Will be restored" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="RESTORED" />
-          </FILE-GROUP>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Modified" />
-          <option name="myStatusName" value="Modified" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MODIFIED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Skipped" />
-          <option name="myStatusName" value="Skipped" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SKIPPED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with conflicts" />
-          <option name="myStatusName" value="Will be merged with conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_CONFLICTS" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with tree conflicts" />
-          <option name="myStatusName" value="Merged with tree conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with property conflicts" />
-          <option name="myStatusName" value="Will be merged with property conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged" />
-          <option name="myStatusName" value="Will be merged" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Not in repository" />
-          <option name="myStatusName" value="Not in repository" />
-          <option name="mySupportsDeletion" value="true" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UNKNOWN" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally added" />
-          <option name="myStatusName" value="Locally added" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_ADDED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally removed" />
-          <option name="myStatusName" value="Locally removed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_REMOVED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Switched" />
-          <option name="myStatusName" value="Switched" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SWITCHED" />
-        </FILE-GROUP>
-      </UpdatedFiles>
-    </UpdateInfo>
   </component>
   <component name="RunManager" selected="Tomcat Server.index.jsp">
     <configuration default="false" name="index.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 7.0">
@@ -723,11 +646,7 @@
       <created>1385406678906</created>
       <updated>1385406678906</updated>
     </task>
-    <task id="LOCAL-00019" summary="já nem me lembro o que fiz...">
-      <created>1385461712362</created>
-      <updated>1385461712362</updated>
-    </task>
-    <option name="localTasksCounter" value="20" />
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -824,7 +743,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="já nem me lembro o que fiz..." />
+    <option name="LAST_COMMIT_MESSAGE" value="com página principal do pisso do caceiro" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -843,7 +762,6 @@
     <MESSAGE value="o facebook já trabalha" />
     <MESSAGE value="login com bomsucessosummerfest!" />
     <MESSAGE value="com página principal do pisso do caceiro" />
-    <MESSAGE value="já nem me lembro o que fiz..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -865,6 +783,27 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="24" selection-start="676" selection-end="676" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="19" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.43965518" />
+      </provider>
+    </entry>
     <entry file="file://D:/Dropbox/foDEI_nos/SD/Caceiro + Cardoso/Projecto/Server/src/Features.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="49" column="31" selection-start="0" selection-end="1858" vertical-scroll-proportion="0.8985075" />
@@ -887,9 +826,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Features.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="41" selection-start="380" selection-end="380" vertical-scroll-proportion="0.18181819">
-          <folding />
-        </state>
+        <state line="15" column="41" selection-start="380" selection-end="380" vertical-scroll-proportion="0.18181819" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
@@ -960,23 +897,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/Register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="21" selection-start="278" selection-end="278" vertical-scroll-proportion="-4.3846154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="181" column="1" selection-start="4061" selection-end="4075" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="32" selection-start="5171" selection-end="5171" vertical-scroll-proportion="0.55018586">
+        <state line="48" column="19" selection-start="2042" selection-end="2042" vertical-scroll-proportion="0.4944238">
           <folding />
         </state>
       </provider>
