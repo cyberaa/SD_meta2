@@ -179,6 +179,15 @@ label {
   letter-spacing: 1px;
 }
 
+.wrong-password {
+    padding-left: 100px;
+    font-size: 13px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: #00a1d2;
+    text-decoration: none;
+}
+
 .login-submit {
   position: relative;
   top: 0px;
