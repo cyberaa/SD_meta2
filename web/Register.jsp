@@ -15,7 +15,7 @@
     <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
-<form method="post" action="index.html" class="login">
+<form method="post" action="Register" class="login">
 
     <p>
         <label for="username">Username:</label>
@@ -33,7 +33,7 @@
 
     <p>
         <label for="lastname">Lastname:</label>
-        <input type="text" name="lastname" id="lastname" value="">
+        <input type="text" name="lastName" id="lastname" value="">
     </p>
 
     <p>
