@@ -109,5 +109,8 @@
         <p class="wrong-password">ERROR. Incorrect password or username.</p>
     </s:if>
 </form>
+<s:if test="%{rmierror==true}">
+    <p class="wrong-password">Failure in connecting with the database. Please try again!</p>
+</s:if>
 </body>
 </html>

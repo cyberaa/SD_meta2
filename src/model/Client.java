@@ -9,7 +9,7 @@ import java.security.NoSuchAlgorithmException;
  * @author Bruno Caceiro - caceiro@student.dei.uc.pt
  * @author David Cardoso - davidfpc@student.dei.uc.pt
  * @version 0.1
- * @project Sistemas Distribuï¿½dos
+ * @project Sistemas Distribuídos
  */
 public class Client {
     private String userName;
@@ -20,23 +20,41 @@ public class Client {
     public String getUserName() {
         return userName;
     }
-
     public Features getRMIServer(){
-        if(this.RMIServer==null||reconnect==false){
+        if(this.RMIServer==null||this.reconnect==false){
             System.getProperties().put("java.security.policy", "policy.all");
             try{
                 this.RMIServer = (Features) Naming.lookup("rmi://127.0.0.1:7000/IdeaBroker");
             }catch(Exception e){
                 System.err.println(e);
-                RMIServer = null;
+                this.RMIServer = null;
             }
         }
-        return RMIServer;
+        return this.RMIServer;
     }
 
-    public void setReconnect(boolean value){
-        this.reconnect = value;
+    public int login(){
+        int answer = 0;
+        try {
+            Features rmi;
+            rmi = this.RMIServer;
+            if(rmi!=null){
+                answer = rmi.Login(getUserName(),password);
+            }else{
+                answer=-666;
+            }
+        } catch (Exception e) {
+            if (reconnect ==false ){
+                reconnect=true;
+                return login();
+            }else{
+                reconnect = false;
+                answer=-666;
+            }
+        }
+        return answer;
     }
+
     public String getPassword() {
         return password;
     }
@@ -46,7 +64,6 @@ public class Client {
     public void setUserName(String userName) {
         this.userName = userName;
     }
-
     private String hashPassword(String pass)    {
         MessageDigest m = null;
         try {

@@ -21,7 +21,7 @@ public class FacebookLogin extends Action{
         }
         public String execute() {
             //super.execute();
-            setMessage("Hello " + client.getUserName());
+           /* setMessage("Hello " + client.getUserName());
             setMessagePassword("Your password is:" + client.getPassword());
             String password = client.getPassword();
             int answer = 0;
@@ -49,9 +49,9 @@ public class FacebookLogin extends Action{
             if(answer<1){
                 tried=true;
                 return "RETRY";
-            }else{
+            }else{ */
                 return "SUCCESS";
-            }
+           /* }   */
         }
 
         public String getMessage() {

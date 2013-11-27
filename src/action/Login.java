@@ -11,41 +11,21 @@ import model.*;
 public class Login extends Action {
 
     private boolean tried=false;
+    private boolean rmierror=false;
 
-    private String message;
-    private String messagePassword;
     private boolean retry;
 
     public Login(){
         client = new Client();
     }
     public String execute() {
-        //super.execute();
-        setMessage("Hello " + client.getUserName());
-        setMessagePassword("Your password is:" + client.getPassword());
-        String password = client.getPassword();
-        int answer;
-        try {
-            Features rmi;
-            rmi = client.getRMIServer();
-            if(rmi!=null){
-                answer = rmi.Login(client.getUserName(),password);
-            }else{
-                return "RMIERROR";
-            }
-        } catch (Exception e) {
-            if (retry ==false ){
-                retry=true;
-                client.setReconnect(true);
-                return this.execute();
-            }else{
-                retry=false;
-                System.err.println(e);
-                return "RMIERROR";
-            }
-
-        }
+        int answer = client.login();
         System.out.println(answer);
+        if (answer ==  -666){
+            //in case of failure to reconnect to the RMI or in case of SQL exception
+            rmierror=true;
+            return "RMIERROR";
+        }
         if(answer<1){
             tried=true;
             return "RETRY";
@@ -54,20 +34,11 @@ public class Login extends Action {
         }
     }
 
-    public String getMessage() {
-        return message;
-    }
-    public void setMessage(String message) {
-        this.message = message;
-    }
-    public String getMessagePassword() {
-        return messagePassword;
-    }
-    public void setMessagePassword(String message) {
-        this.messagePassword = message;
-    }
     public boolean getTried() {
         return tried;
+    }
+    public boolean getRmierror(){
+        return rmierror;
     }
 
 }

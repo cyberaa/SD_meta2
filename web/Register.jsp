@@ -39,7 +39,7 @@
     </p>
 
     <p>
-        <s:textfield name = "lastname" id = "lastname" label = "Lastname"/>
+        <s:textfield name = "lastName" id = "lastname" label = "Lastname"/>
     </p>
 
     <p>
