@@ -2,13 +2,13 @@ package action;
 
 import model.NewClient;
 
-
 /**
  * @author Bruno Caceiro - caceiro@student.dei.uc.pt
  * @author David Cardoso - davidfpc@student.dei.uc.pt
  * @version 0.1
- * @project Sistemas Distribuidos
+ * Distributed Systems
  */
+
 public class Register extends Action {
 
     public boolean inputError;
