@@ -1,6 +1,5 @@
 package action;
 
-import model.Features;
 import model.NewClient;
 
 
@@ -8,18 +7,23 @@ import model.NewClient;
  * @author Bruno Caceiro - caceiro@student.dei.uc.pt
  * @author David Cardoso - davidfpc@student.dei.uc.pt
  * @version 0.1
- * @project Sistemas Distribu�dos
+ * @project Sistemas Distribuidos
  */
 public class Register extends Action {
 
+    public boolean inputError;
     public NewClient newClient;
 
     public Register() {
-        this.newClient =  new NewClient();
+        this.newClient = new NewClient();
     }
 
     public String execute() {
-        return this.newClient.registerNewUSer();
+        String answer = this.newClient.registerNewUSer();
+        if(answer.equals("INPUT_ERROR"))
+            this.inputError = true;
+
+        return answer;
     }
 
     public void setUsername(String username) {

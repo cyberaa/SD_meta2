@@ -18,6 +18,10 @@
             <result name = "ERROR">
                 /RMIerror.jsp
             </result>
+            <result name = "INPUT_ERROR">
+                /Register.jsp
+            </result>
+
         </action>
     </package>
 </struts>

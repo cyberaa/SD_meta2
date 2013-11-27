@@ -270,6 +270,15 @@ label {
   background: url("../img/arrow.png") 0 0 no-repeat;
 }
 
+.wrong-password {
+    padding-left: 100px;
+    font-size: 13px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: #00a1d2;
+    text-decoration: none;
+}
+
 ::-moz-focus-inner {
   border: 0;
   padding: 0;

@@ -46,12 +46,15 @@
         <s:textfield name = "email" id = "email" label = "E-mail"/>
     </p>
 
+    <s:if test="%{inputError == true}">
+        <p class="wrong-password">Please fill all fields correctly</p>
+    </s:if>
+
     <p class="login-submit">
         <button type="submit" class="login-button">Register</button>
     </p>
 
 </form>
-
 
 </body>
 </html>
