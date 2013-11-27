@@ -23,7 +23,6 @@ public class NewClient {
     private boolean reconnect = false;
     private Features RMIServer = null;
 
-    //TODO isto é preciso?
     public NewClient() {}
 
     /**

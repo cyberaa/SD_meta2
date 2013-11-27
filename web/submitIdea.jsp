@@ -1,9 +1,5 @@
 <%--
-  Created by IntelliJ IDEA.
-  User: d_cardoso
-  Date: 25-11-2013
-  Time: 22:02
-  To change this template use File | Settings | File Templates.
+
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib uri="/struts-tags" prefix="s" %>
@@ -12,7 +8,7 @@
     <title>IdeaBroker</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/submitStyle.css" rel="stylesheet">
 
 </head>
 <body>
@@ -20,7 +16,13 @@
     <script>
         window.location = "/index.jsp";
     </script>
-</s:if>   --!>
+</s:if>   -->
+
+<style>
+    body { background: url(img/background.png); }
+
+</style>
+
 <nav class="navbar navbar-inverse " role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -70,21 +72,45 @@
 
 
 <!-- Main container -->
-<div class="container" style="padding-left: 200px; padding-right: 200px;">
+<div class="" style="padding-left: 100px; padding-right: 100px;">
 
     <!-- Submit new idea panel -->
-    <div class="panel panel-default">
+    <div class="panel panel-default"  >
+
         <div class="panel-heading">
-            <h3 class="panel-title"><i class="fa fa-flash" style="margin-right: 3px;"> </i> What's your idea?</h3>
+            <h3 class="panel-title">
+                <i class="fa fa-flash" style="margin-right: 3px;"></i>
+                What's your idea?
+            </h3>
         </div>
+
+        <p></p>
+
         <div class="panel-body">
 
             <div class="form-group">
-                <label for="ideaTitle">Title</label>
-                <input type="title" class="form-control" id="ideaTitle" placeholder="Enter title of idea">
+                <label for="titleIdea1">Title</label>
+                <input type="title" class="form-control-title" id="ideaTitle" placeholder="Enter title of idea">
             </div>
 
+            <label for="titleIdea1">Description</label>
             <textarea class="form-control" rows="3"></textarea>
+
+            <p></p>
+
+
+            <div class="col-lg-6" >
+                <div class="input-group">
+                    <input type="text" class="form-control" style="margin-left:0px;">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Add Topic</button>
+            </span>
+                </div><!-- /input-group -->
+
+                <p></p>
+
+                <textarea class="form-control" rows="3"></textarea>
+            </div><!-- /.col-lg-6 -->
 
             <div class="row" style="margin-top: 20px;">
                 <div class="col-md-2">
@@ -93,9 +119,8 @@
                         <input type="text" class="form-control" id="investment">
                     </div>
                 </div>
-                <div class="col-md-5">
 
-                </div>
+                <!-- Attach File -->
                 <div class="col-md-5">
                     <div class="form-group">
                         <label for="attach">Attach file</label>
@@ -105,13 +130,19 @@
                 </div>
             </div>
         </div>
+
         <button type="button" style="float:right;" class="btn btn-default navbar-btn">Submit</button>
     </div>
 
-</div>
-<div class="teste" style="padding-left: 600px;">
+    <!-- Footer -->
+    <div id="push"></div>
+    <div id="footer">
+        <p class="muted credit">Powered by: <a href="https://www.facebook.com/bruno.caceiro">Bruno Caceiro</a>&
+            <a href="https://www.facebook.com/david.p.cardoso">David Cardoso</a>.</p>
+    </div>
 
-</div>
+
+
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
