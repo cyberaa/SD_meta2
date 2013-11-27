@@ -91,12 +91,14 @@
         <div class="panel-body">
 
             <div class="form-group">
-                <label for="titleIdea1">Title</label>
-                <input type="title" class="form-control-title" id="ideaTitle" placeholder="Enter title of idea">
+                <label for="ideaTitle">Title</label>
+
+                <s:textfield type="title" class="form-control-title" id="ideaTitle" placeholder="Enter title of idea">
             </div>
 
-            <label for="titleIdea1">Description</label>
-            <textarea class="form-control" rows="3"></textarea>
+            <label for="ideaDescription">Description</label>
+            <textarea id = "ideaDescription" class="form-control" rows="3"></textarea>
+
 
             <p></p>
 
