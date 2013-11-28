@@ -100,7 +100,6 @@
             <textarea name = "newIdea.descriptionIdea" id = "descriptionIdea" class="form-control" rows="3" style = "resize: none;"></textarea>
 
             <p></p>
-
             <div class="col-lg-6" >
                 <div class="input-group">
                     <input type="text" name = "newTopic" id = "newTopic"type="text" class="form-control" style="margin-left:0px;"/>
@@ -111,9 +110,9 @@
 
                 <p></p>
 
-                <textarea class="form-control" name = "topicsList" rows="3" id = "topicsList" style = "resize: none;" readonly="true"></textarea>
-            </div><!-- /.col-lg-6 -->
+                <textarea class="form-control" name = "newIdea.topicsList" rows="3" id = "topicsList" style = "resize: none;" readonly="true"></textarea>
 
+            </div><!-- /.col-lg-6 -->
             <div class="row" style="margin-top: 20px;">
                 <div class="col-md-2">
                     <div class="form-group">

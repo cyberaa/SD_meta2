@@ -38,6 +38,10 @@ public class NewIdea {
         this.deiCoinsIdea = deiCoinsIdea;
     }
 
+    public void setTopicsList(String topicsList) {
+        this.topicsList = topicsList;
+    }
+
     /**
      * Method to get Idea's Title
      * @return title idea
@@ -66,6 +70,10 @@ public class NewIdea {
      * Method to get the String of Topics ( yet to be parsed )
      * @return
      */
+    public String getTopicsList() {
+        return topicsList;
+    }
+
 
     public ArrayList<String> getNewIdeaElements() {
         ArrayList<String> newIdea = new ArrayList<String>();
@@ -83,12 +91,4 @@ public class NewIdea {
          System.out.println(getNewIdeaElements());
     }
 
-
-    public String getTopicsList() {
-        return topicsList;
-    }
-
-    public void setTopicsList(String topicsList) {
-        this.topicsList = topicsList;
-    }
 }
