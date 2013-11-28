@@ -23,6 +23,7 @@
 
 </style>
 
+
 <nav class="navbar navbar-inverse " role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -74,7 +75,7 @@
 
 
 <!-- Main container -->
-<div class="" style="padding-left: 100px; padding-right: 100px;">
+<form method="post" action="SubmitIdea" class="" style="padding-left: 100px; padding-right: 100px;">
 
     <!-- Submit new idea panel -->
     <div class="panel panel-default"  >
@@ -91,36 +92,33 @@
         <div class="panel-body">
 
             <div class="form-group">
-                <label for="ideaTitle">Title</label>
-
-                <s:textfield type="title" class="form-control-title" id="ideaTitle" placeholder="Enter title of idea"/>
+                <label for="titleIdea">Title</label>
+                <input type="text" name = "newIdea.titleIdea" type="title" class="form-control-title" id="titleIdea" placeholder="Enter title of idea"/>
             </div>
 
-            <label for="ideaDescription">Description</label>
-            <textarea id = "ideaDescription" class="form-control" rows="3" style = "resize: none;"></textarea>
-
+            <label for = "descriptionIdea" > Description </label>
+            <textarea name = "newIdea.descriptionIdea" id = "descriptionIdea" class="form-control" rows="3" style = "resize: none;"></textarea>
 
             <p></p>
-
 
             <div class="col-lg-6" >
                 <div class="input-group">
                     <input type="text" name = "newTopic" id = "newTopic"type="text" class="form-control" style="margin-left:0px;"/>
             <span class="input-group-btn">
-              <button class="btn btn-default" type="button" onClick="javascript:document.getElementById('topicsLists').value+='#'+document.getElementById('newTopic').value+' '">Add Topic</button>
+              <button class="btn btn-default" type="button" onClick="javascript:document.getElementById('topicsList').value+='#'+document.getElementById('newTopic').value+' '">Add Topic</button>
             </span>
                 </div><!-- /input-group -->
 
                 <p></p>
 
-                <textarea class="form-control" name = "topicsList" rows="3" id = "topicsLists" style = "resize: none;" readonly="true"></textarea>
+                <textarea class="form-control" name = "topicsList" rows="3" id = "topicsList" style = "resize: none;" readonly="true"></textarea>
             </div><!-- /.col-lg-6 -->
 
             <div class="row" style="margin-top: 20px;">
                 <div class="col-md-2">
                     <div class="form-group">
-                        <label class="control-label" for="investment">Price per Share</label>
-                        <input type="text" class="form-control" id="investment">
+                        <label class="control-label" for="deiCoinsIdea">Price per Share</label>
+                        <input type="text" name = "newIdea.deiCoinsIdea" class="form-control" id="deiCoinsIdea">
                     </div>
                 </div>
 
@@ -134,9 +132,12 @@
                 </div>
             </div>
         </div>
-
-        <button type="button" style="float:right;" class="btn btn-default navbar-btn">Submit</button>
     </div>
+    <button type="submit" style="float:right;" class="btn btn-default navbar-btn">Submit</button>
+</form>
+
+
+
 
     <!-- Footer -->
     <div id="push"></div>

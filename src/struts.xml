@@ -21,7 +21,12 @@
             <result name = "INPUT_ERROR">
                 /Register.jsp
             </result>
+        </action>
 
+        <action name="SubmitIdea" class = "action.SubmitIdea">
+            <result name = "SUCCESS">
+                /index.jsp
+            </result>
         </action>
     </package>
 </struts>

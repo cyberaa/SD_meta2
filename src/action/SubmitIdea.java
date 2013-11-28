@@ -1,5 +1,7 @@
 package action;
 
+import model.NewIdea;
+
 /**
  * @author Bruno Caceiro - caceiro@student.dei.uc.pt
  * @author David Cardoso - davidfpc@student.dei.uc.pt
@@ -8,13 +10,15 @@ package action;
  */
 public class SubmitIdea extends Action {
 
-
+    public NewIdea newIdea;
 
     public SubmitIdea() {
-
+        this.newIdea = new NewIdea();
     }
 
     public String execute() {
+        this.newIdea.submitNewIdea();
+
         return "SUCCESS";
     }
 
