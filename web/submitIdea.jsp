@@ -105,15 +105,15 @@
 
             <div class="col-lg-6" >
                 <div class="input-group">
-                    <input type="text" name = "newTopic" type="text" class="form-control" style="margin-left:0px;"/>
+                    <input type="text" name = "newTopic" id = "newTopic"type="text" class="form-control" style="margin-left:0px;"/>
             <span class="input-group-btn">
-              <button class="btn btn-default" type="button" onClick="javascript:document.getElementById('topicslists').value+='#'+document.getElementById('newTopic').value;+' '">Add Topic</button>
+              <button class="btn btn-default" type="button" onClick="javascript:document.getElementById('topicsLists').value+='#'+document.getElementById('newTopic').value+' '">Add Topic</button>
             </span>
                 </div><!-- /input-group -->
 
                 <p></p>
 
-                <textarea class="form-control" name = "topicsList" rows="3" id = "topicslists" style = "resize: none;" readonly="true"></textarea>
+                <textarea class="form-control" name = "topicsList" rows="3" id = "topicsLists" style = "resize: none;" readonly="true"></textarea>
             </div><!-- /.col-lg-6 -->
 
             <div class="row" style="margin-top: 20px;">
