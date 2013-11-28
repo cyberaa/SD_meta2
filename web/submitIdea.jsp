@@ -1,5 +1,5 @@
 <%--
-
+     <%@ taglib prefix="c" uri="sta" %>
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib uri="/struts-tags" prefix="s" %>
@@ -12,11 +12,11 @@
 
 </head>
 <body>
-<!--<s:if test="%{client==null}">
+<%--<s:if test="%{client==null}">
     <script>
         window.location = "/index.jsp";
     </script>
-</s:if>   -->
+</s:if>  --%>
 
 <style>
     body { background: url(img/background.png); }
@@ -93,11 +93,11 @@
             <div class="form-group">
                 <label for="ideaTitle">Title</label>
 
-                <s:textfield type="title" class="form-control-title" id="ideaTitle" placeholder="Enter title of idea">
+                <s:textfield type="title" class="form-control-title" id="ideaTitle" placeholder="Enter title of idea"/>
             </div>
 
             <label for="ideaDescription">Description</label>
-            <textarea id = "ideaDescription" class="form-control" rows="3"></textarea>
+            <textarea id = "ideaDescription" class="form-control" rows="3" style = "resize: none;"></textarea>
 
 
             <p></p>
@@ -105,15 +105,15 @@
 
             <div class="col-lg-6" >
                 <div class="input-group">
-                    <input type="text" class="form-control" style="margin-left:0px;">
+                    <input type="text" name = "newTopic" type="text" class="form-control" style="margin-left:0px;"/>
             <span class="input-group-btn">
-              <button class="btn btn-default" type="button">Add Topic</button>
+              <button class="btn btn-default" type="button" onClick="javascript:document.getElementById('topicslists').value+='#'+document.getElementById('newTopic').value;+' '">Add Topic</button>
             </span>
                 </div><!-- /input-group -->
 
                 <p></p>
 
-                <textarea class="form-control" rows="3"></textarea>
+                <textarea class="form-control" name = "topicsList" rows="3" id = "topicslists" style = "resize: none;" readonly="true"></textarea>
             </div><!-- /.col-lg-6 -->
 
             <div class="row" style="margin-top: 20px;">

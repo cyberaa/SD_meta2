@@ -36,10 +36,9 @@ public class Client {
     public int login(){
         int answer = 0;
         try {
-            Features rmi;
-            rmi = this.RMIServer;
-            if(rmi!=null){
-                answer = rmi.Login(getUserName(),password);
+            this.RMIServer = getRMIServer();
+            if(this.RMIServer!=null){
+                answer = this.RMIServer.Login(getUserName(),password);
             }else{
                 answer=-666;
             }
