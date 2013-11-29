@@ -28,7 +28,7 @@
                 /submitIdea.jsp
             </result>
             <result name = "INPUT_ERROR">
-                /Register.jsp
+                /submitIdea.jsp
             </result>
             <result name = "RMIERROR">
                 /index.jsp

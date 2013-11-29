@@ -2,6 +2,9 @@ package action;
 
 import model.NewIdea;
 
+import java.io.File;
+
+
 /**
  * @author Bruno Caceiro - caceiro@student.dei.uc.pt
  * @author David Cardoso - davidfpc@student.dei.uc.pt
@@ -21,6 +24,7 @@ public class SubmitIdea extends Action {
     public String execute() {
         getClientSession();
         int result = this.newIdea.submitNewIdea(getRMIserver(),getUserID());
+        newIdea.getFileUpload().delete();
         if(result==-666){
             return "RMIERROR";
         }
@@ -40,5 +44,29 @@ public class SubmitIdea extends Action {
 
     public void setErrorMessage(String errorMessage) {
         this.errorMessage = errorMessage;
+    }
+
+    public File getFileUpload() {
+        return newIdea.getFileUpload();
+    }
+
+    public void setFileUpload(File fileUpload) {
+        newIdea.setFileUpload(fileUpload);
+    }
+
+    public String getFileUploadContentType() {
+        return newIdea.getFileUploadContentType();
+    }
+
+    public void setFileUploadContentType(String fileUploadContentType) {
+        newIdea.setFileUploadContentType(fileUploadContentType);
+    }
+
+    public String getFileUploadFileName() {
+        return newIdea.getFileUploadFileName();
+    }
+
+    public void setFileUploadFileName(String fileUploadFileName) {
+        newIdea.setFileUploadFileName(fileUploadFileName);
     }
 }

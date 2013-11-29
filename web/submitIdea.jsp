@@ -21,7 +21,6 @@
 
 <style>
     body { background: url(img/background.png); }
-
 </style>
 
 
@@ -72,11 +71,8 @@
         </ul>
     </div><!-- /.navbar-collapse -->
 </nav>
-
-
-
 <!-- Main container -->
-<form method="post" action="SubmitIdea" class="" style="padding-left: 100px; padding-right: 100px;">
+<form method="post" action="SubmitIdea" class="" style="padding-left: 100px; padding-right: 100px;" enctype="multipart/form-data">
 
     <!-- Submit new idea panel -->
     <div class="panel panel-default"  >
@@ -133,8 +129,8 @@
                 <!-- Attach File -->
                 <div class="col-md-5">
                     <div class="form-group">
-                        <label for="attach">Attach file</label>
-                        <input type="file" id="attach">
+                        <label for="fileUpload">Attach file</label>
+                        <s:file name="fileUpload"  size="40" />
                         <p class="help-block">Only images</p>
                     </div>
                 </div>

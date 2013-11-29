@@ -1,5 +1,9 @@
 package model;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
@@ -14,6 +18,9 @@ public class NewIdea {
     private String descriptionIdea;
     private double deiCoinsIdea;
     private String topicsList;
+    private File fileUpload;
+    private String fileUploadContentType;
+    private String fileUploadFileName;
 
     /**
      * Method to set Idea Title
@@ -108,6 +115,10 @@ public class NewIdea {
                 //compatibility with the reply;
                 data.add("0");
                 answer = RMIServer.newIdea(data,userID,false);
+                if(answer!=-1 && this.getFileUpload()!=null){
+                    byte[] file = readAllBytes(this.getFileUpload());
+                    RMIServer.saveFile(answer,this.getFileUploadFileName(),file);
+                }
             }else{
                 answer=-666;
                 System.out.println("ahahahah");
@@ -119,4 +130,52 @@ public class NewIdea {
         return answer;
     }
 
+    /**
+     * Method to conver a file to a byte array, in order to send through socket
+     * @param file to be converted
+     * @return byte[] of the file
+     * @throws IOException Reached end of file
+     */
+    public byte[] readAllBytes(File file) throws IOException{
+
+        byte []buffer = new byte[(int) file.length()];
+        InputStream ios = null;
+        try {
+            ios = new FileInputStream(file);
+            if ( ios.read(buffer) == -1 ) {
+                throw new IOException("EOF reached while trying to read the whole file");
+            }
+        } finally {
+            try {
+                if ( ios != null )
+                    ios.close();
+            } catch ( IOException e) {
+            }
+        }
+        return buffer;
+    }
+
+    public File getFileUpload() {
+        return fileUpload;
+    }
+
+    public void setFileUpload(File fileUpload) {
+        this.fileUpload = fileUpload;
+    }
+
+    public String getFileUploadContentType() {
+        return fileUploadContentType;
+    }
+
+    public void setFileUploadContentType(String fileUploadContentType) {
+        this.fileUploadContentType = fileUploadContentType;
+    }
+
+    public String getFileUploadFileName() {
+        return fileUploadFileName;
+    }
+
+    public void setFileUploadFileName(String fileUploadFileName) {
+        this.fileUploadFileName = fileUploadFileName;
+    }
 }
