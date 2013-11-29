@@ -28,7 +28,6 @@ public class Action extends ActionSupport implements SessionAware {
      */
     @Override
     public void setSession(Map<String, Object> session) {
-        System.out.println("Work modafoker!!!");
         this.session = session;
     }
 
@@ -37,7 +36,6 @@ public class Action extends ActionSupport implements SessionAware {
      * or loading it from the session if it exists.
      */
     public void getClientSession() {
-        if(session!=null){
             if (!session.containsKey("client")) {
                 if (client==null){
                     this.client = new Client();
@@ -45,10 +43,6 @@ public class Action extends ActionSupport implements SessionAware {
                 session.put("client", client);
             } else
                 this.client = (Client) session.get("client");
-        }else{
-            System.out.println("MERDA, PUTA DO CARALHO!!!!");
-            this.client = new Client();
-        }
     }
 
     public void updateClientSession(){

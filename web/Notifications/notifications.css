@@ -1,0 +1,36 @@
+.isa_info, .isa_success, .isa_warning, .isa_error {
+    width: 50%;
+    border: 1px solid;
+    padding-top: 10px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    margin:auto;
+    font-weight: bold;
+    text-align: center;
+    background: no-repeat 50px center;
+    -moz-border-radius:.5em;
+    -webkit-border-radius:.5em;
+    border-radius:.5em;
+
+}
+.isa_info {
+    color: #00529B;
+    background-color: #BDE5F8;
+    background-image: url('info.png');
+}
+.isa_success {
+    color: #000000;
+    background-color: #008b14;
+    background-image:url('success.png');
+}
+.isa_warning {
+    color: #9F6000;
+    background-color: #FEEFB3;
+    background-image: url('warning.png');
+}
+.isa_error {
+    color: #000000;
+    background-color: #cc0000;
+    background-image: url('error.png');
+}

@@ -20,6 +20,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>IdeaBroker</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="Notifications/notifications.css">
     <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
@@ -105,12 +106,12 @@
     </p>
     <div class="fb-login-button" data-width="200"  data-height="100" data-max-rows="1" data-show-faces="false" style="display: table; margin-right: auto; margin-left: auto;">Login with Facebook</div>
     <p class="forgot-password"><a href="/Register.jsp">Register</a></p>
-    <s:if test="%{tried==true}">
-        <p class="wrong-password">ERROR. Incorrect password or username.</p>
-    </s:if>
 </form>
-<s:if test="%{rmierror==true}">
-    <p class="wrong-password">Failure in connecting with the database. Please try again!</p>
-</s:if>
+    <s:if test="%{tried==true}">
+        <div class="isa_error">ERROR. Incorrect password or username.</div>
+    </s:if>
+    <s:if test="%{rmierror==true}">
+        <div class="isa_error"><b>Failure in connecting with the database. Please try again!</b></div>
+    </s:if>
 </body>
 </html>

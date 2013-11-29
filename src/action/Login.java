@@ -20,10 +20,9 @@ public class Login extends Action {
     }
     public String execute() {
         int answer = login.login(getRMIserver());
-        System.out.println(answer);
         if (answer ==  -666){
             if (!reconnect){
-                reconnect=false;
+                reconnect=true;
                 execute();
             }
             reconnect=false;

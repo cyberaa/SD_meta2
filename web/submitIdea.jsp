@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="css/submitStyle.css" rel="stylesheet">
+    <link rel="stylesheet" href="Notifications/notifications.css">
 
 </head>
 <body>
@@ -90,7 +91,15 @@
         <p></p>
 
         <div class="panel-body">
+            <s:if test="%{tried==true}">
 
+            </s:if>
+            <s:if test="%{submitted==true}">
+                <div class="isa_success">Idea added with success!.</div>
+            </s:if>
+            <s:if test="%{error==true}">
+                <div class="isa_error"><s:property value="errorMessage"/></div>
+            </s:if>
             <div class="form-group">
                 <label for="titleIdea">Title</label>
                 <input type="text" name = "newIdea.titleIdea" type="title" class="form-control-title" id="titleIdea" placeholder="Enter title of idea"/>

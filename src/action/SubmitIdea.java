@@ -11,16 +11,34 @@ import model.NewIdea;
 public class SubmitIdea extends Action {
 
     public NewIdea newIdea;
-
+    public boolean submitted;
+    public boolean error;
+    private String errorMessage;
     public SubmitIdea() {
         this.newIdea = new NewIdea();
     }
 
     public String execute() {
         getClientSession();
-        System.out.println(this.newIdea.submitNewIdea(getRMIserver(),getUserID()));
-
-        return "SUCCESS";
+        int result = this.newIdea.submitNewIdea(getRMIserver(),getUserID());
+        if(result==-666){
+            return "RMIERROR";
+        }
+        else if(result>0){
+            submitted = true;
+            return "SUCCESS";
+        }
+        error=true;
+        errorMessage = "Vai-te Foder puta do caralho, para de tentar foder o site";
+        return "INPUT_ERROR";
     }
 
+
+    public String getErrorMessage() {
+        return errorMessage;
+    }
+
+    public void setErrorMessage(String errorMessage) {
+        this.errorMessage = errorMessage;
+    }
 }
