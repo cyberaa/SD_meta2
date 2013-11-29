@@ -35,6 +35,7 @@ public class Login extends Action {
             return "RETRY";
         }else{
             setUserID(answer);
+            setUserNametoBean(login.getUserName());
             getClientSession();
             return "SUCCESS";
         }
@@ -47,20 +48,13 @@ public class Login extends Action {
         return rmierror;
     }
 
-    public String getUserName() {
-        return client.getUserName();
-    }
 
-    public String getPassword() {
-        return  login.getPassword();
+   public void setPassword(String pass){
+        login.setPassword(pass);
+   }
+    public void setUserName(String username){
+        login.setUserName(username);
     }
-    public void setPassword(String password) {
-        login.setPassword(password);
-    }
-    public void setUserName(String userName) {
-        login.setUserName(userName);
-    }
-
 }
 
 

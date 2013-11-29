@@ -56,7 +56,7 @@ public class Action extends ActionSupport implements SessionAware {
         return client.getUserName();
     }
 
-    public void setUserName(String userName) {
+    public void setUserNametoBean(String userName) {
         client.setUserName(userName);
         updateClientSession();
     }

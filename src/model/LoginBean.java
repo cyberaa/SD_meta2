@@ -17,7 +17,7 @@ public class LoginBean {
         int answer = 0;
         try {
             if(RMIServer!=null){
-                answer = RMIServer.Login(getUserName(),password);
+                answer = RMIServer.Login(userName,password);
             }else{
                 answer=-666;
             }

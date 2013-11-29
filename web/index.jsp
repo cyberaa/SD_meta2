@@ -1,9 +1,9 @@
 <%--
-  Created by IntelliJ IDEA.
-  User: d_cardoso
-  Date: 23-11-2013
-  Time: 12:30
-  To change this template use File | Settings | File Templates.
+Created by IntelliJ IDEA.
+User: d_cardoso
+Date: 23-11-2013
+Time: 12:30
+To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib uri="/struts-tags" prefix="s" %>
@@ -45,7 +45,7 @@
                 // login status of the person. In this case, we're handling the situation where they
                 // have logged in to the app.
 
-                 //window.location = "/submitIdea.jsp";
+                //window.location = "/submitIdea.jsp";
                 //FB.api('/me', function(response) {
                 //    document.loginform.login = response.name;
                 //});
@@ -107,11 +107,11 @@
     <div class="fb-login-button" data-width="200"  data-height="100" data-max-rows="1" data-show-faces="false" style="display: table; margin-right: auto; margin-left: auto;">Login with Facebook</div>
     <p class="forgot-password"><a href="/Register.jsp">Register</a></p>
 </form>
-    <s:if test="%{tried==true}">
-        <div class="isa_error">ERROR. Incorrect password or username.</div>
-    </s:if>
-    <s:if test="%{rmierror==true}">
-        <div class="isa_error"><b>Failure in connecting with the database. Please try again!</b></div>
-    </s:if>
+<s:if test="%{tried==true}">
+    <div class="isa_error">ERROR. Incorrect password or username.</div>
+</s:if>
+<s:if test="%{rmierror==true}">
+    <div class="isa_error"><b>Failure in connecting with the database. Please try again!</b></div>
+</s:if>
 </body>
 </html>
