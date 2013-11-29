@@ -47,16 +47,17 @@ public interface Features extends Remote{
     public int newUser(ArrayList<String> user) throws RemoteException;
 
     /**
+     * Function to add a new Idea
      *
-     * @param data Idea info
-     *      <p>topicID (lots of them)</p>
-            <p>size - 4 = IdeaName </p>
-            <p>size - 3 = IdeaDescription</p>
-            <p>size - 2 = DEIcoins   </p>
-            <p>size - 1 = The ID of the parent Idea </p>
+     * @param data    Idea info
+     *                <p>topicID (lots of them)</p>
+     *                <p>size - 4 = IdeaName </p>
+     *                <p>size - 3 = IdeaDescription</p>
+     *                <p>size - 2 = DEIcoins   </p>
+     *                <p>size - 1 = The ID of the parent Idea </p>
      * @param id_user Id of the user
      * @param ischild If the idea is a reply
-     * @return
+     * @return the IdeaId or -1 in case of error
      * @throws RemoteException
      */
     public int newIdea(ArrayList<String> data, int id_user, boolean ischild) throws RemoteException;
@@ -67,7 +68,7 @@ public interface Features extends Remote{
      * @return the ID of the Topic or -1in case of error
      * @throws RemoteException
      */
-    public int newTopics(ArrayList<String> data) throws RemoteException;
+    public int newTopics(String data) throws RemoteException;
 
     public ArrayList<String> getTopics() throws RemoteException;
     public ArrayList<String> getIdeas(String Topic) throws RemoteException;

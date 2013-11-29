@@ -2,6 +2,7 @@ package action;
 
 import com.opensymphony.xwork2.ActionSupport;
 import model.Client;
+import model.Features;
 import org.apache.struts2.interceptor.SessionAware;
 
 import java.util.Map;
@@ -13,11 +14,13 @@ import java.util.Map;
  * @project Sistemas Distribuídos
  */
 public class Action extends ActionSupport implements SessionAware {
-
+    protected static final long serialVersionUID = 4L;
     protected Map<String, Object> session;
-
     protected Client client;
 
+    Action(){
+        this.client = new Client();
+    }
     /**
      * Needed by SessionAware
      *
@@ -25,6 +28,7 @@ public class Action extends ActionSupport implements SessionAware {
      */
     @Override
     public void setSession(Map<String, Object> session) {
+        System.out.println("Work modafoker!!!");
         this.session = session;
     }
 
@@ -33,37 +37,45 @@ public class Action extends ActionSupport implements SessionAware {
      * or loading it from the session if it exists.
      */
     public void getClientSession() {
-        /*if (!session.containsKey("client")) {
-            session.put("client", client);
-        } else
-            this.client = (Client) session.get("client"); */
-    }
-
-    public boolean getClientStatus(){
-        if (!session.containsKey("client")) {
-            return false;
+        if(session!=null){
+            if (!session.containsKey("client")) {
+                if (client==null){
+                    this.client = new Client();
+                }
+                session.put("client", client);
+            } else
+                this.client = (Client) session.get("client");
+        }else{
+            System.out.println("MERDA, PUTA DO CARALHO!!!!");
+            this.client = new Client();
         }
-        return true;
     }
 
-    public String execute()
-    {
-        getClientSession();
-        return "SUCCESS";
+    public void updateClientSession(){
+        if (session.containsKey("client")) {
+            session.remove("client");
+        }
+            session.put("client", client);
     }
-
 
     public String getUserName() {
         return client.getUserName();
     }
 
-    public String getPassword() {
-        return  client.getPassword();
-    }
-    public void setPassword(String password) {
-        client.setPassword(password);
-    }
     public void setUserName(String userName) {
         client.setUserName(userName);
+        updateClientSession();
+    }
+    public Features getRMIserver(){
+        return client.getRMIServer();
+    }
+
+    public void setUserID(int userID) {
+        client.setUserID(userID);
+        updateClientSession();
+    }
+
+    public int getUserID() {
+        return client.getUserID();
     }
 }

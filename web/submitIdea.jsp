@@ -104,7 +104,7 @@
                 <div class="input-group">
                     <input type="text" name = "newTopic" id = "newTopic"type="text" class="form-control" style="margin-left:0px;"/>
             <span class="input-group-btn">
-              <button class="btn btn-default" type="button" onClick="javascript:document.getElementById('topicsList').value+='#'+document.getElementById('newTopic').value+' ';javascript:document.getElementById('newTopic').value='';">Add Topic</button>
+              <button class="btn btn-default" type="button" onClick="javascript:document.getElementById('topicsList').value+=' #'+document.getElementById('newTopic').value;javascript:document.getElementById('newTopic').value='';">Add Topic</button>
             </span>
                 </div><!-- /input-group -->
 

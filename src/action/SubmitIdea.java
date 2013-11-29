@@ -17,7 +17,8 @@ public class SubmitIdea extends Action {
     }
 
     public String execute() {
-        this.newIdea.submitNewIdea();
+        getClientSession();
+        System.out.println(this.newIdea.submitNewIdea(getRMIserver(),getUserID()));
 
         return "SUCCESS";
     }

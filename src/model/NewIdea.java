@@ -1,6 +1,7 @@
 package model;
 
 import java.util.ArrayList;
+import java.util.StringTokenizer;
 
 /**
  * @author Bruno Caceiro - caceiro@student.dei.uc.pt
@@ -75,20 +76,47 @@ public class NewIdea {
     }
 
 
-    public ArrayList<String> getNewIdeaElements() {
-        ArrayList<String> newIdea = new ArrayList<String>();
-
-        newIdea.add(this.getTopicsList());
-        newIdea.add(this.getTitleIdea());
-        newIdea.add(this.getDescriptionIdea());
-        newIdea.add(Double.toString(this.getDeiCoinsIdea()));
-
-        return newIdea;
+    public ArrayList<String> getTopicsId(Features RMIServer){
+        StringTokenizer st = new StringTokenizer(this.topicsList," #");
+        ArrayList<String> topicName = new ArrayList<String>();
+        int topicID;
+        while (st.hasMoreTokens()) {
+            try{
+                topicID = RMIServer.newTopics(st.nextToken());
+                topicName.add(Integer.toString(topicID));
+            }catch(Exception e){
+                System.out.println(e);
+                return null;
+            }
+        }
+        return topicName;
     }
 
 
-    public void submitNewIdea() {
-         System.out.println(getNewIdeaElements());
+    public int submitNewIdea(Features RMIServer,int userID) {
+        int answer = 0;
+        try {
+            if(RMIServer!=null){
+                ArrayList<String> data = getTopicsId(RMIServer);
+                if (data==null){
+                    System.out.println("lolada");
+                    answer=-666;
+                }
+                data.add(this.getTitleIdea());
+                data.add(this.getDescriptionIdea());
+                data.add(Double.toString(this.getDeiCoinsIdea()));
+                //compatibility with the reply;
+                data.add("0");
+                answer = RMIServer.newIdea(data,userID,false);
+            }else{
+                answer=-666;
+                System.out.println("ahahahah");
+            }
+        } catch (Exception e) {
+            System.out.println(e);
+            answer=-666;
+        }
+        return answer;
     }
 
 }
