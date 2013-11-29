@@ -20,8 +20,8 @@
     background-image: url('info.png');
 }
 .isa_success {
-    color: #000000;
-    background-color: #008b14;
+    color: #c2c2c2;
+    background-color: #009718;
     background-image:url('success.png');
 }
 .isa_warning {
@@ -30,7 +30,7 @@
     background-image: url('warning.png');
 }
 .isa_error {
-    color: #000000;
-    background-color: #cc0000;
+    color: #c6c6c6;
+    background-color: #cc5a3f;
     background-image: url('error.png');
 }
