@@ -71,11 +71,17 @@ public interface Features extends Remote{
     public int newTopics(String data) throws RemoteException;
 
     public ArrayList<String> getTopics() throws RemoteException;
+
     public ArrayList<String> getIdeas(String Topic) throws RemoteException;
+
     public ArrayList<String> getIdeaDetails(String idea) throws RemoteException;
+
     public ArrayList<String> getSharesInfo(String idea)throws RemoteException;
+
     public ArrayList<String> buyShares(String idea, int percentage, int ID_User, int sellingPrice, int maxprice, String timeStamp) throws RemoteException;
+
     public ArrayList<String> getTransactions(int ID_user,boolean limited) throws RemoteException;
+
     /**
      * UPDATES THE LAST LOGIN OF A USER
      * @param ID_User
@@ -83,9 +89,15 @@ public interface Features extends Remote{
      * @throws RemoteException
      */
     public int updateLastLogin(int ID_User) throws RemoteException ;
+
     public ArrayList<String> getuserIdeas(int ID_User) throws RemoteException;
+
+    public ArrayList<String> getuserIdeasDetails (int ID_User, boolean all) throws RemoteException;
+
     public int deleteIdeas(String idea, int ID_User) throws RemoteException;
+
     public ArrayList<String> setSharePrice(String idea,int price, int ID_User) throws RemoteException;
+
     /**
      * Return the number of coins of the user
      * @param ID_User
@@ -93,6 +105,29 @@ public interface Features extends Remote{
      * @throws RemoteException
      */
     public double getCoins(int ID_User) throws RemoteException;
+
     public int saveFile(int idea, String filename, byte[] file) throws RemoteException;
+
     public int getPercentage(String idea, int ID_User) throws RemoteException;
+
+    /**
+     * Method to Add an Idea to an User Watchlist
+     * @param ID_User ID of the User
+     * @param ID_idea ID of the Idea
+     * @return -1 in case of error
+     *         0  if the User already has the Idea in the Watchlist
+     *         1  if the Idea was added with Success
+     * @throws RemoteException
+     */
+    public int addToWatchList(int ID_User, int ID_idea) throws RemoteException;
+
+    /**
+     * Method to Remove an Idea from a User's Watchlist
+     * @param ID_User ID of the User
+     * @param ID_idea ID of the Idea
+     * @return 1 in case of sucess
+     *         -1 in case of error
+     * @throws RemoteException
+     */
+    public int removeFromWatchList(int ID_User, int ID_idea) throws RemoteException;
 }

@@ -18,9 +18,6 @@ public class Action extends ActionSupport implements SessionAware {
     protected Map<String, Object> session;
     protected Client client;
 
-    Action(){
-        this.client = new Client();
-    }
     /**
      * Needed by SessionAware
      *
@@ -36,13 +33,13 @@ public class Action extends ActionSupport implements SessionAware {
      * or loading it from the session if it exists.
      */
     public void getClientSession() {
-            if (!session.containsKey("client")) {
-                if (client==null){
-                    this.client = new Client();
-                }
-                session.put("client", client);
-            } else
-                this.client = (Client) session.get("client");
+        if (!session.containsKey("client")) {
+            if (client==null){
+                this.client = new Client();
+            }
+            session.put("client", client);
+        }else
+            this.client = (Client) session.get("client");
     }
 
     public void updateClientSession(){

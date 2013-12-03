@@ -1,5 +1,6 @@
 package model;
 
+import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.rmi.Naming;
 import java.security.MessageDigest;
@@ -15,6 +16,7 @@ public class Client {
     private String userName;
     private int userID;
     private double DEICoins;
+    private String DEICoinsString;
     private Features RMIServer = null;
     private boolean reconnect=false;
 
@@ -47,10 +49,29 @@ public class Client {
     }
 
     public double getDEICoins() {
+        RMIServer = this.getRMIServer();
+        for(int i =0;i<2;i++){
+            try{
+                this.DEICoins = RMIServer.getCoins(this.userID);
+                break;
+            }
+            catch (Exception e){
+                System.out.println(e);
+                this.DEICoins = -1;
+
+            }
+        }
+        BigDecimal big = new BigDecimal(DEICoins);
+        this.DEICoinsString = big.toString();
         return DEICoins;
     }
 
     public void setDEICoins(double DEICoins) {
         this.DEICoins = DEICoins;
     }
+
+    public String getDEICoinsString() {
+        return DEICoinsString;
+    }
+
 }

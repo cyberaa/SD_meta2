@@ -3,6 +3,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib uri="/struts-tags" prefix="s" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <html>
 <head>
@@ -142,80 +143,45 @@
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
+   <s:iterator var="idea" value="IdeasList">
+        <div class="jumbotron">
+            <p></p>
+            <div class="media">
+                <!--
+                  Caso queiramos ter uma imagem!
+                  <a class="pull-left" href="#">    <img class="media-object" src="https://app.divshot.com/img/placeholder-64x64.gif">  </a>-->
 
+                <div class="media-body">
+                    <h3 class="media-heading"><s:property value="#idea.title"/></h3>
+                    <p><s:property value="#idea.description"/></p>
+                    <p></p>
+                    <p><h5 class="media-heading">Idea Market Price:</h5> <s:property value="#idea.ideaValue"/></p>
+                    <s:iterator var="topic" value="#idea.topics">
+                        <span class="label label-info">#<s:property value="#topic"/></span>
+                    </s:iterator>
+                    <!--<span class="label label-primary">caralho</span>
+                    <span class="label label-success">SD</span>
+                    <span class="label label-info">CACEIRO</span>
+                    <span class="label label-warning">CARDOUZO</span>
+                    <span class="label label-danger">TOPICSLOLOL</span> -->
+                    <p></p>
 
-    <div class="jumbotron">
-        <p></p>
-        <div class="media">
-            <!--
-                Caso queiramos ter uma imagem!
-              <a class="pull-left" href="#">    <img class="media-object" src="https://app.divshot.com/img/placeholder-64x64.gif">  </a>-->
-
-            <div class="media-body">
-                <h4 class="media-heading">Title goes here</h4>
-                <p>Description goes here, blaaskdjnaskjhdbnasjhdbasjdbasjhdbasjhdbasjhdbasjhdbasjdhasbdjhasbdasjhdbasjhdbasjhdasbdjhasbajhdbajhsdbajshdbasjhdbasjhdbasjhdbasjdhbasjhdbasjhdbasjhdbasjhdbasjhdb</p>
-                <p></p>
-                <span class="label label-default">merda</span>
-                <span class="label label-primary">caralho</span>
-                <span class="label label-success">SD</span>
-                <span class="label label-info">CACEIRO</span>
-                <span class="label label-warning">CARDOUZO</span>
-                <span class="label label-danger">TOPICSLOLOL</span>
-                <p></p>
-
-                <div class="btn-group">
-                    <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
-                        <span class="glyphicon glyphicon-euro"></span> Buy Shares
-                    </button>
-                    <span></span>
-                    <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#setSharesModal">
-                        <span class="glyphicon glyphicon-cog"></span> Set Shares
-                    </button>
-                    <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#deleteModal">
-                        <span class="glyphicon glyphicon-trash"></span> Delete
-                    </button>
+                    <div class="btn-group">
+                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                            <span class="glyphicon glyphicon-euro"></span> Buy Shares
+                        </button>
+                        <span></span>
+                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#setSharesModal">
+                            <span class="glyphicon glyphicon-cog"></span> Set Shares
+                        </button>
+                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#deleteModal">
+                            <span class="glyphicon glyphicon-trash"></span> Delete
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-
-
-    <div class="jumbotron">
-        <p></p>
-        <div class="media">
-            <!--
-              Caso queiramos ter uma imagem!
-              <a class="pull-left" href="#">    <img class="media-object" src="https://app.divshot.com/img/placeholder-64x64.gif">  </a>-->
-
-            <div class="media-body">
-                <h4 class="media-heading">Title goes here</h4>
-                <p>Description goes here, blaaskdjnaskjhdbnasjhdbasjdbasjhdbasjhdbasjhdbasjhdbasjdhasbdjhasbdasjhdbasjhdbasjhdasbdjhasbajhdbajhsdbajshdbasjhdbasjhdbasjhdbasjdhbasjhdbasjhdbasjhdbasjhdbasjhdb</p>
-                <p></p>
-                <span class="label label-default">merda</span>
-                <span class="label label-primary">caralho</span>
-                <span class="label label-success">SD</span>
-                <span class="label label-info">CACEIRO</span>
-                <span class="label label-warning">CARDOUZO</span>
-                <span class="label label-danger">TOPICSLOLOL</span>
-                <p></p>
-
-                <div class="btn-group">
-                    <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
-                        <span class="glyphicon glyphicon-euro"></span> Buy Shares
-                    </button>
-                    <span></span>
-                    <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#setSharesModal">
-                        <span class="glyphicon glyphicon-cog"></span> Set Shares
-                    </button>
-                    <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#deleteModal">
-                        <span class="glyphicon glyphicon-trash"></span> Delete
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    </s:iterator>
 
 
 

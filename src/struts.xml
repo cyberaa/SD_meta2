@@ -23,7 +23,7 @@
         </global-results>
 
         <action name="login" class="action.Login">
-            <result name="SUCCESS">/submitIdea.jsp</result>
+            <result name="SUCCESS">/MainScreen.jsp</result>
             <result name="RETRY">/index.jsp</result>
             <result name="RMIERROR">/index.jsp</result>
         </action>

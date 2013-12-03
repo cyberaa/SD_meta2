@@ -24,7 +24,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
             <li><a href="#"><span class="glyphicon glyphicon-plus"></span> &nbsp; Submit Idea</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-user"></span> &nbsp; My Ideas</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> &nbsp; Portfolio</a></li>
             <li><a href="#"><span class="glyphicon glyphicon-resize-full"></span>&nbsp; Transactions</a></li>
             <li><a href="#"><span class="glyphicon glyphicon-star"></span>&nbsp; Watchlist</a></li>
             <li><a href="#"><span class="glyphicon glyphicon-book"></span>&nbsp; Hall of Fame</a></li>
@@ -46,7 +46,7 @@
         </form>
 
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">DEIcoins: <s:property value='#session.client.DEICoins' /></a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-usd"></span><s:property value='#session.client.DEICoinsString' /></a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><s:property value='#session.client.userName' /><b class="caret"></b></a>
                 <ul class="dropdown-menu">
