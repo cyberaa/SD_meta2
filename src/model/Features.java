@@ -57,7 +57,7 @@ public interface Features extends Remote{
      *                <p>size - 1 = The ID of the parent Idea </p>
      * @param id_user Id of the user
      * @param ischild If the idea is a reply
-     * @return the IdeaId or -1 in case of error
+     * @return the IdeaId or -1 in case of error or -2 in case of not enough money
      * @throws RemoteException
      */
     public int newIdea(ArrayList<String> data, int id_user, boolean ischild) throws RemoteException;
@@ -86,7 +86,13 @@ public interface Features extends Remote{
     public ArrayList<String> getuserIdeas(int ID_User) throws RemoteException;
     public int deleteIdeas(String idea, int ID_User) throws RemoteException;
     public ArrayList<String> setSharePrice(String idea,int price, int ID_User) throws RemoteException;
-    public int getCoins(int ID_User) throws RemoteException;
+    /**
+     * Return the number of coins of the user
+     * @param ID_User
+     * @return the number of DEICOINS (double)
+     * @throws RemoteException
+     */
+    public double getCoins(int ID_User) throws RemoteException;
     public int saveFile(int idea, String filename, byte[] file) throws RemoteException;
     public int getPercentage(String idea, int ID_User) throws RemoteException;
 }

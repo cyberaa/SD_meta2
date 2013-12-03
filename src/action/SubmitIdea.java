@@ -32,6 +32,10 @@ public class SubmitIdea extends Action {
             submitted = true;
             return "SUCCESS";
         }
+        else if (result==-2){
+            errorMessage = "Not enough Money!";
+            return "INPUT_ERROR";
+        }
         error=true;
         errorMessage = "Vai-te Foder puta do caralho, para de tentar foder o site";
         return "INPUT_ERROR";
