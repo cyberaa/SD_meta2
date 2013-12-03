@@ -215,6 +215,8 @@
 
 
 
+
+
 <div id="push"></div>
 
 <div id="footer">
@@ -222,7 +224,7 @@
         <p class="muted credit">Powered by: <a href="https://www.facebook.com/bruno.caceiro">Bruno Caceiro</a> & <a href="https://www.facebook.com/david.p.cardoso">David Cardoso</a>.</p>
     </div>
 </div>
-
+</div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://code.jquery.com/jquery.js"></script>
