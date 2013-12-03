@@ -72,4 +72,12 @@ public class Action extends ActionSupport implements SessionAware {
     public int getUserID() {
         return client.getUserID();
     }
+
+    public void setDEICoins(double coins){
+        client.setDEICoins(coins);
+        updateClientSession();
+    }
+    public double getDEICoins(){
+        return client.getDEICoins();
+    }
 }

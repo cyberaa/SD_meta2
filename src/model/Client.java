@@ -14,6 +14,7 @@ import java.security.NoSuchAlgorithmException;
 public class Client {
     private String userName;
     private int userID;
+    private double DEICoins;
     private Features RMIServer = null;
     private boolean reconnect=false;
 
@@ -45,4 +46,11 @@ public class Client {
         return userID;
     }
 
+    public double getDEICoins() {
+        return DEICoins;
+    }
+
+    public void setDEICoins(double DEICoins) {
+        this.DEICoins = DEICoins;
+    }
 }

@@ -26,8 +26,6 @@
             <li class="active"><a href="#">Submit Idea</a></li>
             <li><a href="#">My Ideas</a></li>
             <li><a href="#">Transactions</a></li>
-            <li><a href="#">Watchlist</a></li>
-            <li><a href="#">Hall of Fame</a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Search by <b class="caret"></b></a>
                 <ul class="dropdown-menu">
@@ -46,6 +44,7 @@
         </form>
 
         <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">DEIcoins:<s:property value='#session.client.DEICoins' /></a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><s:property value='#session.client.userName' /><b class="caret"></b></a>
                 <ul class="dropdown-menu">
