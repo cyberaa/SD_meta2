@@ -17,17 +17,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">IdeaBroker</a>
+        <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-sd-video"></span>&nbsp; IdeaBroker</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Submit Idea</a></li>
-            <li><a href="#">My Ideas</a></li>
-            <li><a href="#">Transactions</a></li>
-            <li><a href="#">Watchlist</a></li>
-            <li><a href="#">Hall of Fame</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-plus"></span> &nbsp; Submit Idea</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> &nbsp; My Ideas</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-resize-full"></span>&nbsp; Transactions</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-star"></span>&nbsp; Watchlist</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-book"></span>&nbsp; Hall of Fame</a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Search by <b class="caret"></b></a>
                 <ul class="dropdown-menu">
@@ -46,6 +46,7 @@
         </form>
 
         <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">DEIcoins: <s:property value='#session.client.DEICoins' /></a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><s:property value='#session.client.userName' /><b class="caret"></b></a>
                 <ul class="dropdown-menu">
