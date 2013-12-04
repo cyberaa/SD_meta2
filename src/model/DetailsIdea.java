@@ -9,6 +9,7 @@ import java.util.ArrayList;
  * @project Sistemas Distribuídos
  */
 public class DetailsIdea {
+    private String ideaID;
     private String title;
     private String description;
     private Double ideaValue;
@@ -50,5 +51,13 @@ public class DetailsIdea {
     }
     public void addTopics(String tps) {
         this.topics.add(tps);
+    }
+
+    public String getIdeaID() {
+        return ideaID;
+    }
+
+    public void setIdeaID(String ideaID) {
+        this.ideaID = ideaID;
     }
 }

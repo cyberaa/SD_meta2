@@ -30,14 +30,12 @@ public class Authenticate implements Interceptor {
             Map<String, Object> sessionAttributes = actionInvocation.getInvocationContext().getSession();
 
             Client user = (Client) sessionAttributes.get("client");
-            System.out.println("lol");
             if(user == null) {
                 sessionAttributes.put("client", new Client());
                 return "LOGIN";
             }
             else {
                 int userID = ((Client) sessionAttributes.get("client")).getUserID();
-                System.out.println("userid:"+userID);
                 if(userID > 0) {
                     return actionInvocation.invoke();
                 }

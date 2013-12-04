@@ -95,6 +95,7 @@
                     Are you sure you want to delete?
                 </div>
                 <form action = "DeleteIdea" class="modal-footer">
+                    <input type="text" id = "DeleteIdeaName" name = "IdeaTitle"/>
                     <button type="submit" class="btn btn-default" data-dismiss="modal">Yes</button>
                     <button type="button" class="btn btn-primary" data-dismiss="modal">No</button>
                 </form>
@@ -136,13 +137,28 @@
     </div><!-- /.modal -->
 
    <s:iterator var="idea" value="IdeasList">
+        <!-- Modal Delete -->
+        <div class="modal fade" id="<s:property value="#idea.ideaID"/>" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Delete Idea <s:property value="#idea.title"/></h4>
+                    </div>
+                    <div class="modal-body">
+                        Are you sure you want to delete?
+                    </div>
+                    <form method="post" action = "DeleteIdea" class="modal-footer">
+                        <input type="text" style="display: none" name = "IdeaTitle" value="<s:property value="#idea.title"/>">
+                        <button type="submit" class="btn btn-default">Yes</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">No</button>
+                    </form>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
         <div class="jumbotron">
             <p></p>
             <div class="media">
-                <!--
-                  Caso queiramos ter uma imagem!
-                  <a class="pull-left" href="#">    <img class="media-object" src="https://app.divshot.com/img/placeholder-64x64.gif">  </a>-->
-
                 <div class="media-body">
                     <h3 class="media-heading"><s:property value="#idea.title"/></h3>
                     <p><s:property value="#idea.description"/></p>
@@ -166,7 +182,7 @@
                         <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#setSharesModal">
                             <span class="glyphicon glyphicon-cog"></span> Set Shares
                         </button>
-                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#deleteModal">
+                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#<s:property value="#idea.ideaID"/>">
                             <span class="glyphicon glyphicon-trash"></span> Delete
                         </button>
                     </div>

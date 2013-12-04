@@ -15,11 +15,13 @@ public class DeleteIdea extends Action {
     private boolean retry;
 
     public String execute(){
+        System.out.println("funciona, eu pago-te um fino e tudo!");
         Features server = getRMIserver();
         int userID = getUserID();
         if (IdeaTitle == null){
             return "ERROR";
         }
+        ideas = new Ideas();
         int answer = ideas.removeIdea(server,IdeaTitle,userID);
         if (answer==-666){
             if (retry==false){

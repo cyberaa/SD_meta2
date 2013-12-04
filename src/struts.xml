@@ -61,12 +61,11 @@
         </action>
         <action name="DeleteIdea" class = "action.DeleteIdea">
             <interceptor-ref name="authStack" />
-            <result name = "SUCCESS">
-                /Portfolio.jsp
-            </result>
+            <result name="SUCCESS" type="redirect">GetPortfolio.action</result>
             <result name = "RMIERROR">
                 /index.jsp
             </result>
+            <result name="ERROR" type="redirect">GetPortfolio.action</result>
         </action>
     </package>
 </struts>

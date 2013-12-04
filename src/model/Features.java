@@ -82,20 +82,31 @@ public interface Features extends Remote{
 
     public ArrayList<String> getTransactions(int ID_user,boolean limited) throws RemoteException;
 
-    /**
-     * UPDATES THE LAST LOGIN OF A USER
-     * @param ID_User
-     * @return 1 in case of sucess, -1 in case of failure
-     * @throws RemoteException
-     */
+
     public int updateLastLogin(int ID_User) throws RemoteException ;
 
     public ArrayList<String> getuserIdeas(int ID_User) throws RemoteException;
 
     public ArrayList<String> getuserIdeasDetails (int ID_User, boolean all) throws RemoteException;
 
-    public int deleteIdeas(String idea, int ID_User) throws RemoteException;
+    /**
+     * Method to Delete an Idea (doesn't actually remove from DB, only sets Deleted = true)
+     * @param idea Title of the Idea
+     * @param ID_User ID of the user
+     * @return 1 in case of success
+     *         -1 in case of error
+     * @throws RemoteException
+     */
+    public int deleteIdea(String idea, int ID_User) throws RemoteException;
 
+    /**
+     * Method to Set a new Share Price
+     * @param idea Idea
+     * @param price New Price
+     * @param ID_User User ID
+     * @return cenas
+     * @throws RemoteException
+     */
     public ArrayList<String> setSharePrice(String idea,int price, int ID_User) throws RemoteException;
 
     /**
@@ -106,6 +117,14 @@ public interface Features extends Remote{
      */
     public double getCoins(int ID_User) throws RemoteException;
 
+    /**
+     *
+     * @param idea
+     * @param filename
+     * @param file
+     * @return
+     * @throws RemoteException
+     */
     public int saveFile(int idea, String filename, byte[] file) throws RemoteException;
 
     public int getPercentage(String idea, int ID_User) throws RemoteException;
@@ -130,4 +149,27 @@ public interface Features extends Remote{
      * @throws RemoteException
      */
     public int removeFromWatchList(int ID_User, int ID_idea) throws RemoteException;
+
+    /**
+     * Method to Add an Idea to the Hall of Fame (can only be done by root)
+     * @param ID_Idea ID of Idea
+     * @return
+     */
+    public int addToHallOfFame(int ID_Idea) throws RemoteException;
+
+    /**
+     * Method to Search Topics in DB
+     * @param topic to be search
+     * @return ArrayList with correspondent topics
+     * @throws RemoteException
+     */
+    public ArrayList<String> searchTopics(String topic) throws RemoteException;
+
+    /**
+     * Method to Search Ideas ( by Title )
+     * @param idea Title of the idea
+     * @return Array with ideas
+     * @throws RemoteException
+     */
+    public ArrayList<String> searchIdeas(String idea) throws RemoteException;
 }

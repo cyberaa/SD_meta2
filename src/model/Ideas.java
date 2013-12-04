@@ -27,6 +27,7 @@ public class Ideas {
                 while(i<ideasList.size()){
                     DetailsIdea idea = new DetailsIdea();
                     idea.setTitle(ideasList.get(i++));
+                    idea.setIdeaID(ideasList.get(i++));
                     idea.setDescription(ideasList.get(i++));
                     idea.setIdeaValue(Double.parseDouble(ideasList.get(i++)));
                     int numberTopics =  Integer.parseInt( ideasList.get( i++ ));
@@ -54,8 +55,9 @@ public class Ideas {
     public int removeIdea(Features RMIServer, String ideaTitle, int userID){
         int result;
         try{
-            result = RMIServer.deleteIdeas(ideaTitle,userID);
+            result = RMIServer.deleteIdea(ideaTitle,userID);
         }catch(Exception e){
+            System.out.println(e);
             result = -666;
         }
         return result;

@@ -22,7 +22,8 @@ public class LoginBean {
                 answer=-666;
             }
         } catch (Exception e) {
-                answer=-666;
+            System.out.println(e);
+            answer=-666;
         }
         return answer;
     }
