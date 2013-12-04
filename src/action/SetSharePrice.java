@@ -9,19 +9,21 @@ import model.Ideas;
  * @version 0.1
  * @project Sistemas Distribuídos
  */
-public class DeleteIdea extends Action {
-    private Ideas ideas;
+public class SetSharePrice extends Action {
+
+    private double SharesPrice;
     private String IdeaTitle;
+    private Ideas ideas;
     private boolean retry;
 
     public String execute(){
         Features server = getRMIserver();
         int userID = getUserID();
-        if (IdeaTitle == null){
+        if (getIdeaTitle() == null){
             return "ERROR";
         }
         ideas = new Ideas();
-        int answer = ideas.removeIdea(server,IdeaTitle,userID);
+        int answer = ideas.setSharePrice(server, getIdeaTitle(),userID, SharesPrice);
         if (answer==-666){
             if (retry==false){
                 retry=true;
@@ -32,6 +34,14 @@ public class DeleteIdea extends Action {
             return "ERROR";
         }
         return "SUCCESS";
+    }
+
+    public double getSharesPrice() {
+        return SharesPrice;
+    }
+
+    public void setSharesPrice(double sharesPrice) {
+        SharesPrice = sharesPrice;
     }
 
     public String getIdeaTitle() {

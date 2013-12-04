@@ -23,7 +23,7 @@
 <div class="container">
 
 
-        <h1>Portfolio</h1>
+        <h1>Results for '<s:property value="search"/>':</h1>
         <p></p>
 
     <hr>
@@ -80,7 +80,6 @@
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
-
 
 
    <s:iterator var="idea" value="IdeasList">

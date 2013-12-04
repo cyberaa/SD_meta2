@@ -67,5 +67,21 @@
             </result>
             <result name="ERROR" type="redirect">GetPortfolio.action</result>
         </action>
+        <action name="SetSharePrice" class = "action.SetSharePrice">
+            <interceptor-ref name="authStack" />
+            <result name="SUCCESS" type="redirect">GetPortfolio.action</result>
+            <result name = "RMIERROR">
+                /index.jsp
+            </result>
+            <result name="ERROR" type="redirect">GetPortfolio.action</result>
+        </action>
+        <action name="search" class = "action.Search">
+            <interceptor-ref name="authStack" />
+            <result name="SUCCESS">ListIdeas.jsp</result>
+            <result name = "RMIERROR">
+                /index.jsp
+            </result>
+            <result name="ERROR">ListIdeas.jsp</result>
+        </action>
     </package>
 </struts>

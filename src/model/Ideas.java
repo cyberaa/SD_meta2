@@ -14,15 +14,15 @@ public class Ideas {
 
     }
 
-    public ArrayList<DetailsIdea> getPortfolio(Features RMIServer,int userID) {
+    public ArrayList<DetailsIdea> getIdeas(Features RMIServer,int userID,String ideaTitle) {
         setIdeas(new ArrayList<DetailsIdea>());
         try {
             if(RMIServer!=null){
                 ArrayList<String> ideasList;
-                ideasList = RMIServer.getuserIdeasDetails(userID,true);
-
-
-
+                ideasList = RMIServer.getuserIdeasDetails(userID,true,ideaTitle);
+                if(ideasList==null){
+                    return null;
+                }
                 int i=0;
                 while(i<ideasList.size()){
                     DetailsIdea idea = new DetailsIdea();
@@ -55,11 +55,27 @@ public class Ideas {
     public int removeIdea(Features RMIServer, String ideaTitle, int userID){
         int result;
         try{
-            result = RMIServer.deleteIdea(ideaTitle,userID);
+            result = RMIServer.deleteIdea(ideaTitle, userID);
         }catch(Exception e){
             System.out.println(e);
             result = -666;
         }
         return result;
     }
+
+    public int setSharePrice(Features RMIServer, String ideaTitle, int userID, double finalPrice){
+        ArrayList<String> result;
+        try{
+            result = RMIServer.setSharePrice(ideaTitle, finalPrice, userID);
+            if(result == null){
+                return -1;
+            }
+        }catch(Exception e){
+            System.out.println(e);
+            return -666;
+        }
+        System.out.println("já funciona!!!");
+        return 0;
+    }
+
 }

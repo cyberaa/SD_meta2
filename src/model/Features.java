@@ -87,7 +87,7 @@ public interface Features extends Remote{
 
     public ArrayList<String> getuserIdeas(int ID_User) throws RemoteException;
 
-    public ArrayList<String> getuserIdeasDetails (int ID_User, boolean all) throws RemoteException;
+    public ArrayList<String> getuserIdeasDetails (int ID_User, boolean all, String idea) throws RemoteException;
 
     /**
      * Method to Delete an Idea (doesn't actually remove from DB, only sets Deleted = true)
@@ -107,7 +107,7 @@ public interface Features extends Remote{
      * @return cenas
      * @throws RemoteException
      */
-    public ArrayList<String> setSharePrice(String idea,int price, int ID_User) throws RemoteException;
+    public ArrayList<String> setSharePrice(String idea,double price, int ID_User) throws RemoteException;
 
     /**
      * Return the number of coins of the user

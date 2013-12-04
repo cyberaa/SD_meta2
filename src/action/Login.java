@@ -25,7 +25,7 @@ public class Login extends Action {
         int answer = login.login(getRMIserver());
         setUserID(answer);
         client.setDEICoins(client.getDEICoins());
-        IdeasList = (new Ideas()).getPortfolio(getRMIserver(),answer);
+        IdeasList = (new Ideas()).getIdeas(getRMIserver(),answer,null);
         if (answer ==  -666){
             if (!reconnect){
                 reconnect=true;

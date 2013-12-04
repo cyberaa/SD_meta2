@@ -12,20 +12,32 @@ import java.util.ArrayList;
  * @version 0.1
  * @project Sistemas Distribuídos
  */
-public class ViewPortfolio extends Action {
+public class Search extends Action {
+    private String search;
     private Ideas IdeasList;
 
     public String execute(){
         Features server = getRMIserver();
-
+        int userID = getUserID();
         IdeasList = new Ideas();
-        if(IdeasList.getIdeas(server, getUserID(), null)==null){
+        if(search==null)
+            return "ERROR";
+        if(IdeasList.getIdeas(server ,getUserID(), search)==null){
             server = getRMIserver();
-            if(IdeasList.getIdeas(server, getUserID(), null)==null){
+            if(IdeasList.getIdeas(server ,getUserID(), search)==null){
                 return "RMIERROR";
             }
         }
+        System.out.println(getIdeasList());
         return "SUCCESS";
+    }
+
+    public String getSearch() {
+        return search;
+    }
+
+    public void setSearch(String text) {
+        this.search = text;
     }
 
     public ArrayList<DetailsIdea> getIdeasList() {
