@@ -9,7 +9,6 @@
 
         <interceptors>
             <interceptor name="authentication" class="interceptors.Authenticate" />
-
             <interceptor-stack name="authStack">
                 <interceptor-ref name="authentication" />
                 <interceptor-ref name="defaultStack" />
@@ -23,7 +22,7 @@
         </global-results>
 
         <action name="login" class="action.Login">
-            <result name="SUCCESS">/MainScreen.jsp</result>
+            <result name="SUCCESS" type="redirect">GetPortfolio.action</result>
             <result name="RETRY">/index.jsp</result>
             <result name="RMIERROR">/index.jsp</result>
         </action>
@@ -46,6 +45,24 @@
             </result>
             <result name = "INPUT_ERROR">
                 /submitIdea.jsp
+            </result>
+            <result name = "RMIERROR">
+                /index.jsp
+            </result>
+        </action>
+        <action name="GetPortfolio" class = "action.ViewPortfolio">
+            <interceptor-ref name="authStack" />
+            <result name = "SUCCESS">
+                /Portfolio.jsp
+            </result>
+            <result name = "RMIERROR">
+                /index.jsp
+            </result>
+        </action>
+        <action name="DeleteIdea" class = "action.DeleteIdea">
+            <interceptor-ref name="authStack" />
+            <result name = "SUCCESS">
+                /Portfolio.jsp
             </result>
             <result name = "RMIERROR">
                 /index.jsp

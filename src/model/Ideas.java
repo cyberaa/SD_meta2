@@ -14,8 +14,8 @@ public class Ideas {
 
     }
 
-    public ArrayList<DetailsIdea> getIdeas(Features RMIServer,int userID) {
-        ideas = new ArrayList<DetailsIdea>();
+    public ArrayList<DetailsIdea> getPortfolio(Features RMIServer,int userID) {
+        setIdeas(new ArrayList<DetailsIdea>());
         try {
             if(RMIServer!=null){
                 ArrayList<String> ideasList;
@@ -34,16 +34,30 @@ public class Ideas {
                     while( i < ( a + numberTopics)){
                         idea.addTopics(ideasList.get(i++));
                     }
-                    ideas.add(idea);
+                    getIdeas().add(idea);
                 }
             }
         } catch (Exception e) {
             System.out.println("ERRO getIdeas"+e);
         }
-        return ideas;
+        return getIdeas();
     }
 
     public void setIdeas(ArrayList<DetailsIdea> ideas) {
         this.ideas = ideas;
+    }
+
+    public ArrayList<DetailsIdea> getIdeas() {
+        return ideas;
+    }
+
+    public int removeIdea(Features RMIServer, String ideaTitle, int userID){
+        int result;
+        try{
+            result = RMIServer.deleteIdeas(ideaTitle,userID);
+        }catch(Exception e){
+            result = -666;
+        }
+        return result;
     }
 }

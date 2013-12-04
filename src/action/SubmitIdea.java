@@ -24,7 +24,10 @@ public class SubmitIdea extends Action {
     public String execute() {
         getClientSession();
         int result = this.newIdea.submitNewIdea(getRMIserver(),getUserID());
-        newIdea.getFileUpload().delete();
+        File file = newIdea.getFileUpload();
+        if(file!=null){
+            newIdea.getFileUpload().delete();
+        }
         if(result==-666){
             return "RMIERROR";
         }

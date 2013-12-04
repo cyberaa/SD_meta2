@@ -52,12 +52,16 @@ public class Action extends ActionSupport implements SessionAware {
     public String getUserName() {
         return client.getUserName();
     }
+    public void setUser(Client user){
+
+    }
 
     public void setUserNametoBean(String userName) {
         client.setUserName(userName);
         updateClientSession();
     }
     public Features getRMIserver(){
+        getClientSession();
         return client.getRMIServer();
     }
 

@@ -1,6 +1,5 @@
 package interceptors;
 
-import com.opensymphony.xwork2.Action;
 import com.opensymphony.xwork2.ActionInvocation;
 import com.opensymphony.xwork2.interceptor.Interceptor;
 import model.Client;
@@ -28,26 +27,18 @@ public class Authenticate implements Interceptor {
 
         @Override
         public String intercept(ActionInvocation actionInvocation) throws Exception {
-            System.out.println("inside auth interceptor");
             Map<String, Object> sessionAttributes = actionInvocation.getInvocationContext().getSession();
 
-            Client user = (Client) sessionAttributes.get("user");
-
+            Client user = (Client) sessionAttributes.get("client");
+            System.out.println("lol");
             if(user == null) {
-                System.out.println("Bean will be created");
-                sessionAttributes.put("user", new Client());
+                sessionAttributes.put("client", new Client());
                 return "LOGIN";
             }
             else {
-                System.out.println("Bean in session");
-            /*User action = (User) actionInvocation.getAction();
-
-            int user_id = action.getUser().getUserID();*/
-
-                int user_id = ((Client) sessionAttributes.get("user")).getUserID();
-                System.out.println(user_id + "\n");
-                if(user_id != -1 && user_id != 0) {
-                    System.out.println("User logged!");
+                int userID = ((Client) sessionAttributes.get("client")).getUserID();
+                System.out.println("userid:"+userID);
+                if(userID > 0) {
                     return actionInvocation.invoke();
                 }
                 return "LOGIN";
