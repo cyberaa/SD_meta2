@@ -1,9 +1,8 @@
 package action;
 
-import model.DetailsTopic;
+import model.DetailsIdea;
 import model.Features;
 
-import java.util.ArrayList;
 
 /**
  * @author Bruno Caceiro - caceiro@student.dei.uc.pt
@@ -12,36 +11,67 @@ import java.util.ArrayList;
  * @project Sistemas Distribuídos
  */
 public class ViewIdea extends Action {
-    private String topic;
-    private DetailsTopic topics;
+    private String idea;
+    private DetailsIdea ideaDet;
+    private char Buyresult;
+    private char SetResult;
+    private char DeleteResult;
+    public ViewIdea(){
+        Buyresult = 0;
+        SetResult = 0;
+        DeleteResult = 0;
+    }
     public String execute(){
         Features server = getRMIserver();
-        topics = new DetailsTopic();
-        if(topics.getTopicIdeas(server ,topic)==-666){
+        ideaDet = new DetailsIdea();
+        int answer = ideaDet.getIdeaDetails(server, getIdea());
+        if(answer==-666){
             server = getRMIserver();
-            if(topics.getTopicIdeas(server ,topic)==-666){
+            answer = ideaDet.getIdeaDetails(server, getIdea());
+            if(answer==-666){
                 return "RMIERROR";
             }
         }
         return "SUCCESS";
     }
 
-    public String getTopic() {
-        return topic;
+    public String getIdea() {
+        return idea;
     }
 
-    public void setTopic(String topic) {
-        this.topic = topic;
+    public void setIdea(String idea) {
+        this.idea = idea;
     }
 
-    public DetailsTopic getTopics() {
-        return topics;
+    public DetailsIdea getIdeaDet() {
+        return ideaDet;
     }
 
-    public void setTopics(DetailsTopic topics) {
-        this.topics = topics;
+    public void setIdeaDet(DetailsIdea ideaManager) {
+        this.ideaDet = ideaManager;
     }
-    public ArrayList<String> getTopicIdeas(){
-        return this.topics.getIdeas();
+
+    public char getDeleteResult() {
+        return DeleteResult;
+    }
+
+    public void setDeleteResult(char deleteResult) {
+        DeleteResult = deleteResult;
+    }
+
+    public char getSetResult() {
+        return SetResult;
+    }
+
+    public void setSetResult(char setResult) {
+        SetResult = setResult;
+    }
+
+    public char getBuyresult() {
+        return Buyresult;
+    }
+
+    public void setBuyresult(char buyresult) {
+        Buyresult = buyresult;
     }
 }

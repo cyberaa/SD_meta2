@@ -13,11 +13,14 @@ public class DeleteIdea extends Action {
     private Ideas ideas;
     private String IdeaTitle;
     private boolean retry;
+    private char DeleteResult;
 
     public String execute(){
         Features server = getRMIserver();
         int userID = getUserID();
         if (IdeaTitle == null){
+            DeleteResult = '1';
+            System.out.println("IdeaTitle=null");
             return "ERROR";
         }
         ideas = new Ideas();
@@ -29,8 +32,11 @@ public class DeleteIdea extends Action {
             }
             return "RMIERROR";
         }else if(answer == -1){
+            DeleteResult = '1';
+            System.out.println("Não podes eliminar a ideia");
             return "ERROR";
         }
+        DeleteResult = '2';
         return "SUCCESS";
     }
 
@@ -40,5 +46,13 @@ public class DeleteIdea extends Action {
 
     public void setIdeaTitle(String ideaTitle) {
         IdeaTitle = ideaTitle;
+    }
+
+    public char getDeleteResult() {
+        return DeleteResult;
+    }
+
+    public void setDeleteResult(char deleteResult) {
+        DeleteResult = deleteResult;
     }
 }

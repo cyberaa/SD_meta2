@@ -18,6 +18,8 @@ public class DetailsTopic {
                 if(ideas==null){
                     return -1;
                 }
+            }else{
+                return -666;
             }
         } catch (Exception e) {
             System.out.println("ERRO getTopics"+e);

@@ -43,6 +43,8 @@ public class Action extends ActionSupport implements SessionAware {
     }
 
     public void updateClientSession(){
+        System.out.println(client.getUserID());
+        System.out.println(client.getUserName());
         if (session.containsKey("client")) {
             session.remove("client");
         }
@@ -52,6 +54,7 @@ public class Action extends ActionSupport implements SessionAware {
     public String getUserName() {
         return client.getUserName();
     }
+
     public void setUser(Client user){
 
     }
@@ -66,6 +69,7 @@ public class Action extends ActionSupport implements SessionAware {
     }
 
     public void setUserID(int userID) {
+        System.out.println(userID);
         client.setUserID(userID);
         updateClientSession();
     }

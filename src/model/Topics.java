@@ -17,6 +17,8 @@ public class Topics {
                 if(topics==null){
                     return null;
                 }
+            }else{
+                return null;
             }
         } catch (Exception e) {
             System.out.println("ERRO getTopics"+e);

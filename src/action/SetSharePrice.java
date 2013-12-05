@@ -15,11 +15,13 @@ public class SetSharePrice extends Action {
     private String IdeaTitle;
     private Ideas ideas;
     private boolean retry;
+    private char SetResult;
 
     public String execute(){
         Features server = getRMIserver();
         int userID = getUserID();
         if (getIdeaTitle() == null){
+            SetResult = '1';
             return "ERROR";
         }
         ideas = new Ideas();
@@ -31,8 +33,10 @@ public class SetSharePrice extends Action {
             }
             return "RMIERROR";
         }else if(answer == -1){
+            SetResult = '1';
             return "ERROR";
         }
+        SetResult = '2';
         return "SUCCESS";
     }
 
@@ -50,5 +54,13 @@ public class SetSharePrice extends Action {
 
     public void setIdeaTitle(String ideaTitle) {
         IdeaTitle = ideaTitle;
+    }
+
+    public char getSetResult() {
+        return SetResult;
+    }
+
+    public void setSetResult(char setResult) {
+        SetResult = setResult;
     }
 }

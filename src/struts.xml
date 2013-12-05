@@ -61,27 +61,25 @@
         </action>
         <action name="DeleteIdea" class = "action.DeleteIdea">
             <interceptor-ref name="authStack" />
-            <result name="SUCCESS" type="redirect">GetPortfolio.action</result>
+            <result name="SUCCESS">ViewIdea.jsp</result>
+            <result name="ERROR">ViewIdea.jsp</result>
             <result name = "RMIERROR">
                 /index.jsp
             </result>
-            <result name="ERROR" type="redirect">GetPortfolio.action</result>
         </action>
         <action name="SetSharePrice" class = "action.SetSharePrice">
             <interceptor-ref name="authStack" />
-            <result name="SUCCESS" type="redirect">GetPortfolio.action</result>
+            <result name="SUCCESS">ViewIdea.jsp</result>
+            <result name="ERROR">ViewIdea.jsp</result>
             <result name = "RMIERROR">
                 /index.jsp
             </result>
-            <result name="ERROR" type="redirect">GetPortfolio.action</result>
         </action>
         <action name="search" class = "action.Search">
             <interceptor-ref name="authStack" />
             <result name="SUCCESSIDEAS">ListIdeas.jsp</result>
             <result name="SUCCESSTOPICS">ListTopics.jsp</result>
-            <result name = "RMIERROR">
-                /index.jsp
-            </result>
+            <result name = "RMIERROR">/index.jsp</result>
             <result name="ERROR">ListIdeas.jsp</result>
         </action>
         <action name="ViewTopic" class = "action.ViewTopic">
@@ -90,7 +88,20 @@
             <result name = "RMIERROR">
                 /index.jsp
             </result>
-            <result name="ERROR">ViewTopic.jsp</result>
+        </action>
+        <action name="ViewIdea" class = "action.ViewIdea">
+            <interceptor-ref name="authStack" />
+            <result name="SUCCESS">ViewIdea.jsp</result>
+            <result name = "RMIERROR">
+                /index.jsp
+            </result>
+        </action>
+        <action name="BuyIdea" class = "action.BuyIdea">
+            <interceptor-ref name="authStack" />
+            <result name="SUCCESS" type="redirect">ViewIdea.jsp</result>
+            <result name = "RMIERROR">
+                /index.jsp
+            </result>
         </action>
     </package>
 </struts>

@@ -74,7 +74,6 @@ public class Ideas {
             System.out.println(e);
             return -666;
         }
-        System.out.println("já funciona!!!");
         return 0;
     }
 
