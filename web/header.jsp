@@ -32,8 +32,8 @@
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Search by <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Ideas</a></li>
-                    <li><a href="#">Topics</a></li>
+                    <li><a onclick="javascript:document.getElementById('SearchOption').value='Ideas';javascript:document.getElementById('search').placeholder='Search by Idea'">Ideas</a></li>
+                    <li><a onclick="javascript:document.getElementById('SearchOption').value='Topics';javascript:document.getElementById('search').placeholder='Search by Topic'">Topics</a></li>
                 </ul>
             </li>
         </ul>
@@ -41,8 +41,9 @@
 
         <form method="post" action ="search" class="navbar-form navbar-left" role="search">
             <div class="form-group">
-                <input type="text" name ="search" class="form-control" placeholder="Search">
+                <input type="text" id = "search" name ="search" class="form-control" placeholder="Search by Idea">
             </div>
+            <input type="text"  id = "SearchOption" style="display: none" name = "SearchOption" value="Ideas"/>">
             <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
         </form>
 

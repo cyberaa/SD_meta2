@@ -3,6 +3,7 @@ package action;
 import model.DetailsIdea;
 import model.Features;
 import model.Ideas;
+import model.Topics;
 
 import java.util.ArrayList;
 
@@ -14,22 +15,34 @@ import java.util.ArrayList;
  */
 public class Search extends Action {
     private String search;
+    private String SearchOption;
+
     private Ideas IdeasList;
+    private Topics TopicsList;
 
     public String execute(){
         Features server = getRMIserver();
-        int userID = getUserID();
-        IdeasList = new Ideas();
         if(search==null)
             return "ERROR";
-        if(IdeasList.getIdeas(server ,getUserID(), search)==null){
-            server = getRMIserver();
+        if(SearchOption.equals("Ideas")){
+            IdeasList = new Ideas();
             if(IdeasList.getIdeas(server ,getUserID(), search)==null){
-                return "RMIERROR";
+                server = getRMIserver();
+                if(IdeasList.getIdeas(server ,getUserID(), search)==null){
+                    return "RMIERROR";
+                }
             }
+            return "SUCCESSIDEAS";
+        }else{
+            setTopicsList(new Topics());
+            if(TopicsList.searchTopics(server ,getUserID(), search)==null){
+                server = getRMIserver();
+                if(TopicsList.searchTopics(server ,getUserID(), search)==null){
+                    return "RMIERROR";
+                }
+            }
+            return "SUCCESSTOPICS";
         }
-        System.out.println(getIdeasList());
-        return "SUCCESS";
     }
 
     public String getSearch() {
@@ -46,5 +59,21 @@ public class Search extends Action {
 
     public void setIdeasList(ArrayList<DetailsIdea> ideasList) {
         IdeasList.setIdeas(ideasList);
+    }
+
+    public String getSearchOption() {
+        return SearchOption;
+    }
+
+    public void setSearchOption(String searchOption) {
+        SearchOption = searchOption;
+    }
+
+    public ArrayList<String> getTopicsList() {
+        return TopicsList.getTopics();
+    }
+
+    public void setTopicsList(Topics topicsList) {
+        TopicsList = topicsList;
     }
 }

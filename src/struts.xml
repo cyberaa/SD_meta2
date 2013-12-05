@@ -77,11 +77,20 @@
         </action>
         <action name="search" class = "action.Search">
             <interceptor-ref name="authStack" />
-            <result name="SUCCESS">ListIdeas.jsp</result>
+            <result name="SUCCESSIDEAS">ListIdeas.jsp</result>
+            <result name="SUCCESSTOPICS">ListTopics.jsp</result>
             <result name = "RMIERROR">
                 /index.jsp
             </result>
             <result name="ERROR">ListIdeas.jsp</result>
+        </action>
+        <action name="ViewTopic" class = "action.ViewTopic">
+            <interceptor-ref name="authStack" />
+            <result name="SUCCESS">ViewTopic.jsp</result>
+            <result name = "RMIERROR">
+                /index.jsp
+            </result>
+            <result name="ERROR">ViewTopic.jsp</result>
         </action>
     </package>
 </struts>
