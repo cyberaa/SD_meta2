@@ -35,6 +35,21 @@
         window.location.replace("/ViewIdea.action?idea=<s:property value="IdeaTitle"/>&DeleteResult=4");
     </script>
 </s:if>
+<s:if test="%{BuyResult=='1'}">
+    <script>
+        window.location.replace("/ViewIdea.action?idea=<s:property value="IdeaTitle"/>&BuyResult=4");
+    </script>
+</s:if>
+<s:if test="%{BuyResult=='2'}">
+    <script>
+        window.location.replace("/ViewIdea.action?idea=<s:property value="IdeaTitle"/>&BuyResult=5");
+    </script>
+</s:if>
+<s:if test="%{BuyResult=='3'}">
+    <script>
+        window.location.replace("/ViewIdea.action?idea=<s:property value="IdeaTitle"/>&BuyResult=6");
+    </script>
+</s:if>
 <style>
     body { background: url(img/background.png); }
 </style>
@@ -51,10 +66,10 @@
     <s:if test="%{DeleteResult=='3'}">
         <div class="isa_error">Error deleting the idea. Try again.</div>
     </s:if>
-    <s:if test="%{BuyResult=='3'}">
+    <s:if test="%{BuyResult=='4'}">
         <div class="isa_error">Error buying the idea. Try again.</div>
     </s:if>
-    <s:if test="%{BuyResult=='4'}">
+    <s:if test="%{BuyResult=='6'}">
         <div class="isa_success">The idea has been bought with success!</div>
     </s:if>
     <s:if test="%{BuyResult=='5'}">
@@ -65,7 +80,7 @@
 
     <hr>
      <s:if test="%{DeleteResult=='4'}">
-        <div class="isa_success">The selling price has been changed with success!</div>
+        <div class="isa_success">The idea has been deleted with success!</div>
      </s:if>
      <s:else>
 
@@ -135,25 +150,25 @@
 
                                 <!-- Selling Price-->
                                 <div class="control-group">
-                                    <label class="control-label" for="textinput">Selling Price (per Share)</label>
+                                    <label class="control-label" for="sellingPriceFieldt">Selling Price (per Share)</label>
                                     <div class="controls">
-                                        <input id="sellingPriceFieldt" name="textinput" type="text" placeholder="" class="input-mini">
+                                        <input id="sellingPriceFieldt" name="SellingPrice" type="text" placeholder="" class="input-mini">
 
                                     </div>
                                 </div>
 
                                 <!-- Buy Price-->
                                 <div class="control-group">
-                                    <label class="control-label" for="textinput">Buy price (per Share)</label>
+                                    <label class="control-label" for="buyPriceField">Buy price (per Share)</label>
                                     <div class="controls">
-                                        <input id="buyPriceField" name="textinput" type="text" placeholder="" class="input-mini">
+                                        <input id="buyPriceField" name="buyPrice" type="text" placeholder="" class="input-mini">
 
                                     </div>
                                 </div>
 
                                 <!-- Number of Shares-->
                                 <div class="control-group">
-                                    <label class="control-label" for="textinput">Number of Shares</label>
+                                    <label class="control-label" for="numberSharesField">Number of Shares</label>
                                     <div class="controls">
                                         <input id="numberSharesField" name="numberShares" type="text" placeholder="" class="input-mini">
 

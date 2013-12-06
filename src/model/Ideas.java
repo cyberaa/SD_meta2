@@ -76,5 +76,25 @@ public class Ideas {
         }
         return 0;
     }
+    public int buyShares(Features RMIServer, String ideaTitle, int userID, String n_shares, String maxprice, String finalPrice){
+        ArrayList<String> result;
+        try{
+            int numberShares = Integer.parseInt(n_shares);
+            double finalP = Double.parseDouble(finalPrice);
+            double max = Double.parseDouble(maxprice);
+            result = RMIServer.buyShares(ideaTitle,numberShares,userID,finalP,max,null);
+            if(result == null){
+                return -1;
+            }
+            if(result.size()==0){
+                return 0;
+            }
+            /*FIXME add Notifications?*/
+        }catch(Exception e){
+            System.out.println(e);
+            return -666;
+        }
+        return 1;
+    }
 
 }

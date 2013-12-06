@@ -13,11 +13,11 @@ import model.Features;
 public class ViewIdea extends Action {
     private String idea;
     private DetailsIdea ideaDet;
-    private char Buyresult;
+    private char BuyResult;
     private char SetResult;
     private char DeleteResult;
     public ViewIdea(){
-        Buyresult = 0;
+        BuyResult = 0;
         SetResult = 0;
         DeleteResult = 0;
     }
@@ -67,11 +67,11 @@ public class ViewIdea extends Action {
         SetResult = setResult;
     }
 
-    public char getBuyresult() {
-        return Buyresult;
+    public char getBuyResult() {
+        return BuyResult;
     }
 
-    public void setBuyresult(char buyresult) {
-        Buyresult = buyresult;
+    public void setBuyResult(char buyresult) {
+        BuyResult = buyresult;
     }
 }

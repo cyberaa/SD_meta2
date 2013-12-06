@@ -54,7 +54,7 @@ public interface Features extends Remote{
      *                <p>size - 4 = IdeaName </p>
      *                <p>size - 3 = IdeaDescription</p>
      *                <p>size - 2 = DEIcoins   </p>
-     *                <p>size - 1 = The ID of the parent Idea </p>
+     *                <p>size - 1 = The ID of the parent Idea (-1 in case of original idea)</p>
      * @param id_user Id of the user
      * @param ischild If the idea is a reply
      * @return the IdeaId or -1 in case of error or -2 in case of not enough money
@@ -70,19 +70,58 @@ public interface Features extends Remote{
      */
     public int newTopics(String data) throws RemoteException;
 
+    /**
+     * Function to get all the topics of the database
+     * @return An ArrayList<String> containig all the descriptions of the Topic
+     * @throws RemoteException
+     */
     public ArrayList<String> getTopics() throws RemoteException;
 
+    /**
+     * Return the Title of all the ideas Beloging to a Topic
+     * @param Topic the name of a topic
+     * @return ArrayList<String> containing the titles of all the ideas belonging to topic
+     * @throws RemoteException
+     */
     public ArrayList<String> getIdeas(String Topic) throws RemoteException;
 
+    /**
+     * Return the Idea info
+     * @param idea the title of the idea
+     * @return  ArrayList<String> containing the information of an idea
+     * @throws RemoteException
+     */
     public ArrayList<String> getIdeaDetails(String idea) throws RemoteException;
 
+    /**
+     *
+     * @param idea the title of the idea
+     * @return an arrayList with n times the sequence <username (a String,numberofshares (an Int),the selling price(a double)>
+     * @throws RemoteException
+     */
     public ArrayList<String> getSharesInfo(String idea)throws RemoteException;
 
-    public ArrayList<String> buyShares(String idea, int percentage, int ID_User, int sellingPrice, int maxprice, String timeStamp) throws RemoteException;
+    /**
+     * Buys some shares of an idea
+     * @param idea the title of the idea
+     * @param percentage the number of shares
+     * @param ID_User the id of the user
+     * @param sellingPrice the sellingPrice of the bought shares
+     * @param maxprice the max price to pay for each action
+     * @param timeStamp a time stamp (
+     * @return an array List of the users involved in the transaction [the Id of the seller, a message (notification) and the money spent]
+     * @throws RemoteException
+     */
+    public ArrayList<String> buyShares(String idea, int percentage, int ID_User, double sellingPrice, double maxprice, String timeStamp) throws RemoteException;
 
     public ArrayList<String> getTransactions(int ID_user,boolean limited) throws RemoteException;
 
-
+    /**
+     *
+     * @param ID_User the user ID
+     * @return 1 in case of success, -1 in case of error
+     * @throws RemoteException
+     */
     public int updateLastLogin(int ID_User) throws RemoteException ;
 
     public ArrayList<String> getuserIdeas(int ID_User) throws RemoteException;
@@ -127,6 +166,13 @@ public interface Features extends Remote{
      */
     public int saveFile(int idea, String filename, byte[] file) throws RemoteException;
 
+    /**
+     *
+     * @param idea the title of the idea
+     * @param ID_User the ID of the user
+     * @return  the percentage or -1 in case of error
+     * @throws RemoteException
+     */
     public int getPercentage(String idea, int ID_User) throws RemoteException;
 
     /**
