@@ -26,7 +26,7 @@
 
             <li><a href="<s:url value="submitIdea.jsp" />"><span class="glyphicon glyphicon-plus"></span> &nbsp; Submit Idea</a></li>
             <li><a href="<s:url action="GetPortfolio"/>"><span class="glyphicon glyphicon-user"></span> &nbsp; Portfolio</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-resize-full"></span>&nbsp; Transactions</a></li>
+            <li><a href="<s:url action="ViewTransaction" />"><span class="glyphicon glyphicon-resize-full"></span>&nbsp; Transactions</a></li>
             <li><a href="#"><span class="glyphicon glyphicon-star"></span>&nbsp; Watchlist</a></li>
             <li><a href="#"><span class="glyphicon glyphicon-book"></span>&nbsp; Hall of Fame</a></li>
             <li class="dropdown">

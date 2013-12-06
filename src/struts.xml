@@ -98,7 +98,14 @@
         </action>
         <action name="BuyIdea" class = "action.BuyIdea">
             <interceptor-ref name="authStack" />
-            <result name="SUCCESS" type="redirect">ViewIdea.jsp</result>
+            <result name="SUCCESS">ViewIdea.jsp</result>
+            <result name = "RMIERROR">
+                /index.jsp
+            </result>
+        </action>
+        <action name="ViewTransaction" class = "action.ViewTransactions">
+            <interceptor-ref name="authStack" />
+            <result name="SUCCESS">ViewTransactions.jsp</result>
             <result name = "RMIERROR">
                 /index.jsp
             </result>
