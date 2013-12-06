@@ -1,5 +1,7 @@
 package model;
 
+import java.math.BigDecimal;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 /**
@@ -14,7 +16,9 @@ public class DetailsIdea {
     private String description;
     private String date;
     private Double ideaValue;
+    private String ideaValueString;
     private Double initvalue;
+    private String initValueString;
     private ArrayList<String> topics;
     private ArrayList<String> owners;
 
@@ -53,6 +57,10 @@ public class DetailsIdea {
             System.out.println("ERRO getIdeaDetail"+e);
             return -666;
         }
+        BigDecimal big = new BigDecimal(ideaValue);
+        this.ideaValueString = new DecimalFormat("#0.0000").format(big);
+        big = new BigDecimal(initvalue);
+        this.initValueString = new DecimalFormat("#0.0000").format(big);
         return 1;
     }
 
@@ -121,5 +129,21 @@ public class DetailsIdea {
 
     public void setOwners(ArrayList<String> owners) {
         this.owners = owners;
+    }
+
+    public String getIdeaValueString() {
+        return ideaValueString;
+    }
+
+    public void setIdeaValueString(String ideaValueString) {
+        this.ideaValueString = ideaValueString;
+    }
+
+    public String getInitValueString() {
+        return initValueString;
+    }
+
+    public void setInitValueString(String initValueString) {
+        this.initValueString = initValueString;
     }
 }

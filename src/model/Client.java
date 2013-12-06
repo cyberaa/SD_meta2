@@ -5,6 +5,7 @@ import java.math.BigInteger;
 import java.rmi.Naming;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.text.DecimalFormat;
 
 /**
  * @author Bruno Caceiro - caceiro@student.dei.uc.pt
@@ -62,7 +63,7 @@ public class Client {
             }
         }
         BigDecimal big = new BigDecimal(DEICoins);
-        this.DEICoinsString = big.toString();
+        this.DEICoinsString = new DecimalFormat("#0.00").format(big);
         return DEICoins;
     }
 

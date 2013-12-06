@@ -192,8 +192,8 @@
                 <h3 class="media-heading"><s:property value="ideaDet.title"/></h3>
                 <p><s:property value="ideaDet.description"/></p>
                 <p></p>
-                <p><h5 class="media-heading">Idea Market Price:</h5> <s:property value="ideaDet.ideaValue"/></p>
-                <p><h5 class="media-heading">Idea Original Price:</h5> <s:property value="ideaDet.initvalue"/></p>
+                <p><h5 class="media-heading">Idea Market Price:</h5> <s:property value="ideaDet.ideaValueString"/></p>
+                <p><h5 class="media-heading">Idea Original Price:</h5> <s:property value="ideaDet.initValueString"/></p>
                 <p><h5 class="media-heading">Creation date:</h5> <s:property value="ideaDet.date"/></p>
                 <p><h5 class="media-heading">Owners of the idea:</h5>
                 <s:iterator var="owners" value="ideaDet.owners">

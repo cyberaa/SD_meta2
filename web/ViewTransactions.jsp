@@ -33,8 +33,7 @@
             <p></p>
             <div class="media">
                 <div class="media-body">
-                    <p></p>
-                    <textarea name = "transactionsList" rows="3" id = "topicsList" style = "resize: none; width: 100%;" readonly="true"><s:iterator var="transaction" value="Transac"><s:property value="transaction"/></s:iterator></textarea>
+                    <textarea name = "transactionsList" rows="10" id = "topicsList" style = "resize: none; width: 100%;" readonly="true"><s:iterator var="transaction" value="Transac"><s:property value="transaction"/></s:iterator></textarea>
                 </div>
             </div>
         </div>
