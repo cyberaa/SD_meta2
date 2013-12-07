@@ -18,6 +18,7 @@ public class NewClient {
     private String email;
     private String name;
     private String lastName;
+    private String token;
 
     private boolean reconnect = false;
     private Features RMIServer = null;
@@ -221,4 +222,11 @@ public class NewClient {
         return "SUCCESS";
     }
 
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
 }

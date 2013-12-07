@@ -124,5 +124,9 @@
                 /index.jsp
             </result>
         </action>
+
+        <action name="FacebookLogin" class = "action.FacebookLogin">
+            <result name="SUCCESS" type="redirect">GetPortfolio.action</result>
+        </action>
     </package>
 </struts>
