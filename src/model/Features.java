@@ -107,7 +107,7 @@ public interface Features extends Remote{
      * @param percentage the number of shares
      * @param ID_User the id of the user
      * @param sellingPrice the sellingPrice of the bought shares
-     * @param maxprice the max price to pay for each action
+     * @param maxprice the max price to pay for all of the actions
      * @param timeStamp a time stamp (
      * @return an array List of the users involved in the transaction [the Id of the seller, a message (notification) and the money spent]
      * @throws RemoteException
@@ -197,6 +197,15 @@ public interface Features extends Remote{
     public int removeFromWatchList(int ID_User, int ID_idea) throws RemoteException;
 
     /**
+     * To get the state of the idea (is being watch or not)
+     * @param ID_User
+     * @param ID_idea
+     * @return -1 in case of error, 0 in case of not being watched, 1 if being watched
+     * @throws RemoteException
+     */
+    public int isInWatchList(int ID_User, int ID_idea) throws RemoteException;
+
+    /**
      * Method to Add an Idea to the Hall of Fame (can only be done by root)
      * @param ID_Idea ID of Idea
      * @return
@@ -218,4 +227,12 @@ public interface Features extends Remote{
      * @throws RemoteException
      */
     public ArrayList<String> searchIdeas(String idea) throws RemoteException;
+
+    /**
+     * GETS THE USER WATCHlIST
+     * @param ID_User
+     * @return the return is equal to the userIdea
+     * @throws RemoteException
+     */
+    public ArrayList<String> viewWatchList(int ID_User) throws RemoteException;
 }

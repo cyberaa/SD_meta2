@@ -12,7 +12,7 @@
     <title>RMIERROR!!!!</title>
 </head>
 <body>
-O RMI DEU BODE!!!!!
+O RMI NÃO FUNCIONA!!!!!
 ESTAMOS SEM BASE DE DADOS!!
 <a href="http://localhost:8080">PRESS TO GO BACK!!!</a>
 </body>

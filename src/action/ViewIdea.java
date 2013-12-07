@@ -16,6 +16,7 @@ public class ViewIdea extends Action {
     private char BuyResult;
     private char SetResult;
     private char DeleteResult;
+    private char watchListResult;
     public ViewIdea(){
         BuyResult = 0;
         SetResult = 0;
@@ -24,10 +25,10 @@ public class ViewIdea extends Action {
     public String execute(){
         Features server = getRMIserver();
         ideaDet = new DetailsIdea();
-        int answer = ideaDet.getIdeaDetails(server, getIdea());
+        int answer = ideaDet.getIdeaDetails(server, getIdea(),getUserID());
         if(answer==-666){
             server = getRMIserver();
-            answer = ideaDet.getIdeaDetails(server, getIdea());
+            answer = ideaDet.getIdeaDetails(server, getIdea(),getUserID());
             if(answer==-666){
                 return "RMIERROR";
             }
@@ -73,5 +74,13 @@ public class ViewIdea extends Action {
 
     public void setBuyResult(char buyresult) {
         BuyResult = buyresult;
+    }
+
+    public char getWatchListResult() {
+        return watchListResult;
+    }
+
+    public void setWatchListResult(char watchListResult) {
+        this.watchListResult = watchListResult;
     }
 }

@@ -110,5 +110,19 @@
                 /index.jsp
             </result>
         </action>
+        <action name="WatchList" class = "action.WatchList">
+            <interceptor-ref name="authStack" />
+            <result name="SUCCESS">ViewIdea.jsp</result>
+            <result name = "RMIERROR">
+                /index.jsp
+            </result>
+        </action>
+        <action name="ViewWatchList" class = "action.ViewWatchList">
+            <interceptor-ref name="authStack" />
+            <result name="SUCCESS">WatchList.jsp</result>
+            <result name = "RMIERROR">
+                /index.jsp
+            </result>
+        </action>
     </package>
 </struts>

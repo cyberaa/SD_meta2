@@ -17,17 +17,18 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-sd-video"></span>&nbsp; IdeaBroker</a>
+        <a class="navbar-brand" href="<s:url action="GetPortfolio"/>"><span class="glyphicon glyphicon-sd-video"></span>&nbsp; IdeaBroker</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-
+            <s:if test="%{UserID>1}">
             <li><a href="<s:url value="submitIdea.jsp" />"><span class="glyphicon glyphicon-plus"></span> &nbsp; Submit Idea</a></li>
             <li><a href="<s:url action="GetPortfolio"/>"><span class="glyphicon glyphicon-user"></span> &nbsp; Portfolio</a></li>
             <li><a href="<s:url action="ViewTransaction" />"><span class="glyphicon glyphicon-resize-full"></span>&nbsp; Transactions</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-star"></span>&nbsp; Watchlist</a></li>
+            <li><a href="<s:url action="ViewWatchList" />"><span class="glyphicon glyphicon-star"></span>&nbsp; Watchlist</a></li>
+            </s:if>
             <li><a href="#"><span class="glyphicon glyphicon-book"></span>&nbsp; Hall of Fame</a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Search by <b class="caret"></b></a>

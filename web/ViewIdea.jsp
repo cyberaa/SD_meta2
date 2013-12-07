@@ -50,6 +50,21 @@
         window.location.replace("/ViewIdea.action?idea=<s:property value="IdeaTitle"/>&BuyResult=6");
     </script>
 </s:if>
+<s:if test="%{watchListResult=='1'}">
+    <script>
+        window.location.replace("/ViewIdea.action?idea=<s:property value="IdeaTitle"/>&watchListResult=4");
+    </script>
+</s:if>
+<s:if test="%{watchListResult=='2'}">
+    <script>
+        window.location.replace("/ViewIdea.action?idea=<s:property value="IdeaTitle"/>&watchListResult=5");
+    </script>
+</s:if>
+<s:if test="%{watchListResult=='3'}">
+    <script>
+        window.location.replace("/ViewIdea.action?idea=<s:property value="IdeaTitle"/>&watchListResult=6");
+    </script>
+</s:if>
 <style>
     body { background: url(img/background.png); }
 </style>
@@ -74,6 +89,15 @@
     </s:if>
     <s:if test="%{BuyResult=='5'}">
         <div class="isa_info">The buy request has been added to the queue!</div>
+    </s:if>
+    <s:if test="%{watchListResult=='4'}">
+        <div class="isa_error">Error modifying the WatchList the idea. Try again.!</div>
+    </s:if>
+    <s:if test="%{watchListResult=='5'}">
+        <div class="isa_success">The idea has been removed from the WatchList!</div>
+    </s:if>
+    <s:if test="%{watchListResult=='6'}">
+        <div class="isa_success">The idea has been added to the WatchList!</div>
     </s:if>
         <h1>Details of the idea '<s:property value="ideaDet.title"/>':</h1>
         <p></p>
@@ -135,7 +159,6 @@
                 </div><!-- /.modal-content -->
             </form><!-- /.modal-dialog -->
         </div><!-- /.modal -->
-
         <!-- Modal Buy Shares-->
         <div class="modal fade" id="BuyIdeas<s:property value="#idea.ideaID"/>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -211,16 +234,41 @@
                 <p></p>
 
                 <div class="btn-group">
-                    <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#BuyIdeas<s:property value="#idea.ideaID"/>">
-                        <span class="glyphicon glyphicon-euro"></span> Buy Shares
-                    </button>
-                    <span></span>
-                    <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#setShares<s:property value="#idea.ideaID"/>">
-                        <span class="glyphicon glyphicon-cog"></span> Set Shares
-                    </button>
-                    <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#Delete<s:property value="#idea.ideaID"/>">
-                        <span class="glyphicon glyphicon-trash"></span> Delete
-                    </button>
+                    <s:if test="%{isRoot==false}">
+                            <div class="isa_success">The idea has been deleted with success!</div>
+
+                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#BuyIdeas<s:property value="#idea.ideaID"/>">
+                            <span class="glyphicon glyphicon-euro"></span> Buy Shares
+                        </button>
+                        <span></span>
+                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#setShares<s:property value="#idea.ideaID"/>">
+                            <span class="glyphicon glyphicon-cog"></span> Set Shares
+                        </button>
+                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#Delete<s:property value="#idea.ideaID"/>">
+                            <span class="glyphicon glyphicon-trash"></span> Delete
+                        </button>
+                        <s:if test="%{inWatchList==0}">
+                        <a href="Watchlist.action?idea=<s:property value="#idea.title"/>">
+                            <button class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-star"></span> Add to WatchList
+                            </button>
+                        </a>
+                        </s:if>
+                        <s:else>
+                            <a href="Watchlist.action?idea=<s:property value="#idea.title"/>">
+                                <button class="btn btn-primary btn-sm">
+                                    <span class="glyphicon glyphicon-star"></span> Remove from WatchList
+                                </button>
+                            </a>
+                        </s:else>
+                    </s:if>
+                    <s:else>
+                        <a href="Takeover.action?idea=<s:property value="#idea.title"/>">
+                            <button class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-star"></span> Takeover
+                            </button>
+                        </a>
+                    </s:else>
                 </div>
             </div>
         </div>

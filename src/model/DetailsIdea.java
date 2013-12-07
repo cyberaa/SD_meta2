@@ -19,6 +19,9 @@ public class DetailsIdea {
     private String ideaValueString;
     private Double initvalue;
     private String initValueString;
+    private int numberShares;
+    private int inWatchList;
+    private boolean isRoot;
     private ArrayList<String> topics;
     private ArrayList<String> owners;
 
@@ -27,7 +30,7 @@ public class DetailsIdea {
         owners = new ArrayList<String>();
     }
 
-    public int getIdeaDetails(Features RMIServer,String ideaName){
+    public int getIdeaDetails(Features RMIServer,String ideaName, int UserID){
         ArrayList<String> aux;
         try {
             if(RMIServer!=null){
@@ -36,18 +39,26 @@ public class DetailsIdea {
                     return -1;
                 }else{
                     ideaID = aux.get(0);
-                    title = aux.get(0);
-                    description =aux.get(1);
-                    date = aux.get(2);
-                    initvalue = Double.parseDouble(aux.get(3));
-                    ideaValue = Double.parseDouble(aux.get(4));
-                    int numbertopics = Integer.parseInt(aux.get(aux.size()-2))+5;
-                    for (int i=5;i<(numbertopics);i++){
+                    title = aux.get(1);
+                    description = aux.get(2);
+                    date = aux.get(3);
+                    initvalue = Double.parseDouble(aux.get(4));
+                    ideaValue = Double.parseDouble(aux.get(5));
+                    int numbertopics = Integer.parseInt(aux.get(aux.size()-2))+6;
+                    for (int i=6;i<(numbertopics);i++){
                         topics.add(aux.get(i));
                     }
                     int numberowners = Integer.parseInt(aux.get(aux.size()-1))+numbertopics;
                     for(int i=numbertopics;i<numberowners;i++){
                         owners.add(aux.get(i));
+                    }
+                    int answer = RMIServer.isInWatchList(UserID,Integer.parseInt(aux.get(0)));
+                    if (answer ==-1){
+                        return -1;
+                    }
+                    inWatchList = answer;
+                    if (UserID==1){
+                        isRoot=true;
                     }
                 }
             }else{
@@ -145,5 +156,29 @@ public class DetailsIdea {
 
     public void setInitValueString(String initValueString) {
         this.initValueString = initValueString;
+    }
+
+    public int getInWatchList() {
+        return inWatchList;
+    }
+
+    public void setInWatchList(int inWatchList) {
+        this.inWatchList = inWatchList;
+    }
+
+    public boolean getRoot() {
+        return isRoot;
+    }
+
+    public void setRoot(boolean root) {
+        isRoot = root;
+    }
+
+    public int getNumberShares() {
+        return numberShares;
+    }
+
+    public void setNumberShares(int numberShares) {
+        this.numberShares = numberShares;
     }
 }
