@@ -143,7 +143,7 @@ public class Ideas {
         try {
             if(RMIServer!=null){
                 ArrayList<String> ideasList;
-                //ideasList = RMIServer.view
+                ideasList = RMIServer.viewHallOfFame();
                 if(ideasList==null){
                     return null;
                 }

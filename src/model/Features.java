@@ -235,4 +235,11 @@ public interface Features extends Remote{
      * @throws RemoteException
      */
     public ArrayList<String> viewWatchList(int ID_User) throws RemoteException;
+
+    /**
+     * to get the halloffame
+     * @return the usual
+     * @throws RemoteException
+     */
+    public ArrayList<String> viewHallOfFame() throws RemoteException;
 }
