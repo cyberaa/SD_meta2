@@ -1,61 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ArtifactsWorkspaceSettings">
-    <artifacts-to-build>
-      <artifact name="meta2:war exploded" />
-    </artifacts-to-build>
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" name="Default" comment="Já submete ideias!!!!!!!!!&#10;(also, já guarda a sessão)">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/model/LoginBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/standard.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/action/Action.java" afterPath="$PROJECT_DIR$/src/action/Action.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Client.java" afterPath="$PROJECT_DIR$/src/model/Client.java" />
+    <list default="true" id="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" name="Default" comment="merdas">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Features.java" afterPath="$PROJECT_DIR$/src/model/Features.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/action/Login.java" afterPath="$PROJECT_DIR$/src/action/Login.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/NewIdea.java" afterPath="$PROJECT_DIR$/src/model/NewIdea.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/action/SubmitIdea.java" afterPath="$PROJECT_DIR$/src/action/SubmitIdea.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/submitIdea.jsp" afterPath="$PROJECT_DIR$/web/submitIdea.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/meta2.iml" afterPath="$PROJECT_DIR$/meta2.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="meta2.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.jsp" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385504247074" ignored="false" />
-    <file path="/struts.xml" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385503541169" ignored="false" />
+    <file path="/index.jsp" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1386442323943" ignored="false" />
+    <file path="/struts.xml" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1386441743735" ignored="false" />
     <file path="/HelloWorld.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385226528944" ignored="false" />
-    <file path="/style.css" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385504312734" ignored="false" />
+    <file path="/style.css" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385219282557" ignored="false" />
     <file path="/success.jsp" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385227117882" ignored="false" />
-    <file path="/Dummy.txt" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385685840112" ignored="false" />
-    <file path="/Login.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385685328811" ignored="false" />
-    <file path="/Features.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385661596832" ignored="false" />
+    <file path="/Dummy.txt" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1386447142108" ignored="false" />
+    <file path="/Login.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385410403603" ignored="false" />
+    <file path="/Features.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385505552011" ignored="false" />
     <file path="D:/Dropbox/foDEI_nos/SD/Caceiro + Cardoso/Projecto/serverRMI/src/ImplementedFeatures.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385233265432" ignored="false" />
     <file path="D:/Dropbox/foDEI_nos/SD/Caceiro + Cardoso/Projecto/serverRMI/src/model/ConnectionPool.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385233253564" ignored="false" />
-    <file path="/fragment.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385233256936" ignored="false" />
+    <file path="/fragment.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1386435675178" ignored="false" />
     <file path="D:/Dropbox/foDEI_nos/SD/Caceiro + Cardoso/Projecto/serverRMI/src/model/Features.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385233265431" ignored="false" />
     <file path="D:/Dropbox/foDEI_nos/SD/Caceiro + Cardoso/Projecto/serverRMI/src/ServerRMI.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385233347987" ignored="false" />
     <file path="D:/Dropbox/foDEI_nos/SD/Caceiro + Cardoso/Projecto/serverRMI/src/model/ImplementedFeatures.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385234222640" ignored="false" />
-    <file path="/ServerRMI.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385677782733" ignored="false" />
+    <file path="/ServerRMI.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385233335342" ignored="false" />
     <file path="D:/Dropbox/foDEI_nos/SD/Caceiro + Cardoso/Projecto/serverRMI/src/META-INF/MANIFEST.MF" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385234253516" ignored="false" />
     <file path="/error.jsp" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385406322218" ignored="false" />
-    <file path="/Action.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385685265876" ignored="false" />
-    <file path="/RMIerror.jsp" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385502139538" ignored="false" />
-    <file path="/Register.jsp" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385510664347" ignored="false" />
-    <file path="/registerStyle.css" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385480592553" ignored="false" />
-    <file path="/Client.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385682844676" ignored="false" />
-    <file path="/submitIdea.jsp" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385678755571" ignored="false" />
-    <file path="/FacebookLogin.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385500633150" ignored="false" />
-    <file path="/Utilities.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385504712389" ignored="false" />
-    <file path="/bootstrap.css" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385570451571" ignored="false" />
-    <file path="D:/Dropbox/foDEI_nos/SD/Caceiro + Cardoso/Projecto 2/serverRMI/src/model/ImplementedFeatures.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385681586177" ignored="false" />
-    <file path="/ImplementedFeatures.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385680623191" ignored="false" />
-    <file path="dbtable:/b869c6e2/df8765b1-4ffe-4b39-a150-6b3c9bcb4c38/bomsuces_IdeaBroker..Topic" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385664327746" ignored="false" />
-    <file path="D:/Dropbox/foDEI_nos/SD/Caceiro + Cardoso/Projecto 2/serverRMI/src/model/ServerRMI.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385681603418" ignored="false" />
-    <file path="/ConnectionPool.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385667572121" ignored="false" />
-    <file path="D:/Dropbox/foDEI_nos/SD/Caceiro + Cardoso/Projecto 2/serverRMI/src/model/ConnectionPool.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385667716771" ignored="false" />
-    <file path="/LoginBean.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385680307177" ignored="false" />
-    <file path="/SubmitIdea.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385685287734" ignored="false" />
-    <file path="/NewIdea.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385685592227" ignored="false" />
-    <file path="D:/Dropbox/foDEI_nos/SD/Caceiro + Cardoso/Projecto 2/serverRMI/src/model/Features.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385685679890" ignored="false" />
+    <file path="/Action.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385410518548" ignored="false" />
+    <file path="/Register.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385562468542" ignored="false" />
+    <file path="/NewClient.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1386440416114" ignored="false" />
+    <file path="/Register.jsp" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385512784328" ignored="false" />
+    <file path="/submitIdea.jsp" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385678299267" ignored="false" />
+    <file path="/SubmitIdea.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385677831344" ignored="false" />
+    <file path="/NewIdea.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385677494842" ignored="false" />
+    <file path="/notifications.css" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1385736220036" ignored="false" />
+    <file path="/Ideas.jsp" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1386089443366" ignored="false" />
+    <file path="/header.jsp" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1386090855022" ignored="false" />
+    <file path="/MainScreen.jsp" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1386091362381" ignored="false" />
+    <file path="/mainPageStyle.css" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1386091650658" ignored="false" />
+    <file path="/STYLEDOCARALHOPARAIDEIAS.css" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1386092290250" ignored="false" />
+    <file path="/FacebookLogin.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1386443250932" ignored="false" />
+    <file path="/LoginBean.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1386443870857" ignored="false" />
+    <file path="$USER_HOME$/Dropbox/fodei_nos/SD/Caceiro + Cardoso/Projecto 2/serverRMI/src/model/ImplementedFeatures.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1386433496238" ignored="false" />
+    <file path="$USER_HOME$/Dropbox/fodei_nos/SD/Caceiro + Cardoso/Projecto 2/serverRMI/src/model/Features.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1386433496238" ignored="false" />
+    <file path="$PROJECT_DIR$/../testeRMI/src/model/ImplementedFeatures.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1386446612771" ignored="false" />
+    <file path="/ImplementedFeatures.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1386444120231" ignored="false" />
+    <file path="$PROJECT_DIR$/../testeRMI/src/model/Features.java" changelist="c54d0a6a-39e4-4def-9249-ae0a12f3fa97" time="1386437135541" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +57,11 @@
   </component>
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
+  </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+    <sortChildren value="false" />
   </component>
   <component name="DebuggerManager">
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
@@ -116,25 +110,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SubmitIdea.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/action/SubmitIdea.java">
+      <file leaf-file-name="FacebookLogin.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/action/FacebookLogin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="27" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0">
+            <state line="85" column="42" selection-start="2159" selection-end="2159" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewIdea.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/NewIdea.java">
+      <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="36" selection-start="2115" selection-end="2115" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="docComment;class#NewIdea#0" expanded="true" />
-                <element signature="docComment;method#getTitleIdea#0;class#NewIdea#0" expanded="true" />
-                <element signature="e#1838#1846#0" expanded="true" />
-              </folding>
+            <state line="48" column="42" selection-start="1703" selection-end="1703" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewClient.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/NewClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="220" column="36" selection-start="5699" selection-end="5699" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -145,7 +143,34 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="59" selection-start="621" selection-end="621" vertical-scroll-proportion="-8.16">
+            <state line="145" column="35" selection-start="5601" selection-end="5614" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Action.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/action/Action.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="0" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Login.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/action/Login.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="50" selection-start="572" selection-end="614" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginBean.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/LoginBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="49" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -154,69 +179,17 @@
       <file leaf-file-name="Client.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="0" selection-start="1078" selection-end="1212" vertical-scroll-proportion="0.0">
+            <state line="15" column="13" selection-start="392" selection-end="392" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="22" selection-start="4514" selection-end="4514" vertical-scroll-proportion="-8.307693">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginBean.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/model/LoginBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="28" selection-start="1328" selection-end="1328" vertical-scroll-proportion="0.4701087">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Action.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/action/Action.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="35" selection-start="593" selection-end="593" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="docComment;method#setSession#0;class#Action#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Login.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/action/Login.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="12" selection-start="1026" selection-end="1045" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Register.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/action/Register.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="23" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Features.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Features.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/model/Features.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="17" selection-start="0" selection-end="3464" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="docComment;method#newIdea#0;class#Features#0" expanded="true" />
-              </folding>
+            <state line="248" column="0" selection-start="8297" selection-end="8297" vertical-scroll-proportion="0.93348116">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -240,22 +213,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/web/css/style.css" />
-        <option value="$PROJECT_DIR$/src/model/Utilities.java" />
-        <option value="$PROJECT_DIR$/src/action/FacebookLogin.java" />
-        <option value="$PROJECT_DIR$/web/Register.jsp" />
-        <option value="$PROJECT_DIR$/web/css/bootstrap.css" />
-        <option value="$PROJECT_DIR$/web/css/submitStyle.css" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/model/NewClient.java" />
+        <option value="$PROJECT_DIR$/web/Notifications/notifications.css" />
         <option value="$PROJECT_DIR$/web/submitIdea.jsp" />
-        <option value="$PROJECT_DIR$/src/model/Features.java" />
-        <option value="$PROJECT_DIR$/src/model/Client.java" />
-        <option value="$PROJECT_DIR$/src/action/Action.java" />
-        <option value="$PROJECT_DIR$/src/action/Login.java" />
-        <option value="$PROJECT_DIR$/src/action/SubmitIdea.java" />
-        <option value="$PROJECT_DIR$/src/model/NewIdea.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/Ideas.jsp" />
+        <option value="$PROJECT_DIR$/web/Ideas.jsp" />
+        <option value="$PROJECT_DIR$/web/header.jsp" />
+        <option value="$PROJECT_DIR$/web/css/mainPageStyle.css" />
+        <option value="$PROJECT_DIR$/web/css/STYLEDOCARALHOPARAIDEIAS.css" />
+        <option value="$PROJECT_DIR$/web/MainScreen.jsp" />
+        <option value="$PROJECT_DIR$/web/css/style.css" />
+        <option value="$PROJECT_DIR$/web/css/registerStyle.css" />
+        <option value="$PROJECT_DIR$/src/model/NewClient.java" />
+        <option value="$PROJECT_DIR$/src/struts.xml" />
+        <option value="$PROJECT_DIR$/src/action/FacebookLogin.java" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/model/LoginBean.java" />
+        <option value="$PROJECT_DIR$/src/model/Features.java" />
       </list>
     </option>
   </component>
@@ -267,10 +240,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="54" />
+    <option name="y" value="22" />
+    <option name="width" value="1386" />
+    <option name="height" value="878" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -289,7 +262,7 @@
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
-      <flattenPackages ProjectPane="false" />
+      <flattenPackages />
       <showMembers />
       <showModules />
       <showLibraryContents />
@@ -300,7 +273,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -330,24 +302,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="meta2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SD_meta2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -401,8 +355,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meta2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SD_meta2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -411,10 +380,10 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="preferences.applicationServers" />
+    <property name="options.lastSelected" value="editor.preferences.appearance" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="D:/Dropbox/foDEI_nos/SD/Caceiro + Cardoso/Projecto 2/serverRMI" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Dropbox/fodei_nos/SD/Caceiro + Cardoso/Projecto 2/serverRMI" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -426,128 +395,17 @@
     <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/img" />
+      <recent name="$PROJECT_DIR$/web/css" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\d_cardoso\Documents\GitHub\SD_meta2\web" />
+      <recent name="$PROJECT_DIR$/web" />
     </key>
   </component>
-  <component name="RestoreUpdateTree">
-    <UpdateInfo date="Moments ago" ActionInfo="_Update">
-      <UpdatedFiles>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated from server" />
-          <option name="myStatusName" value="Changed on server" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CHANGED_ON_SERVER" />
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Updated" />
-            <option name="myStatusName" value="Changed" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="UPDATED" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/action/SubmitIdea.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/model/NewIdea.java</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/struts.xml</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/web/submitIdea.jsp</PATH>
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Created" />
-            <option name="myStatusName" value="Created" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="CREATED" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Deleted" />
-            <option name="myStatusName" value="Deleted" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="true" />
-            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Restored" />
-            <option name="myStatusName" value="Will be restored" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="RESTORED" />
-          </FILE-GROUP>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Modified" />
-          <option name="myStatusName" value="Modified" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MODIFIED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Skipped" />
-          <option name="myStatusName" value="Skipped" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SKIPPED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with conflicts" />
-          <option name="myStatusName" value="Will be merged with conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_CONFLICTS" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with tree conflicts" />
-          <option name="myStatusName" value="Merged with tree conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with property conflicts" />
-          <option name="myStatusName" value="Will be merged with property conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged" />
-          <option name="myStatusName" value="Will be merged" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Not in repository" />
-          <option name="myStatusName" value="Not in repository" />
-          <option name="mySupportsDeletion" value="true" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UNKNOWN" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally added" />
-          <option name="myStatusName" value="Locally added" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_ADDED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally removed" />
-          <option name="myStatusName" value="Locally removed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_REMOVED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Switched" />
-          <option name="myStatusName" value="Switched" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SWITCHED" />
-        </FILE-GROUP>
-      </UpdatedFiles>
-    </UpdateInfo>
-  </component>
   <component name="RunManager" selected="Tomcat Server.index.jsp">
-    <configuration default="false" name="RMIerror.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 7.0">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/login.action" />
+    <configuration default="false" name="index.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 7.0">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/index.jsp" />
       <deployment>
         <artifact name="meta2:war exploded">
           <settings>
@@ -556,7 +414,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="RMIerror_jsp_meta2" />
+        <option name="BASE_DIRECTORY_NAME" value="index_jsp_meta2_2" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -565,7 +423,7 @@
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="59434" />
+        <option name="DEBUG_PORT" value="" />
         <option name="TRANSPORT" value="0" />
         <option name="LOCAL" value="true" />
       </RunnerSettings>
@@ -585,46 +443,6 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method>
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="meta2:war exploded" />
-        </option>
-      </method>
-    </configuration>
-    <configuration default="false" name="index.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 7.0">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/login.action" />
-      <deployment>
-        <artifact name="meta2:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="index_jsp_meta2_3" />
-      </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -755,16 +573,13 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.RMIerror.jsp" />
-      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.index.jsp" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.index.jsp" />
     </list>
     <recent_temporary>
-      <list size="4">
+      <list size="2">
         <item index="0" class="java.lang.String" itemvalue="Tomcat Server.index.jsp" />
-        <item index="1" class="java.lang.String" itemvalue="Tomcat Server.RMIerror.jsp" />
-        <item index="2" class="java.lang.String" itemvalue="Tomcat Server.index.jsp" />
-        <item index="3" class="java.lang.String" itemvalue="Tomcat Server.index.jsp" />
+        <item index="1" class="java.lang.String" itemvalue="Tomcat Server.index.jsp" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -868,66 +683,86 @@
       <created>1385406678906</created>
       <updated>1385406678906</updated>
     </task>
-    <task id="LOCAL-00019" summary="já nem me lembro o que fiz...">
-      <created>1385461712362</created>
-      <updated>1385461712362</updated>
+    <task id="LOCAL-00019" summary="Starting Register">
+      <created>1385482552112</created>
+      <updated>1385482552112</updated>
     </task>
-    <task id="LOCAL-00020" summary="já nem me lembro o que fiz...">
-      <created>1385476653317</created>
-      <updated>1385476653317</updated>
+    <task id="LOCAL-00020" summary="Starting Register with Model and Action. Missing connection to database!  MÃE, ESTOU NO GITHUB!!!!!">
+      <created>1385502449356</created>
+      <updated>1385502449356</updated>
     </task>
-    <task id="LOCAL-00021" summary="já nem me lembro o que fiz...">
-      <created>1385481456870</created>
-      <updated>1385481456870</updated>
+    <task id="LOCAL-00021" summary="Dia 12314565423, ainda não regista. Está quase.">
+      <created>1385505179926</created>
+      <updated>1385505179926</updated>
     </task>
-    <task id="LOCAL-00022" summary="Client">
-      <created>1385481975229</created>
-      <updated>1385481975229</updated>
+    <task id="LOCAL-00022" summary="Fiz merdas">
+      <created>1385506824626</created>
+      <updated>1385506824626</updated>
     </task>
-    <task id="LOCAL-00023" summary="lolololololo">
-      <created>1385483671323</created>
-      <updated>1385483671323</updated>
+    <task id="LOCAL-00023" summary="Register and Login ready!">
+      <created>1385512993258</created>
+      <updated>1385512993258</updated>
     </task>
-    <task id="LOCAL-00024" summary="lolololololo">
-      <created>1385501459642</created>
-      <updated>1385501459642</updated>
+    <task id="LOCAL-00024" summary="New looks on Submit Idea">
+      <created>1385545719315</created>
+      <updated>1385545719315</updated>
     </task>
-    <task id="LOCAL-00025" summary="fodes tudo caceiro!!!">
-      <created>1385502642629</created>
-      <updated>1385502642629</updated>
+    <task id="LOCAL-00025" summary="cenas fodas">
+      <created>1385545915746</created>
+      <updated>1385545915746</updated>
     </task>
-    <task id="LOCAL-00026" summary="ja regista (FIXME. FAZER PROTECCOES)">
-      <created>1385510906694</created>
-      <updated>1385510906694</updated>
+    <task id="LOCAL-00026" summary="Preparing to submit ideas">
+      <created>1385562766789</created>
+      <updated>1385562766789</updated>
     </task>
-    <task id="LOCAL-00027" summary="Features are now commented (and other stuff)">
-      <created>1385674521217</created>
-      <updated>1385674521217</updated>
+    <task id="LOCAL-00027" summary="merdas">
+      <created>1385563030930</created>
+      <updated>1385563030930</updated>
     </task>
-    <task id="LOCAL-00028" summary="já não me lembro do que fiz">
-      <created>1385675480019</created>
-      <updated>1385675480019</updated>
+    <task id="LOCAL-00028" summary="New Main Screen (landing page) SO MUCH PRETTY">
+      <created>1385638742214</created>
+      <updated>1385638742214</updated>
     </task>
-    <task id="LOCAL-00029" summary="button add topic now works">
-      <created>1385676926107</created>
-      <updated>1385676926107</updated>
+    <task id="LOCAL-00029" summary="Submit Idea almost ready">
+      <created>1385678409411</created>
+      <updated>1385678409411</updated>
     </task>
-    <task id="LOCAL-00030" summary="só para ti caceiro,que estavas a refilar dos warnings">
-      <created>1385678608689</created>
-      <updated>1385678608689</updated>
+    <task id="LOCAL-00030" summary="Notificações mais bonitas. Cardouzo é um noob a escolher cores">
+      <created>1385736371701</created>
+      <updated>1385736371701</updated>
     </task>
-    <task id="LOCAL-00031" summary="já não me lembro do que fiz">
-      <created>1385679083040</created>
-      <updated>1385679083040</updated>
+    <task id="LOCAL-00031" summary="STYLEDOCARALHOPARAIDEAS&#10;&#10;ESTÁ TUDO, SÓ FALTA FUNCIONAR">
+      <created>1386089342916</created>
+      <updated>1386089342916</updated>
     </task>
-    <task id="LOCAL-00032" summary="botão add topic já funciona bem como o caralho!">
-      <created>1385679258230</created>
-      <updated>1385679258230</updated>
+    <task id="LOCAL-00032" summary="Sou um noob e não sei fechar divs">
+      <created>1386089522499</created>
+      <updated>1386089522499</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Está decidido. Vou para design.">
+      <created>1386092523284</created>
+      <updated>1386092523284</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Cardooooouuuuzo burro">
+      <created>1386092693536</created>
+      <updated>1386092693536</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Cadeira de Merda. Só apetece cagar nisto">
+      <created>1386418426957</created>
+      <updated>1386418426957</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Novas Libraries">
+      <created>1386430457953</created>
+      <updated>1386430457953</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Faz Login e Registo com o facebook">
+      <created>1386447159774</created>
+      <updated>1386447159774</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
-  <component name="TodoView" selected-index="4">
+  <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
       <are-packages-shown value="false" />
       <are-modules-shown value="false" />
@@ -948,34 +783,34 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="54" y="22" width="1386" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1119403" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298585" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39863715" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31175467" sideWeight="0.4469697" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18787879" sideWeight="0.28620103" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32453826" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32849604" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32879046" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.57069844" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24944155" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1621212" sideWeight="0.62350935" order="0" side_tool="false" content_ui="combo" x="15" y="152" width="228" height="587" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37649062" sideWeight="0.5530303" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14253731" sideWeight="0.6490765" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35092348" sideWeight="0.5530303" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32849604" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -983,7 +818,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_NEW_TODO" value="true" />
     <option name="myTodoPanelSettings">
@@ -1021,7 +856,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Já submete ideias!!!!!!!!!&#10;(also, já guarda a sessão)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Faz Login e Registo com o facebook" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1040,18 +875,25 @@
     <MESSAGE value="o facebook já trabalha" />
     <MESSAGE value="login com bomsucessosummerfest!" />
     <MESSAGE value="com página principal do pisso do caceiro" />
-    <MESSAGE value="já nem me lembro o que fiz..." />
-    <MESSAGE value="Client" />
-    <MESSAGE value="lolololololo" />
-    <MESSAGE value="fodes tudo caceiro!!!" />
-    <MESSAGE value="ja regista (FIXME. FAZER PROTECCOES)" />
-    <MESSAGE value="Features are now commented (and other stuff)" />
-    <MESSAGE value="button add topic now works" />
-    <MESSAGE value="só para ti caceiro,que estavas a refilar dos warnings" />
-    <MESSAGE value="já não me lembro do que fiz" />
-    <MESSAGE value="botão add topic já funciona bem como o caralho!" />
-    <MESSAGE value="Já submete ideias!!!!!!!!!" />
-    <MESSAGE value="Já submete ideias!!!!!!!!!&#10;(also, já guarda a sessão)" />
+    <MESSAGE value="Starting Register" />
+    <MESSAGE value="Starting Register with Model and Action. Missing connection to database!  MÃE, ESTOU NO GITHUB!!!!!" />
+    <MESSAGE value="Dia 12314565423, ainda não regista. Está quase." />
+    <MESSAGE value="Fiz merdas" />
+    <MESSAGE value="Register and Login ready!" />
+    <MESSAGE value="New looks on Submit Idea" />
+    <MESSAGE value="cenas fodas" />
+    <MESSAGE value="Preparing to submit ideas" />
+    <MESSAGE value="merdas" />
+    <MESSAGE value="New Main Screen (landing page) SO MUCH PRETTY" />
+    <MESSAGE value="Submit Idea almost ready" />
+    <MESSAGE value="Notificações mais bonitas. Cardouzo é um noob a escolher cores" />
+    <MESSAGE value="STYLEDOCARALHOPARAIDEAS&#10;&#10;ESTÁ TUDO, SÓ FALTA FUNCIONAR" />
+    <MESSAGE value="Sou um noob e não sei fechar divs" />
+    <MESSAGE value="Está decidido. Vou para design." />
+    <MESSAGE value="Cardooooouuuuzo burro" />
+    <MESSAGE value="Cadeira de Merda. Só apetece cagar nisto" />
+    <MESSAGE value="Novas Libraries" />
+    <MESSAGE value="Faz Login e Registo com o facebook" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1073,57 +915,53 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/css/registerStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="39" selection-start="460" selection-end="462" vertical-scroll-proportion="-6.48">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/mainPageStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="275" selection-end="393" vertical-scroll-proportion="-0.68">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/submitStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="344" selection-end="355" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="479" selection-end="479" vertical-scroll-proportion="-7.48">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+    <entry file="file://$PROJECT_DIR$/web/img/background.png">
+      <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/submitIdea.jsp">
+    <entry file="file://$PROJECT_DIR$/web/img/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/arrow.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="171" selection-start="4020" selection-end="4020" vertical-scroll-proportion="-6.5384617">
+        <state line="113" column="37" selection-start="2741" selection-end="2741" vertical-scroll-proportion="0.020491803">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/NewClient.java">
+    <entry file="file://$PROJECT_DIR$/src/model/Ideas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="583" selection-end="1100" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="docComment;method#getRMIServer#0;class#NewClient#0" expanded="true" />
-            <element signature="docComment;method#hashPassword#0;class#NewClient#0" expanded="true" />
-          </folding>
+        <state line="145" column="16" selection-start="4856" selection-end="4856" vertical-scroll-proportion="0.33264032">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/action/BuyIdea.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/action/Action.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="0" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="13" selection-start="392" selection-end="392" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1132,83 +970,55 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="59" selection-start="621" selection-end="621" vertical-scroll-proportion="-8.16">
+        <state line="145" column="35" selection-start="5601" selection-end="5614" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Client.java">
+    <entry file="file://$PROJECT_DIR$/src/model/NewClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="1078" selection-end="1212" vertical-scroll-proportion="0.0">
+        <state line="220" column="36" selection-start="5699" selection-end="5699" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/action/Action.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="35" selection-start="593" selection-end="593" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#setSession#0;class#Action#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/action/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="12" selection-start="1026" selection-end="1045" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/action/Register.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="23" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/action/SubmitIdea.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="27" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/NewIdea.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="36" selection-start="2115" selection-end="2115" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#NewIdea#0" expanded="true" />
-            <element signature="docComment;method#getTitleIdea#0;class#NewIdea#0" expanded="true" />
-            <element signature="e#1838#1846#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Features.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="17" selection-start="0" selection-end="3464" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="docComment;method#newIdea#0;class#Features#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="22" selection-start="4514" selection-end="4514" vertical-scroll-proportion="-8.307693">
+        <state line="48" column="42" selection-start="1703" selection-end="1703" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/action/FacebookLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="42" selection-start="2159" selection-end="2159" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/action/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="50" selection-start="572" selection-end="614" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/scribe-1.0.6.jar!/org/scribe/builder/ServiceBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="1198" selection-end="1198" vertical-scroll-proportion="0.84375" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/LoginBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="28" selection-start="1328" selection-end="1328" vertical-scroll-proportion="0.4701087">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="13" column="49" selection-start="408" selection-end="408" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Features.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="248" column="0" selection-start="8297" selection-end="8297" vertical-scroll-proportion="0.93348116">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1266,12 +1076,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>meta2</last-edited>
+          <last-edited>Web|meta2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1279,7 +1088,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>standard</last-edited>
+          <last-edited>scribe-1.2.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
