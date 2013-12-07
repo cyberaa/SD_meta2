@@ -28,12 +28,6 @@
             money.</p>
         <p></p>
 
-
-
-
-
-
-
     <hr>
 
     <!-- Modal Buy Shares-->
