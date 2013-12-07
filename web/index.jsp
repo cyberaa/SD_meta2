@@ -1,4 +1,4 @@
-<%--
+RMIerror.jsp<%--
 Created by IntelliJ IDEA.
 User: d_cardoso
 Date: 23-11-2013

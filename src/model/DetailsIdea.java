@@ -28,6 +28,7 @@ public class DetailsIdea {
     public DetailsIdea(){
         topics = new ArrayList<String>();
         owners = new ArrayList<String>();
+        inWatchList=-1;
     }
 
     public int getIdeaDetails(Features RMIServer,String ideaName, int UserID){
@@ -57,6 +58,13 @@ public class DetailsIdea {
                         return -1;
                     }
                     inWatchList = answer;
+
+                    answer = RMIServer.getPercentage(ideaName, UserID);
+                    if (answer ==-1){
+                        return -1;
+                    }
+                    numberShares = answer;
+
                     if (UserID==1){
                         isRoot=true;
                     }

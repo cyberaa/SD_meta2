@@ -31,6 +31,7 @@ public class Authenticate implements Interceptor {
 
             Client user = (Client) sessionAttributes.get("client");
             if(user == null) {
+                System.out.println("user=null");
                 sessionAttributes.put("client", new Client());
                 return "LOGIN";
             }
@@ -39,6 +40,7 @@ public class Authenticate implements Interceptor {
                 if(userID > 0) {
                     return actionInvocation.invoke();
                 }
+                System.out.println(userID<=0);
                 return "LOGIN";
             }
         }

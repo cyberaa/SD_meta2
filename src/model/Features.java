@@ -242,8 +242,4 @@ public interface Features extends Remote{
      * @throws RemoteException
      */
     public ArrayList<String> viewHallOfFame() throws RemoteException;
-
-    public int newFacebookUser(String ID_facebook, String userName) throws RemoteException;
-
-    public int authenticateFacebook(String idFacebook, String username) throws RemoteException;
 }

@@ -32,6 +32,7 @@ public class BuyIdea extends Action{
                 return "RMIERROR";
             }
         }
+        getDEICoins();
         //in case of error
         if(answer == -1){
             BuyResult = '1';

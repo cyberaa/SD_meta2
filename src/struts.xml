@@ -47,7 +47,7 @@
                 /submitIdea.jsp
             </result>
             <result name = "RMIERROR">
-                /index.jsp
+                RMIerror.jsp
             </result>
         </action>
         <action name="GetPortfolio" class = "action.ViewPortfolio">
@@ -56,7 +56,7 @@
                 /Portfolio.jsp
             </result>
             <result name = "RMIERROR">
-                /index.jsp
+                RMIerror.jsp
             </result>
         </action>
         <action name="DeleteIdea" class = "action.DeleteIdea">
@@ -64,7 +64,7 @@
             <result name="SUCCESS">ViewIdea.jsp</result>
             <result name="ERROR">ViewIdea.jsp</result>
             <result name = "RMIERROR">
-                /index.jsp
+                RMIerror.jsp
             </result>
         </action>
         <action name="SetSharePrice" class = "action.SetSharePrice">
@@ -72,7 +72,7 @@
             <result name="SUCCESS">ViewIdea.jsp</result>
             <result name="ERROR">ViewIdea.jsp</result>
             <result name = "RMIERROR">
-                /index.jsp
+                RMIerror.jsp
             </result>
         </action>
         <action name="search" class = "action.Search">
@@ -86,42 +86,60 @@
             <interceptor-ref name="authStack" />
             <result name="SUCCESS">ViewTopic.jsp</result>
             <result name = "RMIERROR">
-                /index.jsp
+                RMIerror.jsp
             </result>
         </action>
         <action name="ViewIdea" class = "action.ViewIdea">
             <interceptor-ref name="authStack" />
             <result name="SUCCESS">ViewIdea.jsp</result>
             <result name = "RMIERROR">
-                /index.jsp
+                RMIerror.jsp
             </result>
         </action>
         <action name="BuyIdea" class = "action.BuyIdea">
             <interceptor-ref name="authStack" />
             <result name="SUCCESS">ViewIdea.jsp</result>
             <result name = "RMIERROR">
-                /index.jsp
+                RMIerror.jsp
             </result>
         </action>
         <action name="ViewTransaction" class = "action.ViewTransactions">
             <interceptor-ref name="authStack" />
             <result name="SUCCESS">ViewTransactions.jsp</result>
             <result name = "RMIERROR">
-                /index.jsp
+                RMIerror.jsp
             </result>
         </action>
         <action name="WatchList" class = "action.WatchList">
             <interceptor-ref name="authStack" />
             <result name="SUCCESS">ViewIdea.jsp</result>
+            <result name="ERROR">ViewIdea.jsp</result>
             <result name = "RMIERROR">
-                /index.jsp
+                RMIerror.jsp
             </result>
         </action>
         <action name="ViewWatchList" class = "action.ViewWatchList">
             <interceptor-ref name="authStack" />
             <result name="SUCCESS">WatchList.jsp</result>
+            <result name="ERROR">WatchList.jsp</result>
             <result name = "RMIERROR">
-                /index.jsp
+                RMIerror.jsp
+            </result>
+        </action>
+        <action name="ViewHallOfFame" class = "action.ViewHallOfFame">
+            <interceptor-ref name="authStack" />
+            <result name="SUCCESS">HallOfFame.jsp</result>
+            <result name="ERROR">HallOfFame.jsp</result>
+            <result name = "RMIERROR">
+                RMIerror.jsp
+            </result>
+        </action>
+        <action name="TakeOver" class = "action.Takeover">
+            <interceptor-ref name="authStack" />
+            <result name="SUCCESS">ViewIdea.jsp</result>
+            <result name="ERROR">ViewIdea.jsp</result>
+            <result name = "RMIERROR">
+                RMIerror.jsp
             </result>
         </action>
 

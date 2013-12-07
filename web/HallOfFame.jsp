@@ -42,19 +42,7 @@
                             <span class="label label-info">#<s:property value="#topic"/></span>
                         </a>
                     </s:iterator>
-                    <!--<span class="label label-primary">caralho</span>
-                    <span class="label label-success">SD</span>
-                    <span class="label label-info">CACEIRO</span>
-                    <span class="label label-warning">CARDOUZO</span>
-                    <span class="label label-danger">TOPICSLOLOL</span> -->
                     <p></p>
-
-                    <div class="btn-group">
-                        <a href="ViewIdea.action?idea=<s:property value="#idea.title"/>">
-                            <button class="btn btn-primary btn-sm">
-                                <span class="glyphicon glyphicon-hand-right"></span> View Idea Details
-                            </button></a>
-                    </div>
                 </div>
             </div>
         </div>
