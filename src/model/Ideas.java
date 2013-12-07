@@ -99,13 +99,27 @@ public class Ideas {
     }
 
     public int addToWatchListStatus(Features RMIServer, String IdeaID, int userID){
-        //TODO
-     return -1;
+        int result;
+        try{
+            int idea = Integer.parseInt(IdeaID);
+            result = RMIServer.addToWatchList(userID,idea);
+        }catch(Exception e){
+            System.out.println(e);
+            result = -666;
+        }
+        return result;
     }
 
     public int removeFromWatchListStatus(Features RMIServer, String IdeaID, int userID){
-        //TODO
-     return -1;
+        int result;
+        try{
+            int idea = Integer.parseInt(IdeaID);
+            result = RMIServer.removeFromWatchList(userID,idea);
+        }catch(Exception e){
+            System.out.println(e);
+            result = -666;
+        }
+        return result;
     }
 
     public ArrayList<DetailsIdea> getWatchList(Features RMIServer,int userID) {
@@ -168,4 +182,14 @@ public class Ideas {
         return getIdeas();
     }
 
+    public int takeOver(Features RMIServer , int UserId, String IdeaTitle){
+        int result;
+        try{
+            result = RMIServer.takeover(UserId,IdeaTitle);
+        }catch(Exception e){
+            System.out.println(e);
+            result = -666;
+        }
+        return result;
+    }
 }

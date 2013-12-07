@@ -17,10 +17,13 @@ public class ViewIdea extends Action {
     private char SetResult;
     private char DeleteResult;
     private char watchListResult;
+    private char TakeOverResult;
     public ViewIdea(){
         BuyResult = 0;
         SetResult = 0;
         DeleteResult = 0;
+        watchListResult = 0;
+        TakeOverResult=0;
     }
     public String execute(){
         Features server = getRMIserver();
@@ -82,5 +85,13 @@ public class ViewIdea extends Action {
 
     public void setWatchListResult(char watchListResult) {
         this.watchListResult = watchListResult;
+    }
+
+    public char getTakeOverResult() {
+        return TakeOverResult;
+    }
+
+    public void setTakeOverResult(char takeOverResult) {
+        TakeOverResult = takeOverResult;
     }
 }

@@ -65,6 +65,16 @@
         window.location.replace("/ViewIdea.action?idea=<s:property value="IdeaTitle"/>&watchListResult=6");
     </script>
 </s:if>
+<s:if test="%{TakeOverResult=='1'}">
+    <script>
+        window.location.replace("/ViewIdea.action?idea=<s:property value="IdeaTitle"/>&TakeOverResult=3");
+    </script>
+</s:if>
+<s:if test="%{TakeOverResult=='2'}">
+    <script>
+        window.location.replace("/ViewIdea.action?idea=<s:property value="IdeaTitle"/>&TakeOverResult=4");
+    </script>
+</s:if>
 <style>
     body { background: url(img/background.png); }
 </style>
@@ -99,15 +109,21 @@
     <s:if test="%{watchListResult=='6'}">
         <div class="isa_success">The idea has been added to the WatchList!</div>
     </s:if>
-        <h1>Details of the idea '<s:property value="ideaDet.title"/>':</h1>
-        <p></p>
+    <s:elseif test="%{TakeOverResult=='3'}">
+        <div class="isa_error">TakeOver has failed!</div>
+    </s:elseif>
 
-    <hr>
      <s:if test="%{DeleteResult=='4'}">
         <div class="isa_success">The idea has been deleted with success!</div>
      </s:if>
+     <s:elseif test="%{TakeOverResult=='4'}">
+        <div class="isa_success">TakeOver has completed with success!</div>
+     </s:elseif>
      <s:else>
+        <h1>Details of the idea '<s:property value="ideaDet.title"/>':</h1>
+        <p></p>
 
+         <hr>
         <div class="jumbotron">
         <!-- Modal Delete -->
         <div class="modal fade" id="Delete<s:property value="#idea.ideaID"/>" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
@@ -234,9 +250,7 @@
                 <p></p>
 
                 <div class="btn-group">
-                    <s:if test="%{isRoot==false}">
-                            <div class="isa_success">The idea has been deleted with success!</div>
-
+                    <s:if test="%{UserID>1}">
                         <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#BuyIdeas<s:property value="#idea.ideaID"/>">
                             <span class="glyphicon glyphicon-euro"></span> Buy Shares
                         </button>
@@ -244,26 +258,28 @@
                         <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#setShares<s:property value="#idea.ideaID"/>">
                             <span class="glyphicon glyphicon-cog"></span> Set Shares
                         </button>
-                        <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#Delete<s:property value="#idea.ideaID"/>">
-                            <span class="glyphicon glyphicon-trash"></span> Delete
-                        </button>
-                        <s:if test="%{inWatchList==0}">
-                        <a href="Watchlist.action?idea=<s:property value="#idea.title"/>">
+                        <s:if test="%{ideaDet.numberShares==100000}">
+                            <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#Delete<s:property value="#idea.ideaID"/>">
+                                <span class="glyphicon glyphicon-trash"></span> Delete
+                            </button>
+                        </s:if>
+                        <s:if test="%{ideaDet.inWatchList==0}">
+                        <a href="WatchList.action?IdeaID=<s:property value="ideaDet.ideaID"/>&IdeaTitle=<s:property value="ideaDet.title"/>&inWatchList=0">
                             <button class="btn btn-primary btn-sm">
                                 <span class="glyphicon glyphicon-star"></span> Add to WatchList
                             </button>
                         </a>
                         </s:if>
-                        <s:else>
-                            <a href="Watchlist.action?idea=<s:property value="#idea.title"/>">
+                        <s:elseif test="%{ideaDet.inWatchList==1}">
+                            <a href="WatchList.action?IdeaID=<s:property value="ideaDet.ideaID"/>&IdeaTitle=<s:property value="ideaDet.title"/>&inWatchList=1">
                                 <button class="btn btn-primary btn-sm">
                                     <span class="glyphicon glyphicon-star"></span> Remove from WatchList
                                 </button>
                             </a>
-                        </s:else>
+                        </s:elseif>
                     </s:if>
                     <s:else>
-                        <a href="Takeover.action?idea=<s:property value="#idea.title"/>">
+                        <a href="TakeOver.action?IdeaTitle=<s:property value="ideaDet.title"/>">
                             <button class="btn btn-primary btn-sm">
                                 <span class="glyphicon glyphicon-star"></span> Takeover
                             </button>

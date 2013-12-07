@@ -242,4 +242,13 @@ public interface Features extends Remote{
      * @throws RemoteException
      */
     public ArrayList<String> viewHallOfFame() throws RemoteException;
+
+    /**
+     * Gives the root the possibility to takeover an Idea
+     * @param userID the id of the user
+     * @param IdeaTitle the title of the idea
+     * @return -1 in case of error, 1 in case of successs
+     * @throws RemoteException
+     */
+    public int takeover(int userID, String IdeaTitle) throws RemoteException;
 }
