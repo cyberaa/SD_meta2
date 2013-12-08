@@ -70,7 +70,7 @@
             <div class="row" style="margin-top: 20px;">
                 <div class="col-md-2">
                     <div class="form-group">
-                        <label class="control-label" for="deiCoinsIdea">Price per Share</label>
+                        <label class="control-label" for="deiCoinsIdea">Price to invest (the price will be divided into 100 000 shares):</label>
                         <input type="text" name = "newIdea.deiCoinsIdea" class="form-control" id="deiCoinsIdea">
                     </div>
                 </div>
