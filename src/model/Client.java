@@ -20,6 +20,7 @@ public class Client {
     private String DEICoinsString;
     private Features RMIServer = null;
     private boolean reconnect=false;
+    private String token;
 
     public Features getRMIServer(){
         if(this.RMIServer==null||this.reconnect==false){
@@ -73,6 +74,14 @@ public class Client {
 
     public String getDEICoinsString() {
         return DEICoinsString;
+    }
+
+    public String getToken(){
+        return token;
+    }
+
+    public void setToken(String Tok){
+        token = Tok;
     }
 
 }

@@ -52,10 +52,10 @@ public class Ideas {
         return ideas;
     }
 
-    public int removeIdea(Features RMIServer, String ideaTitle, int userID){
+    public int removeIdea(Features RMIServer, String ideaTitle, int userID, String Token){
         int result;
         try{
-            result = RMIServer.deleteIdea(ideaTitle, userID);
+            result = RMIServer.deleteIdea(ideaTitle, userID,Token);
         }catch(Exception e){
             System.out.println(e);
             result = -666;
@@ -84,6 +84,27 @@ public class Ideas {
             double finalP = Double.parseDouble(finalPrice);
             double max = Double.parseDouble(maxprice);
             result = RMIServer.buyShares(ideaTitle,numberShares,userID,finalP,max,null);
+            if(result == null){
+                return -1;
+            }
+            if(result.size()==0){
+                return 0;
+            }
+            /*FIXME add Notifications?*/
+        }catch(Exception e){
+            System.out.println(e);
+            return -666;
+        }
+        return 1;
+    }
+
+    public int buySharesFacebook(Features RMIServer, String ideaTitle, int userID, String n_shares, String maxprice, String finalPrice,String token){
+        ArrayList<String> result;
+        try{
+            int numberShares = Integer.parseInt(n_shares);
+            double finalP = Double.parseDouble(finalPrice);
+            double max = Double.parseDouble(maxprice);
+            result = RMIServer.buySharesFacebook(ideaTitle,numberShares,userID,finalP,max,null,token);
             if(result == null){
                 return -1;
             }

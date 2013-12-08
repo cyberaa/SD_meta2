@@ -129,6 +129,35 @@ public class NewIdea {
         }
         return answer;
     }
+    public int submitNewIdeaFacebook(Features RMIServer,int userID,String token) {
+        int answer = 0;
+        try {
+            if(RMIServer!=null){
+                ArrayList<String> data = getTopicsId(RMIServer);
+                if (data==null){
+                    System.out.println("lolada");
+                    answer=-666;
+                }
+                data.add(this.getTitleIdea());
+                data.add(this.getDescriptionIdea());
+                data.add(Double.toString(this.getDeiCoinsIdea()));
+                //compatibility with the reply;
+                data.add("0");
+                answer = RMIServer.newIdeaFacebook(data,userID,false,token);
+                if(answer!=-1 && this.getFileUpload()!=null){
+                    byte[] file = readAllBytes(this.getFileUpload());
+                    RMIServer.saveFile(answer,this.getFileUploadFileName(),file);
+                }
+            }else{
+                answer=-666;
+                System.out.println("ahahahah");
+            }
+        } catch (Exception e) {
+            System.out.println(e);
+            answer=-666;
+        }
+        return answer;
+    }
 
     /**
      * Method to conver a file to a byte array, in order to send through socket

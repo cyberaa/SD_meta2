@@ -131,13 +131,13 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Delete Idea <s:property value="#ideaDet.title"/></h4>
+                        <h4 class="modal-title">Delete Idea <s:property value="ideaDet.title"/></h4>
                     </div>
                     <div class="modal-body">
                         Are you sure you want to delete?
                     </div>
                     <form method="post" action = "DeleteIdea" class="modal-footer">
-                        <input type="text" style="display: none" name = "IdeaTitle" value="<s:property value="#ideaDet.title"/>">
+                        <input type="text" style="display: none" name = "IdeaTitle" value="<s:property value="ideaDet.title"/>">
                         <button type="submit" class="btn btn-default">Yes</button>
                         <button type="button" class="btn btn-primary" data-dismiss="modal">No</button>
                     </form>

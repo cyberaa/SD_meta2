@@ -24,7 +24,7 @@ public class DeleteIdea extends Action {
             return "ERROR";
         }
         ideas = new Ideas();
-        int answer = ideas.removeIdea(server,IdeaTitle,userID);
+        int answer = ideas.removeIdea(server,IdeaTitle,userID,getClientTocken());
         if (answer==-666){
             if (retry==false){
                 retry=true;

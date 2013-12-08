@@ -5,6 +5,7 @@ import java.rmi.RemoteException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.scribe.builder.ServiceBuilder;
@@ -28,7 +29,6 @@ public class LoginBean {
     private String password;
     private String AppSecret = "af8edf703b7a95f5966e9037b545b7ce";
     private double deiCoins;
-    private String token;
 
     public int login(Features RMIServer){
         int answer = 0;
@@ -82,11 +82,10 @@ public class LoginBean {
         System.out.println("idFacebook " + userName);
         try {
             answer = RMIServer.authenticateFacebook(idFacebook, userName);
-        } catch (RemoteException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        } catch (Exception e) {
+            System.out.println("ERRO login with the facebook");
         }
-
-
+        System.out.println("Tokenfinalfunc:"+token);
         return answer;
 
 
@@ -130,11 +129,5 @@ public class LoginBean {
         return hashText;
     }
 
-    public String getToken() {
-        return token;
-    }
 
-    public void setToken(String token) {
-        this.token = token;
-    }
 }

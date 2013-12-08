@@ -23,7 +23,14 @@ public class SubmitIdea extends Action {
 
     public String execute() {
         getClientSession();
-        int result = this.newIdea.submitNewIdea(getRMIserver(),getUserID());
+        String token = getClientTocken();
+        int result;
+        System.out.println("Token: "+token);
+        if(token==null){
+            result = this.newIdea.submitNewIdea(getRMIserver(),getUserID());
+        }else{
+            result = this.newIdea.submitNewIdeaFacebook(getRMIserver(),getUserID(),token);
+        }
         File file = newIdea.getFileUpload();
         if(file!=null){
             newIdea.getFileUpload().delete();
@@ -40,7 +47,7 @@ public class SubmitIdea extends Action {
             return "INPUT_ERROR";
         }
         error=true;
-        errorMessage = "Vai-te Foder puta do caralho, para de tentar foder o site";
+        errorMessage = "Error while inserting idea";
         return "INPUT_ERROR";
     }
 

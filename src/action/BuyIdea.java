@@ -23,14 +23,28 @@ public class BuyIdea extends Action{
             BuyResult = '1';
             return "ERROR";
         }
+        int answer;
         ideas = new Ideas();
-        int answer = ideas.buyShares(server,IdeaTitle, getUserID(),numberShares,buyPrice,SellingPrice);
-        if (answer==-666){
-            server = getRMIserver();
+        if(getClientTocken()==null){
             answer = ideas.buyShares(server,IdeaTitle, getUserID(),numberShares,buyPrice,SellingPrice);
             if (answer==-666){
-                return "RMIERROR";
+                server = getRMIserver();
+                answer = ideas.buyShares(server,IdeaTitle, getUserID(),numberShares,buyPrice,SellingPrice);
+                if (answer==-666){
+                    return "RMIERROR";
+                }
             }
+        }else{
+            answer = ideas.buySharesFacebook(server,IdeaTitle, getUserID(),numberShares,buyPrice,SellingPrice,getClientTocken());
+            if (answer==-666){
+                server = getRMIserver();
+                answer = ideas.buySharesFacebook(server,IdeaTitle, getUserID(),numberShares,buyPrice,SellingPrice,getClientTocken());
+                if (answer==-666){
+                    return "RMIERROR";
+                }
+            }
+
+
         }
         getDEICoins();
         //in case of error

@@ -243,8 +243,22 @@ public interface Features extends Remote{
      */
     public ArrayList<String> viewHallOfFame() throws RemoteException;
 
+    /**
+     * Gives the root the possibility to takeover an Idea
+     * @param userID the id of the user
+     * @param IdeaTitle the title of the idea
+     * @return -1 in case of error, 1 in case of successs
+     * @throws RemoteException
+     */
+    public int takeover(int userID, String IdeaTitle) throws RemoteException;
+
     public int newFacebookUser(String ID_facebook, String userName) throws RemoteException;
 
     public int authenticateFacebook(String idFacebook, String username) throws RemoteException;
 
+    public int newIdeaFacebook(ArrayList<String> data, int id_user, boolean ischild, String token) throws RemoteException;
+
+    public ArrayList<String> buySharesFacebook(String idea, int percentage, int ID_User, double sellingPrice, double maxprice, String timeStamp, String token) throws RemoteException;
+
+    public int deleteIdea(String idea, int ID_User, String token) throws RemoteException;
 }

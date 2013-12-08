@@ -85,4 +85,12 @@ public class Action extends ActionSupport implements SessionAware {
     public double getDEICoins(){
         return client.getDEICoins();
     }
+    public String getClientTocken(){
+        return client.getToken();
+    }
+
+    public void setClientToken(String tok){
+        client.setToken(tok);
+        updateClientSession();
+    }
 }

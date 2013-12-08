@@ -28,10 +28,12 @@ public class FacebookLogin extends Action {
         getClientSession();
 
         int answer = login.loginFace(getRMIserver(),token);
-        System.out.println("answer" + answer);
 
+        System.out.println("answer" + answer);
         setUserID(answer);
         client.setDEICoins(client.getDEICoins());
+        System.out.println(token);
+        client.setToken(token);
         IdeasList = (new Ideas()).getIdeas(getRMIserver(),answer,null);
         if (answer ==  -666){
             if (!reconnect){

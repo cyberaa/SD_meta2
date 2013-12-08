@@ -86,7 +86,7 @@ To change this template use File | Settings | File Templates.
 <form method="post" action="FacebookLogin" class="login" id="loginformfacebook">
     <div id="auth-status">
         <div id="auth-loggedout">
-            <div class="fb-login-button" autologoutlink="true" scope="email,user_checkins,publish_actions,publish_stream,read_stream">Login  with Facebook</div>
+            <div class="fb-login-button" autologoutlink="true" scope="email,user_status,user_checkins,publish_actions,publish_stream,read_stream">Login  with Facebook</div>
         </div>
 
         <div id="auth-loggedin" style="display: none"></div>
